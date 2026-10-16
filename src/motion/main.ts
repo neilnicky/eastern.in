@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
 import { SplitText } from "gsap/SplitText";
-import Lenis from "lenis";
+import type Lenis from "lenis";
 import { reducedMotion, runCleanups } from "./env";
 import { initMenu, closeMenu } from "./menu";
 import { initCursor } from "./cursor";
@@ -16,18 +16,22 @@ CustomEase.create("linedraw", ".65,.05,.36,1");
 CustomEase.create("textveil", ".165,1,.32,1");
 CustomEase.create("headermark", ".22,1,.36,1");
 
+/** Smooth wheel scrolling, desktop only: Lenis is not even downloaded on touch (pointer: coarse) or with reduced motion. */
 export let lenis: Lenis | null = null;
+const wantsSmoothScroll = () => !reducedMotion() && !window.matchMedia("(pointer: coarse)").matches;
 let booted = false;
 
 export function boot() {
   if (booted) return;
   booted = true;
 
-  if (!reducedMotion()) {
-    lenis = new Lenis({ lerp: 0.1, smoothWheel: true, syncTouch: false });
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add((t) => lenis?.raf(t * 1000));
-    gsap.ticker.lagSmoothing(0);
+  if (!reducedMotion()) gsap.ticker.lagSmoothing(0);
+  if (wantsSmoothScroll()) {
+    import("lenis").then(({ default: Lenis }) => {
+      lenis = new Lenis({ lerp: 0.1, smoothWheel: true, syncTouch: false });
+      lenis.on("scroll", ScrollTrigger.update);
+      gsap.ticker.add((t) => lenis?.raf(t * 1000));
+    }).catch((e) => console.error("lenis", e));
   }
   initMenu();
   initCursor();

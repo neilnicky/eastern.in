@@ -50,6 +50,8 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: clip; }
+/* Touch devices don't load Lenis (motion/main.ts); keep the scroll lock lenis.stop() gave them while the menu is open. */
+@media (pointer: coarse) and (prefers-reduced-motion: no-preference) { html.menu-open { overflow: clip; } }
 body {
   margin: 0;
   background: var(--cream);

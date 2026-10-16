@@ -1,5 +1,5 @@
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { onCleanup } from "./env";
+import { onCleanup, reducedMotion } from "./env";
 import { lenis } from "./main";
 
 /** Reference M16: the floating tab bar marks the section in view; its links are ordinary anchors. */
@@ -18,9 +18,11 @@ export default function tabbar(root: HTMLElement) {
       if (!target) return;
       ScrollTrigger.create({ trigger: target, start: "top 55%", end: "bottom 55%", onToggle: (self) => self.isActive && setActive(target.id) });
       a.addEventListener("click", (e) => {
-        if (!lenis) return;
+        if (reducedMotion()) return; // native jump to the anchor
         e.preventDefault();
-        lenis.scrollTo(target, { offset: -40, duration: 1.2 });
+        // Lenis on desktop; touch devices don't load it, so scroll there natively (same target and offset)
+        if (lenis) lenis.scrollTo(target, { offset: -40, duration: 1.2 });
+        else window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 40, behavior: "smooth" });
         history.replaceState(null, "", a.hash);
       }, { signal: ac.signal });
     });

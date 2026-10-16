@@ -211,3 +211,27 @@ test("typing in the product filter refreshes ScrollTrigger once, after the pause
   await expect(page.locator("[data-filter-status]")).toContainText("result");
   await expect.poll(rects, { timeout: 2000 }).toBeGreaterThan(0); // one refresh once typing pauses
 });
+
+test.describe("Lenis smooth scrolling is desktop-only", () => {
+  test("a touch device never downloads or starts Lenis, and the open menu still locks page scroll", async ({ browser }) => {
+    const ctx = await browser.newContext({ ...devices["Pixel 7"] });
+    const page = await ctx.newPage();
+    const lenisRequests: string[] = [];
+    page.on("request", (r) => { if (/\/lenis\.[\w-]+\.js$/.test(r.url())) lenisRequests.push(r.url()); });
+    await page.goto("/products/");
+    await page.waitForLoadState("networkidle");
+    expect(lenisRequests).toEqual([]);
+    await expect(page.locator("html")).not.toHaveClass(/\blenis\b/);
+
+    await page.locator("[data-menu-toggle]").click();
+    await expect(page.locator("#site-menu")).toBeVisible();
+    expect(await page.evaluate(() => getComputedStyle(document.documentElement).overflow)).toBe("clip");
+    await ctx.close();
+  });
+
+  test("a desktop pointer loads it", async ({ page }, info) => {
+    test.skip(info.project.name !== "desktop", "fine pointer only");
+    await page.goto("/products/");
+    await expect(page.locator("html")).toHaveClass(/\blenis\b/);
+  });
+});
