@@ -1,4 +1,4 @@
-import { test, expect, type Page } from "@playwright/test";
+import { test, expect, devices, type Page } from "@playwright/test";
 
 /** Counts inline-style mutations on the hero packs (the marquee ticker is their only writer after load). */
 async function watchHeroPacks(page: Page) {
@@ -72,4 +72,32 @@ test("split-text reveals leave no will-change layers behind once they have playe
   expect(left.charsWithWillChange, "no character keeps will-change").toBe(0);
   expect(left.charsWithInlineTransform, "no character keeps an inline transform").toBe(0);
   expect(left.otherWillChange).toEqual([]);
+});
+
+test.describe("product tile hover shapes", () => {
+  test("a touch device renders zero spice SVGs on /products/", async ({ browser }) => {
+    const ctx = await browser.newContext({ ...devices["Pixel 7"] });
+    const page = await ctx.newPage();
+    await page.goto("/products/");
+    await expect(page.locator(".tile").first()).toBeVisible();
+    expect(await page.locator("svg.spice").count()).toBe(0);
+    // and the shape layer itself does not render on touch
+    expect(await page.locator(".tile__shapes").first().evaluate((e) => getComputedStyle(e).display)).toBe("none");
+    await ctx.close();
+  });
+
+  test("hover-capable pointers still draw the masked silhouettes", async ({ page }, info) => {
+    test.skip(info.project.name !== "desktop", "hover only");
+    await page.goto("/products/");
+    const tile = page.locator("#spices-masalas .tile").nth(2);
+    await tile.scrollIntoViewIfNeeded();
+    await tile.hover();
+    await page.waitForTimeout(1200);
+    const s = await tile.evaluate((t) => {
+      const pick = (el: Element, pseudo: string) => { const cs = getComputedStyle(el, pseudo); return { opacity: cs.opacity, mask: cs.maskImage || cs.webkitMaskImage }; };
+      const shapes = t.querySelector(".tile__shapes")!;
+      return [pick(t, "::before"), pick(shapes, "::before"), pick(shapes, "::after")];
+    });
+    for (const p of s) { expect(p.opacity).toBe("1"); expect(p.mask).toContain("data:image/svg+xml"); }
+  });
 });

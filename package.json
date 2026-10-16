@@ -12,7 +12,8 @@
     "assets": "node scripts/build-assets.mjs",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "write-docs": "tsx scripts/write-docs.ts"
+    "write-docs": "tsx scripts/write-docs.ts",
+    "spice-masks": "tsx scripts/write-spice-masks.ts"
   },
   "dependencies": {
     "@fontsource-variable/figtree": "5.2.10",
