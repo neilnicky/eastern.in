@@ -18,6 +18,11 @@ export default function filter(root: HTMLElement) {
     const empty = box.querySelector<HTMLElement>("[data-filter-empty]");
     const ac = new AbortController();
     const norm = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ഀ-ൿ ]+/g, " ").replace(/\s+/g, " ").trim();
+    // filtering changes page height, so ScrollTrigger positions must be recomputed, but a full refresh per keystroke
+    // is the expensive part of typing: wait until input pauses
+    const REFRESH_IDLE_MS = 150;
+    let refreshTimer = 0;
+    const scheduleRefresh = () => { clearTimeout(refreshTimer); refreshTimer = window.setTimeout(() => ScrollTrigger.refresh(), REFRESH_IDLE_MS); };
     const index = items.map((el) => ({ el, text: norm(el.dataset.filterText ?? el.textContent ?? ""), tags: (el.dataset.filterTags ?? "").split(" ").filter(Boolean) }));
 
     const apply = () => {
@@ -34,7 +39,7 @@ export default function filter(root: HTMLElement) {
       if (empty) empty.hidden = shown > 0;
       if (status) status.textContent = q || active !== "all" ? `${shown} ${shown === 1 ? "result" : "results"}` : "";
       box.classList.toggle("is-filtering", !!q || active !== "all");
-      requestAnimationFrame(() => ScrollTrigger.refresh());
+      scheduleRefresh();
     };
     input?.addEventListener("input", apply, { signal: ac.signal });
     input?.closest("form")?.addEventListener("submit", (e) => e.preventDefault(), { signal: ac.signal });
@@ -49,6 +54,6 @@ export default function filter(root: HTMLElement) {
     if (hashTag) tags.forEach((o) => o.setAttribute("aria-pressed", String(o === hashTag)));
     // the module loads lazily: honour anything typed (or restored by the browser) before it attached
     if (q || hashTag || input?.value) apply();
-    onCleanup(() => ac.abort());
+    onCleanup(() => { ac.abort(); clearTimeout(refreshTimer); });
   });
 }

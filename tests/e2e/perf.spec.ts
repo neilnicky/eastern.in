@@ -190,3 +190,24 @@ test.describe("italic Fraunces is fetched only where it is used", () => {
     expect(requested).toHaveLength(1);
   });
 });
+
+test("typing in the product filter refreshes ScrollTrigger once, after the pause, not per keystroke", async ({ page }) => {
+  // a ScrollTrigger refresh re-measures every trigger with getBoundingClientRect; filtering itself never reads layout
+  await page.addInitScript(() => {
+    const original = Element.prototype.getBoundingClientRect;
+    const w = window as unknown as { __rects: number };
+    w.__rects = 0;
+    Element.prototype.getBoundingClientRect = function () { w.__rects++; return original.call(this); };
+  });
+  const rects = () => page.evaluate(() => (window as unknown as { __rects: number }).__rects);
+  await page.goto("/products/");
+  await page.waitForLoadState("networkidle");
+  await page.locator("#product-search").focus();
+  await page.waitForTimeout(500);
+  await page.evaluate(() => { (window as unknown as { __rects: number }).__rects = 0; });
+
+  await page.keyboard.type("mango pickle", { delay: 60 });
+  expect(await rects(), "no layout reads while keys keep coming").toBe(0);
+  await expect(page.locator("[data-filter-status]")).toContainText("result");
+  await expect.poll(rects, { timeout: 2000 }).toBeGreaterThan(0); // one refresh once typing pauses
+});
