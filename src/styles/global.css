@@ -1,0 +1,145 @@
+/* Tokens follow docs/design-direction.md §2. Scale, spacing and easing values are measured from the
+   reference's :root; colour is Eastern's (logo orange #FF4F02, clove, cream). */
+:root {
+  --cream: #fbf2e6;
+  --cream-deep: #f6e2cc;
+  --clove: #3b160f;
+  --clove-soft: #7a4a3a;
+  --orange: #ff4f02;
+  --orange-ink: #e04400;
+  --orange-text: #c93d00;
+  --turmeric: #f2a20c;
+  --menu: #ff4f02;
+  --tile: #f6e2cc;
+  --rule: color-mix(in srgb, var(--clove) 22%, transparent);
+
+  --font-serif: "Fraunces Variable", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-sans: "Figtree Variable", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --text-small: 0.875rem;
+  --text-base: 1rem;
+  --text-medium: clamp(1.125rem, calc(1.085rem + 0.165vw), 1.25rem);
+  --text-large: 2rem;
+  --text-title: clamp(2.75rem, calc(1.9rem + 3.6vw), 6.6rem);
+  --text-hero: clamp(3.4rem, calc(2.95rem + 6.65vw), 999999px); /* reference scale ×1.12: Fraunces caps sit lower than Ivy Mode */
+  --text-display: clamp(4rem, calc(2.9rem + 11vw), 999999px);
+  --text-label: 0.6875rem;
+
+  --space-s: 2.5rem;
+  --space-xs: 3.75rem;
+  --space-l: 6.25rem;
+  --space-xl: clamp(6rem, calc(var(--space-l) * 2), 999999px);
+  --pad: clamp(16px, 2vw, 40px);
+  --gutter: clamp(12px, 1.45vw, 30px);
+  --header-offset: clamp(16px, 2vw, 30px);
+  --logo-w: clamp(64px, 5.6vw, 84px);
+  --radius: 15px;
+
+  --ease-premium: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-textveil: cubic-bezier(0.165, 1, 0.32, 1);
+
+  color-scheme: light;
+}
+
+@font-face { font-family: "Fraunces Fallback"; src: local("Palatino"), local("Book Antiqua"); size-adjust: 104%; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: clip; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--clove);
+  font: 400 var(--text-base) / 1.3 var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; }
+:focus-visible { outline: 2px solid var(--clove); outline-offset: 3px; border-radius: 2px; }
+.on-dark :focus-visible, .menu :focus-visible { outline-color: var(--cream); }
+::selection { background: var(--orange); color: var(--cream); }
+
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: fixed; left: var(--pad); top: -100px; z-index: 200; background: var(--clove); color: var(--cream); padding: 0.75rem 1rem; border-radius: 99px; font-weight: 600; }
+.skip:focus { top: var(--pad); }
+
+/* ---------- type ---------- */
+.serif { font-family: var(--font-serif); font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0; font-weight: 400; letter-spacing: 0.012em; }
+.display, .hero-title, .title {
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
+  font-weight: 400;
+  letter-spacing: 0.012em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--orange-ink);
+  text-wrap: balance;
+}
+.hero-title { font-size: var(--text-hero); text-align: center; }
+.display { font-size: min(var(--text-display), 12.4vw); line-height: 0.92; } /* 12.4vw keeps 9–10-letter words (WORLDWIDE, MILESTONES) on one line */
+.title { font-size: var(--text-title); text-align: center; }
+.label { font: 600 var(--text-label) / 1.2 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange-text); }
+.lead { font-size: var(--text-medium); line-height: 1.45; text-align: center; max-width: 42rem; margin-inline: auto; text-wrap: pretty; }
+.prose { font-size: var(--text-base); line-height: 1.55; max-width: 44rem; }
+.prose > * + * { margin-top: 1em; }
+.prose h2, .prose h3 { font: 600 var(--text-label) / 1.2 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange-text); margin-top: 2.25em; }
+.prose ul, .prose ol { padding-left: 1.25em; }
+.prose li + li { margin-top: 0.5em; }
+.prose a, a.inline { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.prose a:hover, a.inline:hover { color: var(--orange-text); }
+
+/* ◆ punctuation (reference pattern) */
+.diamond { display: block; width: 9px; height: 9px; background: var(--clove); transform: rotate(45deg); margin: 0 auto; }
+.diamonds { display: grid; gap: var(--space-s); justify-items: center; padding-block: var(--space-xs); }
+
+/* ---------- layout ---------- */
+.wrap { padding-inline: var(--pad); }
+.section { padding-block: var(--space-l); }
+.grid-12 { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.page-head { padding-top: calc(var(--header-offset) + var(--logo-w) * 0.9 + clamp(2rem, 6vw, 5rem)); padding-bottom: var(--space-s); }
+
+/* pills (only on tab bars and weights, as on the reference) */
+.pill { display: inline-flex; align-items: center; justify-content: center; min-height: 2.25rem; padding: 0.35rem 0.9rem; border-radius: 99px; border: 1px solid currentColor; font: 600 0.75rem/1 var(--font-sans); white-space: nowrap; }
+.pill.is-solid { background: var(--orange); border-color: var(--orange); color: var(--cream); }
+
+/* ruled spec rows / tables */
+.rule-table { width: 100%; border-collapse: collapse; font-size: var(--text-small); }
+.rule-table th { text-align: left; font: 600 var(--text-label) / 1.2 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange-text); padding: 0 0 0.75rem; border-bottom: 1px solid var(--clove); }
+.rule-table td { padding: 0.8rem 0.75rem 0.8rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+
+/* text reveal masks (motion/reveal.ts). Without JS / reduced motion everything is simply visible. */
+.js [data-reveal] .line { display: block; overflow: clip; padding-bottom: 0.06em; margin-bottom: -0.06em; }
+.js [data-reveal] .char { display: inline-block; will-change: transform; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* outlined call-to-action (reference: "Discover"/"Shop" pills in the menu and footer) */
+.pill-link {
+  display: inline-flex; align-items: center; gap: 0.6rem; min-height: 2.75rem; padding: 0 0.5rem 0 1.25rem;
+  border: 1px solid currentColor; border-radius: 99px; font: 600 0.75rem/1 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background-color 0.35s, color 0.35s, border-color 0.35s;
+}
+.pill-link::after { content: "→"; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--orange); color: var(--cream); font-size: 0.875rem; letter-spacing: 0; transition: transform 0.4s var(--ease-soft); }
+.pill-link:hover { background: var(--clove); border-color: var(--clove); color: var(--cream); }
+.pill-link:hover::after { transform: translateX(3px); }
+.pill-link--light:hover { background: var(--cream); border-color: var(--cream); color: var(--clove); }
+.pill-link[target="_blank"]::after { content: "↗"; }
+
+/* Small screens: keep whole words on one line (longest display words: WORLDWIDE, INNOVATION, VERMICELLI). */
+.display, .hero-title, .title { overflow-wrap: normal; hyphens: manual; }
+@media (max-width: 600px) {
+  .display { font-size: 12.4vw; }
+  .hero-title { font-size: clamp(2.25rem, 11vw, 3.4rem); }
+  .title { font-size: clamp(2rem, 9.6vw, 2.75rem); }
+}
