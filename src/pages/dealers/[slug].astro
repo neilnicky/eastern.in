@@ -1,0 +1,31 @@
+---
+import Article from "@/layouts/Article.astro";
+import { stores, mapsLink, phonesIn, type Store } from "@/content/stores";
+
+export function getStaticPaths() {
+  return stores.map((store) => ({ params: { slug: store.slug }, props: { store } }));
+}
+interface Props { store: Store }
+const { store } = Astro.props;
+const telHref = (n: string) => `tel:${n.replace(/[^\d+]/g, "").replace(/^(\d{10})$/, "+91$1")}`;
+const linkify = (line: string) => {
+  let html = line.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]!);
+  for (const p of phonesIn(line)) html = html.replace(p, `<a class="inline" href="${telHref(p)}">${p}</a>`);
+  return html;
+};
+const eyebrow = store.kind === "office" ? "Eastern office" : store.kind === "network" ? "Distributors" : "Store";
+---
+<Article title={store.name} eyebrow={`${eyebrow} · ${store.region === store.country ? store.country : `${store.region}, ${store.country}`}`} back={{ label: "Store Locator", href: "/store-locator/" }} description={`${store.name} — ${store.region}, ${store.country}. Where to buy Eastern products.`}>
+  {store.lines.length > 0 && <address class="addr">{store.lines.map((l) => <span set:html={linkify(l)} />)}</address>}
+  {store.entries.length > 0 && (
+    <table class="rule-table">
+      <thead><tr><th scope="col">{store.entries.length} distributors</th></tr></thead>
+      <tbody>{store.entries.map((e) => <tr><td set:html={linkify(e)} /></tr>)}</tbody>
+    </table>
+  )}
+  <p><a class="pill-link" href={mapsLink(store)} target="_blank" rel="noopener">Open in Google Maps</a></p>
+</Article>
+
+<style>
+  .addr { font-style: normal; display: grid; gap: 0.25rem; font-family: var(--font-serif); font-variation-settings: "opsz" 36; font-size: var(--text-medium); line-height: 1.35; }
+</style>

@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import Article from "@/layouts/Article.astro";
+import { contests, type ContestPost } from "@/content/archive";
+import { upload, hasUpload } from "@/lib/media";
+export function getStaticPaths() {
+  return contests.map((contest) => ({ params: { slug: contest.slug }, props: { contest } }));
+}
+interface Props { contest: ContestPost }
+const { contest } = Astro.props;
+---
+<Article title={contest.title} eyebrow={contest.status ? `Contests · ${contest.status}` : "Contests"} blocks={contest.blocks} back={{ label: "All contests", href: "/contests/" }}>
+  <Fragment slot="before">{contest.images.filter(hasUpload).map((src) => <Image class="contest__img" src={upload(src)} alt={contest.title} widths={[480, 720]} sizes="(max-width: 760px) 100vw, 46rem" />)}</Fragment>
+  {contest.terms.length > 0 && (
+    <section class="terms">
+      <h2 class="label">Terms &amp; Conditions</h2>
+      <ol class="prose">{contest.terms.map((t) => <li>{t}</li>)}</ol>
+    </section>
+  )}
+</Article>
+<style>
+  .contest__img { border-radius: var(--radius); width: auto; max-width: 100%; }
+  .terms { border-top: 1px solid var(--rule); padding-top: 1rem; display: grid; gap: 0.75rem; }
+  .terms ol { padding-left: 1.25em; }
+</style>

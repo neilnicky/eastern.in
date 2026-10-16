@@ -1,0 +1,49 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import VideoPlayer from "@/components/VideoPlayer.astro";
+import ProductTile from "@/components/ProductTile.astro";
+import RecipeCard from "@/components/RecipeCard.astro";
+import { videoRecipes } from "@/content/recipes";
+import { getProduct } from "@/content/products";
+import type { VideoRecipe } from "@/content/types";
+
+export function getStaticPaths() {
+  return videoRecipes.map((recipe) => ({ params: { slug: recipe.slug }, props: { recipe } }));
+}
+interface Props { recipe: VideoRecipe }
+const { recipe } = Astro.props;
+const used = recipe.products.map(getProduct);
+const i = videoRecipes.indexOf(recipe);
+const more = [1, 2, 3].map((k) => videoRecipes[(i + k) % videoRecipes.length]!);
+const date = new Date(recipe.date).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+---
+<Base title={recipe.title} description={`Watch the Eastern video recipe: ${recipe.title}.`}>
+  <PageHead title={recipe.title} eyebrow="Video recipe" small />
+  <div class="wrap player"><VideoPlayer youtubeId={recipe.youtubeId} thumb={recipe.thumb} title={recipe.title} /></div>
+  <p class="meta">Published {date} · <a class="inline" href={`https://www.youtube.com/watch?v=${recipe.youtubeId}`} target="_blank" rel="noopener">Watch on YouTube<span aria-hidden="true"> ↗</span></a></p>
+
+  {used.length > 0 && (
+    <section class="section made" aria-labelledby="made-title">
+      <h2 id="made-title" class="title" data-reveal>Made with</h2>
+      <ul class="made__grid wrap">{used.map((p) => <li><ProductTile product={p} /></li>)}</ul>
+    </section>
+  )}
+
+  <section class="section" aria-labelledby="more-title">
+    <h2 id="more-title" class="title" data-reveal>More recipes</h2>
+    <ul class="more wrap">{more.map((r) => <li><RecipeCard recipe={r} /></li>)}</ul>
+    <p class="center"><a class="pill-link" href="/recipes/">All recipes</a></p>
+  </section>
+</Base>
+
+<style>
+  .player { padding-top: var(--space-s); }
+  .meta { text-align: center; margin-top: 1.25rem; font-size: var(--text-small); }
+  .made .title, .section .title { margin-bottom: var(--space-s); }
+  .made__grid { list-style: none; display: flex; justify-content: center; gap: 0.5rem; }
+  .made__grid li { width: min(44vw, 280px); }
+  .more { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+  .center { text-align: center; margin-top: var(--space-s); }
+  @media (max-width: 700px) { .more { grid-template-columns: 1fr; } }
+</style>

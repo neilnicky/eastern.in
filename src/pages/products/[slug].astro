@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import ProductTile from "@/components/ProductTile.astro";
+import RecipeCard from "@/components/RecipeCard.astro";
+import Gallery from "@/components/Gallery.astro";
+import { products, otherProducts } from "@/content/products";
+import { getCategory, categoryUrl } from "@/content/product-categories";
+import { recipesForProduct } from "@/content/recipes";
+import { pack } from "@/lib/media";
+import type { Product } from "@/content/types";
+
+export function getStaticPaths() {
+  return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+}
+interface Props { product: Product }
+const { product } = Astro.props;
+const cat = getCategory(product.category);
+const others = otherProducts(product, 8);
+const recipes = recipesForProduct(product.slug);
+const amazon = product.buyUrl && /amazon\./.test(product.buyUrl);
+const desc = `Eastern ${product.name}${product.pack ? ` — ${product.pack}` : ""}. Part of the Eastern ${cat.title} range.`;
+---
+<Base title={product.name} description={desc}>
+  <section class="pdp" data-pdp aria-labelledby="pdp-title">
+    <div class="pdp__sides wrap" aria-hidden="true">
+      <a href={categoryUrl(cat.slug)} tabindex="-1">{cat.title}</a>
+      <span>Eastern<br />Since 1983</span>
+    </div>
+    <h1 id="pdp-title" class="hero-title pdp__title" data-reveal="hero">{product.name}</h1>
+    <div class="pdp__pack" data-pdp-pack>
+      <Image src={pack(product.slug)} alt={`Eastern ${product.name} pack`} widths={[360, 520, 720, 960]} sizes="(max-width: 600px) 70vw, 30vw" loading="eager" fetchpriority="high" />
+    </div>
+  </section>
+
+  <div class="diamonds wrap">
+    <span class="diamond" aria-hidden="true"></span>
+    <p class="lead">Eastern {product.name}{product.pack ? `, ${product.pack}` : ""}. From the Eastern <a class="inline" href={categoryUrl(cat.slug)}>{cat.title}</a> range.</p>
+    <span class="diamond" aria-hidden="true"></span>
+  </div>
+
+  <dl class="spec wrap">
+    {product.pack && (
+      <div class="spec__cell">
+        <dt class="label">Pack</dt>
+        <dd><span class="pill">{product.pack}</span></dd>
+      </div>
+    )}
+    <div class="spec__cell">
+      <dt class="label">Range</dt>
+      <dd><a class="inline" href={categoryUrl(cat.slug)}>{cat.title}</a></dd>
+    </div>
+    <div class="spec__cell">
+      <dt class="label">Where to buy</dt>
+      <dd>
+        {amazon ? <a class="inline" href={product.buyUrl} target="_blank" rel="noopener">Buy on Amazon<span aria-hidden="true"> ↗</span></a> : <a class="inline" href="/store-locator/">Find a store</a>}
+      </dd>
+    </div>
+  </dl>
+
+  {recipes.length > 0 && (
+    <section class="section cook" aria-labelledby="cook-title">
+      <h2 id="cook-title" class="title" data-reveal>Cook with it</h2>
+      <Gallery label={`Recipes with Eastern ${product.name}`} cursor="Drag">
+        {recipes.map((r) => <div class="cook__item"><RecipeCard recipe={r} /></div>)}
+      </Gallery>
+    </section>
+  )}
+
+  <section class="section others" aria-labelledby="others-title">
+    <h2 id="others-title" class="title" data-reveal>The other products</h2>
+    <ul class="others__grid wrap">
+      {others.map((p) => <li><ProductTile product={p} /></li>)}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .pdp { position: relative; min-height: 100svh; padding-top: calc(var(--header-offset) + var(--logo-w) + clamp(2rem, 5vw, 4rem)); overflow: clip; }
+  .pdp__title { position: relative; z-index: 1; padding-inline: var(--pad); max-width: 13ch; margin-inline: auto; }
+  .pdp__sides { position: absolute; inset: auto 0 22svh; display: flex; justify-content: space-between; z-index: 3; font-family: var(--font-serif); font-variation-settings: "opsz" 24; font-size: var(--text-medium); line-height: 1.2; }
+  .pdp__sides span { text-align: right; }
+  .pdp__pack {
+    position: relative; z-index: 2; width: min(32vw, 420px); margin: clamp(2rem, 9vh, 6rem) auto 0;
+    aspect-ratio: 1 / 1.32; transform-origin: 50% 60%; perspective: 1200px; will-change: transform;
+  }
+  .pdp__pack :global(img) { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 30px 36px rgba(59, 22, 15, 0.24)); }
+  .spec { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; max-width: 900px; margin: 0 auto var(--space-l); border-top: 1px solid var(--rule); }
+  .spec__cell { padding: 1.25rem; display: grid; gap: 0.75rem; align-content: start; }
+  .spec__cell + .spec__cell { border-left: 1px solid var(--rule); }
+  .spec dd { margin: 0; }
+  .cook__item { width: clamp(240px, 26vw, 360px); }
+  .cook .title, .others .title { margin-bottom: var(--space-s); }
+  .others__grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; }
+  @media (max-width: 900px) { .others__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 600px) {
+    .pdp__pack { width: 64vw; }
+    .pdp__sides { position: static; padding-top: 1.5rem; font-size: 0.875rem; }
+    .spec { grid-auto-flow: row; }
+    .spec__cell + .spec__cell { border-left: 0; border-top: 1px solid var(--rule); }
+    .spec__cell { text-align: center; justify-items: center; }
+  }
+</style>

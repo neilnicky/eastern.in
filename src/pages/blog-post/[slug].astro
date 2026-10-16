@@ -1,0 +1,10 @@
+---
+import Article from "@/layouts/Article.astro";
+import { blogPosts, type BlogPost } from "@/content/archive";
+export function getStaticPaths() {
+  return blogPosts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+interface Props { post: BlogPost }
+const { post } = Astro.props;
+---
+<Article title={post.title} eyebrow="Blogs" date={post.date?.replace(/^\w+day,\s*/, "")} blocks={post.blocks} back={{ label: "All posts", href: "/blogs/" }} />

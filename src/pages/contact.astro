@@ -1,0 +1,82 @@
+---
+import Base from "@/layouts/Base.astro";
+import Spice from "@/components/Spice.astro";
+import { siteConfig } from "@/content/site-config";
+import { about } from "@/content/pages";
+import type { SpiceName } from "@/content/types";
+
+// Falling silhouettes (reference M20). Static pile positions double as the reduced-motion / no-JS layout.
+const bodies: { name: SpiceName; w: number; x: number; y: number; r: number; round?: boolean }[] = [
+  { name: "coconut", w: 39, x: 4, y: 74, r: -8 },
+  { name: "turmeric", w: 34, x: 38, y: 78, r: 6 },
+  { name: "peppercorn", w: 14, x: 70, y: 84, r: 0, round: true },
+  { name: "chilli", w: 36, x: 56, y: 58, r: -24 },
+  { name: "star-anise", w: 26, x: 12, y: 52, r: 12, round: true },
+  { name: "cardamom", w: 16, x: 34, y: 56, r: 30 },
+  { name: "cinnamon", w: 39, x: 30, y: 36, r: -10 },
+  { name: "curry-leaf", w: 17, x: 72, y: 34, r: 18 },
+  { name: "clove", w: 13, x: 18, y: 30, r: -20 },
+  { name: "peppercorn", w: 12, x: 52, y: 26, r: 0, round: true },
+  { name: "star-anise", w: 20, x: 80, y: 60, r: -6, round: true },
+  { name: "chilli", w: 29, x: 8, y: 12, r: 30 },
+];
+---
+<Base title="Contact" page="contact" footer={false} description="Contact Eastern: registered office (Orkla India Limited, Bangalore), regional office (Kochi), toll free 1800 425 5122.">
+  <div class="contact">
+    <div class="contact__art" data-physics aria-hidden="true">
+      {bodies.map((b) => (
+        <span class="body" data-physics-body={b.round ? "round" : "box"} style={`width:${b.w}%;left:${b.x}%;top:${b.y}%;rotate:${b.r}deg`}><Spice name={b.name} /></span>
+      ))}
+    </div>
+    <div class="contact__info">
+      <h1 class="contact__title" data-reveal="hero">Contact</h1>
+      <p class="contact__lead">{about.vision.text}.</p>
+      <div class="contact__cols">
+        {siteConfig.offices.map((o) => (
+          <div>
+            <h2 class="label">{o.label}</h2>
+            <address>
+              {o.name}<br />
+              {o.lines.map((l) => <>{l}<br /></>)}
+            </address>
+            <p><a href={`tel:${o.phone.replace(/\s/g, "")}`}>{o.phone}</a><br /><a class="mail" href={`mailto:${o.email}`}>{o.email}</a></p>
+            {"map" in o && o.map && <p><a class="inline" href={o.map} target="_blank" rel="noopener">Open in Google Maps<span aria-hidden="true"> ↗</span></a></p>}
+          </div>
+        ))}
+        <div>
+          <h2 class="label">Follow us</h2>
+          <ul>{siteConfig.social.map((s) => <li><a href={s.href} target="_blank" rel="noopener">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul>
+        </div>
+      </div>
+      <p class="contact__media">{siteConfig.media.text} <a class="mail" href={`mailto:${siteConfig.media.email}`}>{siteConfig.media.email}</a></p>
+      <p class="contact__desk">Kochi: <a href="tel:+914843001100">{siteConfig.kochiDesk.phone}</a> · <a class="mail" href={`mailto:${siteConfig.kochiDesk.email}`}>{siteConfig.kochiDesk.email}</a></p>
+      <p class="contact__links"><a class="pill-link" href="/store-locator/">Store Locator</a></p>
+      <p class="contact__legal"><a href="/privacy/">Privacy Policy</a> · © {new Date().getFullYear()} Eastern. {siteConfig.ownership}</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .contact { display: grid; grid-template-columns: 1fr 1fr; min-height: 100svh; }
+  .contact__art { position: relative; overflow: hidden; min-height: 60svh; }
+  .body { position: absolute; display: block; }
+  .body :global(svg) { width: 100%; height: auto; }
+  .contact__art:global(.is-live) .body { left: 0 !important; top: 0 !important; rotate: none !important; cursor: grab; will-change: transform; }
+  .contact__info { padding: calc(var(--header-offset) + var(--logo-w) + 3rem) var(--pad) var(--pad); display: grid; align-content: center; gap: 1.5rem; max-width: 46rem; }
+  .contact__title { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; letter-spacing: 0.012em; font-size: clamp(3.4rem, 2rem + 4.6vw, 7rem); line-height: 1; text-transform: uppercase; color: var(--orange-ink); }
+  .contact__lead { font-family: var(--font-serif); font-variation-settings: "opsz" 36; font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem); line-height: 1.15; max-width: 18ch; }
+  .contact__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); font-size: 0.8125rem; line-height: 1.5; }
+  .contact__cols .label { margin-bottom: 0.6rem; }
+  .contact__cols address { font-style: normal; margin-bottom: 0.6rem; }
+  .contact__cols ul { list-style: none; }
+  .contact__cols a:hover, .contact__legal a:hover { color: var(--orange-text); }
+  .mail { color: var(--orange-text); }
+  .contact__media, .contact__desk { font-size: 0.875rem; }
+  .contact__legal { font-size: 0.75rem; opacity: 0.75; }
+  @media (max-width: 900px) {
+    .contact { grid-template-columns: 1fr; }
+    .contact__art { order: 2; height: 70svh; }
+    .contact__cols { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) { .contact__cols { grid-template-columns: 1fr; } }
+</style>

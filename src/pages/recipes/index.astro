@@ -1,0 +1,70 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import HeroCard from "@/components/HeroCard.astro";
+import RecipeCard from "@/components/RecipeCard.astro";
+import { videoRecipes, cookbookRecipes, cookbookSections } from "@/content/recipes";
+import { findProduct } from "@/content/products";
+
+const names = (slugs: string[]) => slugs.map((s) => findProduct(s)?.name ?? "").join(" ");
+const tags = [
+  { id: "all", label: "All" },
+  { id: "video", label: "Video recipes" },
+  ...cookbookSections.map((s) => ({ id: s.slug, label: s.label })),
+];
+---
+<Base title="Recipes" description={`${videoRecipes.length} video recipes and ${cookbookRecipes.length} Cook Book recipes made with Eastern spices, masalas and mixes.`}>
+  <PageHead title="Recipes" />
+  <HeroCard image="wp-content/uploads/2025/04/Web-banner-3.jpg" alt="The Secret to irresistible Chicken Curry — Eastern Chicken Masala" />
+
+  <div data-filter>
+    <div class="diamonds wrap">
+      <span class="diamond" aria-hidden="true"></span>
+      <form class="tools" role="search" action="/recipes/" method="get">
+        <label class="label" for="recipe-search">Search {videoRecipes.length + cookbookRecipes.length} recipes</label>
+        <input id="recipe-search" name="q" type="search" autocomplete="off" placeholder="Sambar, chicken, payasam…" data-filter-input />
+        <div class="tags" role="group" aria-label="Show">
+          {tags.map((t, i) => <button type="button" class="pill" data-filter-tag={t.id} aria-pressed={i === 0 ? "true" : "false"}>{t.label}</button>)}
+        </div>
+        <p class="status" aria-live="polite" data-filter-status></p>
+      </form>
+      <span class="diamond" aria-hidden="true"></span>
+    </div>
+
+    <section class="section group" aria-labelledby="video-title" data-filter-group>
+      <h2 id="video-title" class="title" data-reveal>Video recipes</h2>
+      <ul class="grid grid--video wrap">
+        {videoRecipes.map((r) => <li data-filter-item data-filter-text={`${r.title} ${names(r.products)}`} data-filter-tags="video"><RecipeCard recipe={r} /></li>)}
+      </ul>
+    </section>
+
+    {cookbookSections.map((s) => (
+      <section class="section group" aria-labelledby={`${s.slug}-title`} data-filter-group>
+        <h2 id={`${s.slug}-title`} class="title" data-reveal>Cook Book · {s.label}</h2>
+        <ul class="grid grid--book wrap">
+          {cookbookRecipes.filter((r) => r.section === s.slug).map((r) => <li data-filter-item data-filter-text={`${r.title} ${r.subtitle ?? ""} ${names(r.products)}`} data-filter-tags={s.slug}><RecipeCard recipe={r} /></li>)}
+        </ul>
+        <p class="more"><a class="pill-link" href={s.path}>{s.label}</a></p>
+      </section>
+    ))}
+    <p class="wrap empty" data-filter-empty hidden>No recipe matches that search.</p>
+  </div>
+</Base>
+
+<style>
+  .tools { display: grid; gap: 1rem; justify-items: center; width: min(100%, 40rem); }
+  .tools input { width: 100%; min-height: 3.25rem; padding: 0 1.25rem; border-radius: 99px; border: 1px solid var(--clove); background: transparent; font: 400 var(--text-medium)/1 var(--font-sans); color: var(--clove); text-align: center; }
+  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; }
+  .tags .pill[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: var(--cream); }
+  .status { min-height: 1.2em; font-size: var(--text-small); }
+  .group .title { margin-bottom: var(--space-s); }
+  .grid { list-style: none; display: grid; gap: var(--space-s) var(--gutter); }
+  .grid--video { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid--book { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .grid > li[hidden] { display: none; }
+  .more { text-align: center; margin-top: var(--space-s); }
+  :global(.is-filtering) .more { display: none; }
+  .empty { text-align: center; padding-block: var(--space-l); }
+  @media (max-width: 900px) { .grid--video { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid--book { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .grid--video { grid-template-columns: 1fr; } .grid--book { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

@@ -1,0 +1,22 @@
+---
+import Article from "@/layouts/Article.astro";
+import { events, type EventPost } from "@/content/archive";
+export function getStaticPaths() {
+  return events.map((event) => ({ params: { slug: event.slug }, props: { event } }));
+}
+interface Props { event: EventPost }
+const { event } = Astro.props;
+---
+<Article title={event.title} eyebrow="Events" date={[event.eventDate, event.eventTime].filter(Boolean).join(", ")} blocks={event.blocks} back={{ label: "All events", href: "/events/" }}>
+  <dl class="facts">
+    {event.eventDate && <div><dt class="label">Event Date</dt><dd>{event.eventDate}{event.eventTime ? `, ${event.eventTime}` : ""}</dd></div>}
+    {event.location && <div><dt class="label">Event Location</dt><dd>{event.location}</dd></div>}
+    {event.link && <div><dt class="label">Event Link</dt><dd><a class="inline" href={event.link} target="_blank" rel="noopener">{event.link.replace(/^https?:\/\//, "").replace(/\?.*$/, "")}<span aria-hidden="true"> ↗</span></a></dd></div>}
+  </dl>
+</Article>
+<style>
+  .facts { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border-top: 1px solid var(--rule); }
+  .facts div { padding: 1rem 1rem 0 0; display: grid; gap: 0.5rem; }
+  .facts dd { margin: 0; overflow-wrap: anywhere; }
+  @media (max-width: 600px) { .facts { grid-auto-flow: row; } }
+</style>

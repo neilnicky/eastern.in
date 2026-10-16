@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import Gallery from "@/components/Gallery.astro";
+import { videos } from "@/content/archive";
+import { upload, hasUpload } from "@/lib/media";
+const [lead, ...rest] = videos;
+---
+<Base title="Videos" description={`Eastern TV commercials, songs and short films — ${videos.length} videos.`}>
+  <PageHead title="TVCs" eyebrow="Videos" />
+  <section class="reel" aria-label="Latest videos">
+    <Gallery label="Eastern videos" cursor="Drag">
+      {videos.map((v) => (
+        <a class="reel__item" href={v.path}>
+          <span class="reel__img">{v.thumb && hasUpload(v.thumb) && <Image src={upload(v.thumb)} alt="" widths={[480, 720]} sizes="(max-width: 700px) 80vw, 40vw" />}<span class="reel__play" aria-hidden="true">▶</span></span>
+          <span class="reel__title">{v.title}</span>
+        </a>
+      ))}
+    </Gallery>
+  </section>
+  <section class="section list wrap" aria-labelledby="all-title">
+    <h2 id="all-title" class="label">All videos</h2>
+    <table class="rule-table">
+      <thead><tr><th scope="col">Title</th><th scope="col">Published</th></tr></thead>
+      <tbody>
+        {[lead!, ...rest].map((v) => <tr><td><a class="inline" href={v.path}>{v.title}</a></td><td>{v.date?.replace(/^\w+day,\s*/, "")}</td></tr>)}
+      </tbody>
+    </table>
+  </section>
+</Base>
+
+<style>
+  .reel { padding-top: var(--space-s); }
+  .reel__item { display: grid; gap: 0.75rem; width: min(80vw, 560px); }
+  .reel__img { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: var(--clove); }
+  .reel__img :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .reel__play { position: absolute; left: 1rem; bottom: 1rem; width: 3rem; height: 3rem; border-radius: 50%; display: grid; place-items: center; background: var(--orange); color: var(--cream); padding-left: 0.15rem; }
+  .reel__title { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-size: 1.25rem; line-height: 1.15; text-transform: uppercase; }
+  .list { max-width: 60rem; margin: 0 auto; display: grid; gap: 1.25rem; }
+  .list td:last-child { white-space: nowrap; }
+</style>

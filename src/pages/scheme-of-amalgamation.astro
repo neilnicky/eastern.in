@@ -1,0 +1,33 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import { amalgamation } from "@/content/pages";
+const size = (b: number) => (b > 1e6 ? `${(b / 1e6).toFixed(1)} MB` : `${Math.round(b / 1e3)} KB`);
+const kind = (h: string) => (h.endsWith(".zip") ? "ZIP" : "PDF");
+---
+<Base title={amalgamation.title} description="Statutory documents for the scheme of amalgamation of Eastern Condiments Pvt. Ltd. (ECPL) with MTR Foods.">
+  <PageHead title={amalgamation.title} small />
+  <section class="docs wrap" aria-label="Documents">
+    <table class="rule-table">
+      <thead><tr><th scope="col">Document</th><th scope="col">Download</th></tr></thead>
+      <tbody>
+        {amalgamation.groups.map((g) => (
+          <tr>
+            <th scope="row" class="docs__label">{g.label}</th>
+            <td>
+              <ul class="docs__files">
+                {g.files.map((f) => <li><a class="inline" href={f.href} download>{g.files.length > 1 ? f.label : "Download"}</a> <span class="docs__meta">{kind(f.href)}, {size(f.bytes)}</span></li>)}
+              </ul>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+</Base>
+<style>
+  .docs { max-width: 60rem; margin: 0 auto; padding-block: var(--space-s) var(--space-l); }
+  .docs__label { font: 400 var(--text-base)/1.4 var(--font-sans); text-transform: none; letter-spacing: 0; color: var(--clove); border-bottom: 1px solid var(--rule); padding: 0.8rem 1rem 0.8rem 0; width: 55%; }
+  .docs__files { list-style: none; display: grid; gap: 0.35rem; }
+  .docs__meta { font-size: 0.75rem; opacity: 0.7; }
+</style>

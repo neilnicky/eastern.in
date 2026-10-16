@@ -1,0 +1,38 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import ProductTile from "@/components/ProductTile.astro";
+import { productCategories, categoryUrl } from "@/content/product-categories";
+import { productsIn } from "@/content/products";
+import type { ProductCategory } from "@/content/types";
+
+export function getStaticPaths() {
+  return productCategories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+interface Props { category: ProductCategory }
+const { category } = Astro.props;
+const items = productsIn(category.slug);
+const others = productCategories.filter((c) => c.slug !== category.slug);
+---
+<Base title={category.title} description={`Eastern ${category.title}: ${items.map((p) => p.name).join(", ")}.`}>
+  <PageHead title={category.title} eyebrow={category.group === "international" ? "International range" : "Eastern range"} small>
+    <p class="count">{items.length} {items.length === 1 ? "product" : "products"}</p>
+  </PageHead>
+  <ul class="grid wrap">
+    {items.map((p, i) => <li><ProductTile product={p} loading={i < 8 ? "eager" : "lazy"} headingLevel="h2" /></li>)}
+  </ul>
+  <nav class="others wrap" aria-label="Other ranges">
+    <h2 class="label">Other ranges</h2>
+    <ul>{others.map((c) => <li><a href={categoryUrl(c.slug)} class="pill">{c.title}</a></li>)}</ul>
+  </nav>
+</Base>
+
+<style>
+  .count { margin-top: 1rem; font-size: var(--text-small); }
+  .grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; padding-top: var(--space-s); }
+  .others { padding-block: var(--space-l); display: grid; justify-items: center; gap: 1rem; }
+  .others ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; max-width: 60rem; }
+  .others .pill:hover { background: var(--clove); color: var(--cream); border-color: var(--clove); }
+  @media (max-width: 900px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

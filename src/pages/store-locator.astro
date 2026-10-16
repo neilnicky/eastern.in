@@ -1,0 +1,85 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import { stores, storeRegions, mapsLink, phonesIn } from "@/content/stores";
+import { siteConfig } from "@/content/site-config";
+const regions = storeRegions();
+const telHref = (n: string) => `tel:${n.replace(/[^\d+]/g, "").replace(/^(\d{10})$/, "+91$1")}`;
+const linkify = (line: string) => {
+  let html = line.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]!);
+  for (const p of phonesIn(line)) html = html.replace(p, `<a class="inline" href="${telHref(p)}">${p}</a>`);
+  return html;
+};
+---
+<Base title="Store Locator" description={`Find Eastern products: ${stores.length} stores and distributors in India and the United States, plus Amazon, urDoorStep and bigbasket.`}>
+  <PageHead title="Store Locator" eyebrow="Where to buy" small />
+
+  <section class="online wrap" aria-labelledby="online-title">
+    <h2 id="online-title" class="label">Shop online</h2>
+    <ul>{siteConfig.retailers.map((r) => <li><a class="pill-link" href={r.href} target="_blank" rel="noopener">{r.label}</a></li>)}</ul>
+  </section>
+
+  <div class="finder" data-filter>
+    <div class="diamonds wrap">
+      <span class="diamond" aria-hidden="true"></span>
+      <form class="tools" role="search" action="/store-locator/" method="get">
+        <label class="label" for="store-search">Search {stores.length} locations by name, town or state</label>
+        <input id="store-search" name="q" type="search" autocomplete="off" placeholder="Kochi, Kollam, New Jersey…" data-filter-input />
+        <div class="tags" role="group" aria-label="Country">
+          <button type="button" class="pill" data-filter-tag="all" aria-pressed="true">All</button>
+          <button type="button" class="pill" data-filter-tag="india" aria-pressed="false">India</button>
+          <button type="button" class="pill" data-filter-tag="united-states" aria-pressed="false">United States</button>
+          <button type="button" class="pill" data-filter-tag="office" aria-pressed="false">Eastern offices</button>
+        </div>
+        <p class="status" aria-live="polite" data-filter-status></p>
+      </form>
+      <span class="diamond" aria-hidden="true"></span>
+    </div>
+
+    {regions.map(([label, list]) => (
+      <section class="region wrap" aria-label={label} data-filter-group>
+        <h2 class="region__title">{label.replace(/^India · India$/, "India")}</h2>
+        <table class="rule-table">
+          <thead><tr><th scope="col">Store</th><th scope="col">Address</th><th scope="col"><span class="sr-only">Map</span></th></tr></thead>
+          <tbody>
+            {list.map((s) => (
+              <tr data-filter-item data-filter-text={`${s.name} ${s.region} ${s.country} ${s.lines.join(" ")} ${s.entries.join(" ")}`} data-filter-tags={`${s.country === "India" ? "india" : "united-states"} ${s.kind === "office" ? "office" : ""}`}>
+                <td class="region__name"><a href={s.path}>{s.name}</a>{s.kind === "network" && <span class="region__kind"> · {s.entries.length} distributors</span>}{s.kind === "office" && <span class="region__kind"> · Eastern office</span>}</td>
+                <td>{s.kind === "network" ? <a class="inline" href={s.path}>See all {s.entries.length} distributors</a> : s.lines.map((l) => <span class="line" set:html={linkify(l)} />)}</td>
+                <td class="region__map"><a class="inline" href={mapsLink(s)} target="_blank" rel="noopener" aria-label={`${s.name} on Google Maps`}>Map<span aria-hidden="true"> ↗</span></a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    ))}
+    <p class="wrap empty" data-filter-empty hidden>No location matches that search. Try a town or state.</p>
+  </div>
+</Base>
+
+<style>
+  .online { display: grid; justify-items: center; gap: 1rem; padding-block: var(--space-s) 0; }
+  .online ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+  .tools { display: grid; gap: 1rem; justify-items: center; width: min(100%, 40rem); }
+  .tools input { width: 100%; min-height: 3.25rem; padding: 0 1.25rem; border-radius: 99px; border: 1px solid var(--clove); background: transparent; font: 400 var(--text-medium)/1 var(--font-sans); color: var(--clove); text-align: center; }
+  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; }
+  .tags .pill[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: var(--cream); }
+  .status { min-height: 1.2em; font-size: var(--text-small); }
+  .region { max-width: 70rem; margin: 0 auto; padding-bottom: var(--space-s); }
+  .region[hidden], .region tr[hidden] { display: none; }
+  .region__title { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; font-size: var(--text-large); text-transform: uppercase; color: var(--orange-ink); margin-bottom: 1rem; }
+  .region__name { width: 30%; font-weight: 600; }
+  .region__name a:hover { color: var(--orange-text); }
+  .region__kind { font-weight: 400; font-size: 0.75rem; opacity: 0.75; }
+  .region__map { width: 4rem; text-align: right; }
+  .line { display: block; }
+  .empty { text-align: center; padding-block: var(--space-l); }
+  @media (max-width: 700px) {
+    .rule-table thead { display: none; }
+    .rule-table tr { display: grid; grid-template-columns: 1fr auto; padding: 0.75rem 0; border-bottom: 1px solid var(--rule); }
+    .rule-table td { border: 0; padding: 0.15rem 0; }
+    .region__name { width: auto; grid-column: 1; }
+    .region__map { grid-column: 2; grid-row: 1; }
+    .rule-table td:nth-child(2) { grid-column: 1 / -1; }
+  }
+</style>

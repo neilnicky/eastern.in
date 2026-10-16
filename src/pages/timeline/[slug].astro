@@ -1,0 +1,11 @@
+---
+import Article from "@/layouts/Article.astro";
+import { historyStories, type HistoryStory } from "@/content/history";
+
+export function getStaticPaths() {
+  return historyStories.map((story) => ({ params: { slug: story.slug }, props: { story } }));
+}
+interface Props { story: HistoryStory }
+const { story } = Astro.props;
+---
+<Article title={story.title} eyebrow="From the archive" blocks={story.blocks} back={{ label: "Timeline", href: "/timeline/" }} />

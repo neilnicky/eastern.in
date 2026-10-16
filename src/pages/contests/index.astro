@@ -1,0 +1,17 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import ArchiveList from "@/components/ArchiveList.astro";
+import { contests } from "@/content/archive";
+---
+<Base title="Contests" description="Participate in Promotional Contests from Eastern. Past contests archive.">
+  <PageHead title="Contests" small>
+    <p class="intro">Participate in Promotional Contests from Eastern.</p>
+    <p class="intro"><strong>Sorry! No Active Contests.</strong></p>
+  </PageHead>
+  <div class="list"><ArchiveList items={contests.map((c) => ({ href: c.path, title: c.title, image: c.images[0] ?? null, badge: c.status }))} /></div>
+</Base>
+<style>
+  .intro { margin-top: 1rem; font-size: var(--text-medium); }
+  .list { padding-block: var(--space-s) var(--space-l); }
+</style>

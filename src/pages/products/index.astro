@@ -1,0 +1,77 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import HeroCard from "@/components/HeroCard.astro";
+import TabBar from "@/components/TabBar.astro";
+import ProductTile from "@/components/ProductTile.astro";
+import { productCategories, categoryUrl } from "@/content/product-categories";
+import { productsIn, products } from "@/content/products";
+
+const PREVIEW = 8;
+const sections = productCategories.map((c) => ({ c, items: productsIn(c.slug) }));
+---
+<Base title="Products" description={`All ${products.length} Eastern products across ${productCategories.length} ranges.`}>
+  <PageHead title="Products" />
+  <HeroCard image="wp-content/uploads/2025/02/Web-banner-5.jpg" alt="Bring Home the Essence of Authentic Spices — Eastern Kashmiri Chilli, Chilli, Coriander and Turmeric Powder" />
+
+  <div class="catalogue" data-filter>
+    <div class="diamonds wrap">
+      <span class="diamond" aria-hidden="true"></span>
+      <form class="search" role="search" action="/products/" method="get">
+        <label class="label" for="product-search">Search {products.length} products</label>
+        <div class="search__row">
+          <input id="product-search" name="q" type="search" autocomplete="off" placeholder="Chicken masala, pickle, puttu…" data-filter-input />
+        </div>
+        <p class="search__status" aria-live="polite" data-filter-status></p>
+      </form>
+      <span class="diamond" aria-hidden="true"></span>
+    </div>
+
+    <TabBar label="Product ranges" items={sections.map(({ c }) => ({ label: c.title, id: c.slug }))} from="#spices-masalas" />
+
+    {sections.map(({ c, items }, i) => (
+      <section id={c.slug} class:list={["range", { "range--flood": i === 0 }]} style={`--flood:${c.flood};--flood-ink:${c.floodInk}`} aria-labelledby={`${c.slug}-title`} data-filter-group>
+        <div class="range__head wrap">
+          <h2 id={`${c.slug}-title`} class="title range__title" data-reveal>{c.title}</h2>
+          <p class="range__meta">{c.group === "international" ? "International · " : ""}{items.length} {items.length === 1 ? "product" : "products"}</p>
+        </div>
+        <ul class="range__grid wrap">
+          {items.map((p, j) => (
+            <li class:list={{ "is-extra": j >= PREVIEW }} data-filter-item data-filter-text={`${p.name} ${c.title} ${p.pack ?? ""}`}>
+              <ProductTile product={p} />
+            </li>
+          ))}
+        </ul>
+        {items.length > PREVIEW && <p class="range__more"><a class="pill-link" href={categoryUrl(c.slug)}>All {items.length} {c.title}</a></p>}
+        {items.length <= PREVIEW && <p class="range__more"><a class="pill-link" href={categoryUrl(c.slug)}>{c.title}</a></p>}
+      </section>
+    ))}
+    <p class="wrap empty" data-filter-empty hidden>No product matches that search. Try a shorter word, or browse the ranges above.</p>
+  </div>
+</Base>
+
+<style>
+  .search { display: grid; gap: 0.75rem; justify-items: center; width: min(100%, 34rem); }
+  .search__row { width: 100%; }
+  .search input {
+    width: 100%; min-height: 3.25rem; padding: 0 1.25rem; border-radius: 99px; border: 1px solid var(--clove); background: transparent;
+    font: 400 var(--text-medium)/1 var(--font-sans); color: var(--clove); text-align: center;
+  }
+  .search input::placeholder { color: var(--clove-soft); }
+  .search__status { min-height: 1.2em; font-size: var(--text-small); }
+  .range { padding-block: var(--space-l) var(--space-s); scroll-margin-top: 4rem; }
+  .range__head { display: grid; justify-items: center; gap: 0.75rem; margin-bottom: var(--space-s); }
+  .range__meta { font-size: var(--text-small); }
+  .range__grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; }
+  .range__grid > li[hidden] { display: none; }
+  .is-extra { display: none; }
+  :global(.is-filtering) .is-extra:not([hidden]) { display: block; }
+  :global(.is-filtering) .range__more { display: none; }
+  .range__more { text-align: center; margin-top: var(--space-s); }
+  .range--flood { background: var(--flood); color: var(--flood-ink); border-radius: 22px; margin: var(--space-s) 8px 0; padding-block: var(--space-xl) var(--space-l); }
+  .range--flood .range__title { color: var(--flood-ink); font-size: var(--text-display); line-height: 0.92; }
+  .range--flood .pill-link:hover { background: var(--cream); color: var(--clove); border-color: var(--cream); }
+  .empty { text-align: center; padding-block: var(--space-l); }
+  @media (max-width: 900px) { .range__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .range__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .range--flood .range__title { font-size: var(--text-hero); } }
+</style>

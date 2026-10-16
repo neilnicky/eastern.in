@@ -1,0 +1,81 @@
+---
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import HeroCard from "@/components/HeroCard.astro";
+import Spice from "@/components/Spice.astro";
+import { about } from "@/content/pages";
+import { upload } from "@/lib/media";
+import type { SpiceName } from "@/content/types";
+
+// Silhouette scene (reference M19): positions are % of the stage; from* are entry offsets (xPercent/yPercent).
+const shapes: { name: SpiceName; x: number; y: number; w: number; fromX: number; fromY: number }[] = [
+  { name: "chilli", x: 8, y: 10, w: 22, fromX: -160, fromY: -60 },
+  { name: "star-anise", x: 70, y: 6, w: 18, fromX: 160, fromY: -80 },
+  { name: "turmeric", x: 3, y: 70, w: 22, fromX: -180, fromY: 60 },
+  { name: "cardamom", x: 78, y: 52, w: 12, fromX: 200, fromY: 40 },
+  { name: "curry-leaf", x: 26, y: 80, w: 10, fromX: -40, fromY: 160 },
+  { name: "coconut", x: 60, y: 80, w: 18, fromX: 60, fromY: 180 },
+];
+---
+<Base title={about.title} description={`Eastern's vision: ${about.vision.text}. Mission: ${about.mission.text}. Values: ${about.values.text}.`}>
+  <PageHead title={about.title} />
+  <HeroCard image={about.heroImage} alt={about.heroAlt} />
+
+  <section class="scene" data-converge aria-labelledby="vision-title">
+    <div class="scene__stage">
+      {shapes.map((s) => (
+        <span class="scene__shape" data-converge-shape data-from-x={s.fromX} data-from-y={s.fromY} style={`left:${s.x}%;top:${s.y}%;width:${s.w}vmin`}><Spice name={s.name} /></span>
+      ))}
+      <div class="scene__text">
+        <p class="label" data-converge-text>{about.vision.label}</p>
+        <h2 id="vision-title" class="scene__statement" data-converge-text>{about.vision.text}</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars wrap" aria-label="Mission and values">
+    <div class="pillar">
+      <h2 class="label">{about.mission.label}</h2>
+      <p class="pillar__text">{about.mission.text}</p>
+    </div>
+    <div class="pillar">
+      <h2 class="label">{about.values.label}</h2>
+      <ul class="pillar__values">{about.values.items.map((v) => <li>{v}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section orkla wrap" aria-labelledby="orkla-title">
+    <h2 id="orkla-title" class="title" data-reveal>Orkla India</h2>
+    <p class="orkla__programme label">{about.programme}</p>
+    <table class="rule-table orkla__table">
+      <tbody>{about.orkla.lines.map((l) => { const [y, t] = l.split(" — "); return <tr><th scope="row">{y}</th><td>{t}</td></tr>; })}</tbody>
+    </table>
+    <p class="center"><a class="pill-link" href={about.orkla.href} target="_blank" rel="noopener">Orkla India</a></p>
+    <figure class="orkla__source">
+      <Image src={upload(about.sourceImage)} alt={`Eastern, Unify to Transform and Orkla. Vision: ${about.vision.text}. Mission: ${about.mission.text}. Values: ${about.values.text}.`} widths={[700, 1100]} sizes="(max-width: 900px) 100vw, 900px" />
+    </figure>
+    <p class="center"><a class="inline" href="/timeline/">Our company's timeline</a> · <a class="inline" href="/innovationcenter/">Innovation Center</a></p>
+  </section>
+</Base>
+
+<style>
+  .scene { position: relative; height: 100svh; overflow: hidden; }
+  .scene__stage { position: relative; height: 100%; }
+  .scene__shape { position: absolute; display: block; }
+  .scene__shape :global(svg) { width: 100%; height: auto; }
+  .scene__text { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1rem; text-align: center; padding: var(--pad); z-index: 2; }
+  .scene__statement { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; letter-spacing: 0.012em; text-transform: uppercase; color: var(--orange-ink); font-size: clamp(2.4rem, 1.4rem + 4.4vw, 6.5rem); line-height: 1; max-width: 12ch; text-wrap: balance; }
+  .pillars { display: grid; grid-template-columns: 1fr 1fr; max-width: 980px; margin: var(--space-l) auto 0; border-top: 1px solid var(--rule); }
+  .pillar { padding: 1.5rem 1.5rem 0; display: grid; gap: 1rem; align-content: start; }
+  .pillar + .pillar { border-left: 1px solid var(--rule); }
+  .pillar__text, .pillar__values { font-family: var(--font-serif); font-variation-settings: "opsz" 48; font-size: clamp(1.4rem, 1.1rem + 1vw, 2.1rem); line-height: 1.15; text-transform: uppercase; }
+  .pillar__values { list-style: none; display: grid; gap: 0.25rem; color: var(--orange-ink); }
+  .orkla { max-width: 60rem; margin: 0 auto; display: grid; gap: 1.5rem; }
+  .orkla__programme { text-align: center; }
+  .orkla__table th { width: 6rem; font: 400 1.25rem/1 var(--font-serif); color: var(--orange-ink); letter-spacing: 0; text-transform: none; border-bottom: 1px solid var(--rule); padding-top: 0.8rem; }
+  .orkla__source { margin-top: var(--space-s); }
+  .orkla__source :global(img) { border-radius: var(--radius); }
+  .center { text-align: center; }
+  @media (max-width: 700px) { .pillars { grid-template-columns: 1fr; } .pillar + .pillar { border-left: 0; border-top: 1px solid var(--rule); margin-top: 1.5rem; } }
+</style>

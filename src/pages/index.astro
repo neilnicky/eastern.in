@@ -1,0 +1,191 @@
+---
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import Lead from "@/components/Lead.astro";
+import Gallery from "@/components/Gallery.astro";
+import ProductTile from "@/components/ProductTile.astro";
+import CategoryTile from "@/components/CategoryTile.astro";
+import RecipeCard from "@/components/RecipeCard.astro";
+import { home } from "@/content/pages";
+import { getProduct, findProduct, productUrl, newProducts } from "@/content/products";
+import { productCategories } from "@/content/product-categories";
+import { videoRecipes, featuredRecipeSlugs } from "@/content/recipes";
+import { pack, upload } from "@/lib/media";
+
+// Hero marquee: a spread of ranges and pack formats, each linking to its product.
+const heroSlugs = ["chicken-masala", "kabsa-masala", "mango-pickle", "sambar-powder", "roasted-vermicelli", "kashmiri-chilli", "semiya-payasam", "instant-puttu-mix", "meat-masala-2", "garlic-pickle", "pure-coffee-powder", "turmeric-powder-4", "chicken-porichathu", "shawarma-masala"];
+const heroPacks = heroSlugs.map(getProduct);
+const featured = featuredRecipeSlugs.map((s) => videoRecipes.find((r) => r.slug === s)!);
+const badgeText = home.badgeText.repeat(4);
+---
+<Base page="home">
+  <section class="hero" data-marquee aria-labelledby="hero-title">
+    <h1 id="hero-title" class="sr-only">Eastern Condiments — India's No.1 Spice Exporter</h1>
+    <div class="hero__stage" data-marquee-stage>
+      <div class="hero__badge" aria-hidden="true"><div class="hero__badge-in" data-marquee-badge>
+        <svg class="hero__ring" viewBox="0 0 400 400">
+          <defs><path id="ring" d="M200,200 m-176,0 a176,176 0 1,1 352,0 a176,176 0 1,1 -352,0" /></defs>
+          <circle class="hero__ring-line" cx="200" cy="200" r="190" />
+          <circle class="hero__ring-line hero__ring-line--inner" cx="200" cy="200" r="160" />
+          <text><textPath href="#ring" textLength="1100" lengthAdjust="spacing">{badgeText}</textPath></text>
+        </svg>
+      </div></div>
+      <ul class="hero__track" aria-label="Eastern products">
+        {heroPacks.map((p, i) => (
+          <li class="hero__item" data-marquee-item>
+            <a href={productUrl(p.slug)} data-cursor="Discover the product">
+              <Image src={pack(p.slug)} alt="" widths={[260, 400, 560]} sizes="(max-width: 600px) 60vw, 26vw" loading={i < 6 ? "eager" : "lazy"} />
+              <span class="sr-only">{p.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="hero__hint label" aria-hidden="true">{home.scrollHint}</p>
+    </div>
+  </section>
+
+  <Lead class="home-lead"><p>{home.worldwide.text}</p></Lead>
+
+  <section class="campaigns" aria-label="Campaigns">
+    <Gallery label="Eastern campaigns">
+      {home.campaigns.slides.map((s) => {
+        const p = s.product ? findProduct(s.product) : undefined;
+        const img = <Image src={upload(s.image)} alt={s.alt} widths={[640, 960, 1280]} sizes="(max-width: 700px) 86vw, 64vw" />;
+        return p ? <a class="campaigns__slide" href={productUrl(p.slug)}>{img}</a> : <div class="campaigns__slide">{img}</div>;
+      })}
+    </Gallery>
+    <p class="campaigns__note wrap">{home.campaigns.note}</p>
+  </section>
+
+  <section class="stats wrap" aria-label="Eastern at a glance">
+    <dl class="stats__row">
+      {home.stats.map((s) => (
+        <div class="stats__cell">
+          {s.label && <dt class="label">{s.label}</dt>}
+          <dd class:list={["stats__value", { "stats__value--text": !s.label }]}>{s.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="section new" aria-labelledby="new-title">
+    <h2 id="new-title" class="title" data-reveal>{home.newProducts.title}</h2>
+    <Gallery label="New products" class="new__gallery" cursor="Drag">
+      {newProducts.map((n) => <div class="new__item"><ProductTile product={getProduct(n.product)} showPack={false} /></div>)}
+    </Gallery>
+  </section>
+
+  <section class="section cats" aria-labelledby="cats-title">
+    <h2 id="cats-title" class="title" data-reveal>Our Products</h2>
+    <ul class="cats__grid wrap">
+      {productCategories.map((c) => <li><CategoryTile category={c} /></li>)}
+    </ul>
+    <p class="center"><a class="pill-link" href="/products/">All products</a></p>
+  </section>
+
+  <section class="section recipes" aria-labelledby="recipes-title">
+    <h2 id="recipes-title" class="title" data-reveal>{home.recipes.title}</h2>
+    <ul class="recipes__grid wrap">
+      {featured.map((r) => <li><RecipeCard recipe={r} /></li>)}
+    </ul>
+    <p class="center"><a class="pill-link" href="/recipes/">{home.recipes.cta}</a></p>
+  </section>
+
+  <section class="world on-dark" aria-labelledby="world-title">
+    <div class="world__inner wrap">
+      <p class="label world__eyebrow">{home.campaignReel.title}</p>
+      <h2 id="world-title" class="display world__title" data-reveal>{home.worldwide.title}</h2>
+      <p class="world__text">{home.worldwide.text}</p>
+      <p><a class="pill-link pill-link--light" href="/store-locator/">{home.worldwide.cta}</a></p>
+      <a class="world__reel" href={home.campaignReel.href} target="_blank" rel="noopener">
+        <Image src={upload(home.campaignReel.image)} alt="Eastern campaign reel on Instagram" widths={[360, 560]} sizes="(max-width: 700px) 80vw, 28vw" />
+        <span class="label">{home.campaignReel.cta} ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section cook wrap" aria-labelledby="cook-title">
+    <div class="cook__img" data-parallax="6"><Image src={upload(home.cookbook.image)} alt="" widths={[552]} /></div>
+    <div class="cook__text">
+      <h2 id="cook-title" class="cook__title" data-reveal>{home.cookbook.title}</h2>
+      <p>{home.cookbook.text}</p>
+      <p><a class="pill-link" href="/cook_book/">{home.cookbook.cta}</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* ---------- hero marquee (reference M2–M4) ---------- */
+  .hero { position: relative; height: 260svh; }
+  .hero__stage { position: sticky; top: 0; height: 100svh; overflow: hidden; touch-action: pan-y; user-select: none; }
+  .hero__badge {
+    position: absolute; left: 50%; bottom: 0; width: min(74vw, 940px); aspect-ratio: 1;
+    transform: translate(-50%, 56%);
+  }
+  .hero__badge-in { position: relative; width: 100%; height: 100%; }
+
+  /* minimal badge: two hairline rings with the circular brand line between them, turning with the marquee */
+  .hero__ring { width: 100%; height: 100%; transform: rotate(var(--badge-rot, 0deg)); overflow: visible; }
+  .hero__ring-line { fill: none; stroke: var(--clove); stroke-opacity: 0.22; stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+  .hero__ring-line--inner { stroke-opacity: 0.12; }
+  .hero__ring text { font-family: var(--font-sans); font-weight: 600; font-size: 7px; letter-spacing: 0.32em; fill: var(--orange-text); text-transform: uppercase; }
+  .hero__track { list-style: none; display: flex; gap: 1.5rem; height: 100%; align-items: center; padding: 0 var(--pad); overflow-x: auto; scrollbar-width: none; }
+  .hero__item { flex: 0 0 auto; width: min(44vw, 260px); }
+  .hero__item a { display: block; }
+  .hero__item { aspect-ratio: 1 / 1.32; }
+  .hero__item a { height: 100%; }
+  /* every pack sits in the same box, so packs read at one consistent size */
+  .hero__item :global(img) { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 24px 26px rgba(59, 22, 15, 0.22)); -webkit-user-drag: none; }
+  :global(.is-live) .hero__track { display: block; overflow: visible; padding: 0; }
+  :global(.is-live) .hero__item {
+    position: absolute; left: 50%; top: 52%; width: var(--pack-w, 260px); height: calc(var(--pack-w, 260px) * 1.32);
+    margin-left: calc(var(--pack-w, 260px) / -2); translate: 0 -50%;
+    will-change: transform; transform-style: preserve-3d;
+  }
+  :global(.is-live) .hero__stage { perspective: 1400px; cursor: grab; }
+  :global(.is-live) .hero__stage:active { cursor: grabbing; }
+  .hero__hint { position: absolute; left: 50%; bottom: max(1.25rem, 2.5vh); translate: -50% 0; color: var(--clove); letter-spacing: 0.14em; z-index: 20; }
+  @media (max-width: 600px) { .hero__badge { width: 118vw; transform: translate(-50%, 58%); } .hero__ring text { font-size: 8.5px; } .hero { height: 220svh; } }
+  @media (prefers-reduced-motion: reduce) { .hero { height: auto; } .hero__stage { position: relative; height: 80svh; } }
+
+  /* ---------- sections ---------- */
+  .home-lead { padding-top: var(--space-l); }
+  .campaigns__slide { display: block; width: min(86vw, 1100px); border-radius: var(--radius); overflow: hidden; }
+  .campaigns__slide :global(img) { width: 100%; height: auto; aspect-ratio: 1920 / 849; object-fit: cover; }
+  .campaigns__note { margin-top: 0.75rem; font-size: 0.75rem; opacity: 0.7; text-align: center; }
+
+  .stats { padding-block: var(--space-l) 0; }
+  .stats__row { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 980px; margin: 0 auto; border-top: 1px solid var(--rule); }
+  .stats__cell { padding: 1.5rem 1.25rem 0; text-align: center; display: grid; align-content: start; gap: 0.6rem; }
+  .stats__cell + .stats__cell { border-left: 1px solid var(--rule); }
+  .stats__value { margin: 0; font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-size: clamp(2rem, 1.4rem + 2.4vw, 3.5rem); line-height: 1; color: var(--orange-ink); text-transform: uppercase; }
+  .stats__value--text { font-size: clamp(1.4rem, 1rem + 1.4vw, 2.2rem); padding-top: 1.1rem; }
+  @media (max-width: 700px) {
+    .stats__row { grid-template-columns: 1fr 1fr; }
+    .stats__cell:nth-child(3) { border-left: 0; }
+    .stats__cell:nth-child(n + 3) { border-top: 1px solid var(--rule); margin-top: 1.5rem; }
+  }
+
+  .new .title, .cats .title, .recipes .title { margin-bottom: var(--space-s); }
+  .new__item { width: clamp(180px, 22vw, 300px); }
+  .cats__grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; }
+  @media (max-width: 900px) { .cats__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .recipes__grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+  @media (max-width: 760px) { .recipes__grid { grid-template-columns: 1fr; } }
+  .center { text-align: center; margin-top: var(--space-s); }
+
+  .world { background: var(--clove); color: var(--cream); border-radius: 22px 22px 0 0; margin-top: var(--space-l); }
+  .world__inner { display: grid; justify-items: center; gap: 1.5rem; padding-block: var(--space-xl) var(--space-l); text-align: center; }
+  .world__eyebrow { color: var(--orange); }
+  .world__title { color: var(--cream); }
+  .world__text { max-width: 34rem; font-size: var(--text-medium); line-height: 1.45; }
+  .world__reel { display: grid; gap: 0.75rem; justify-items: center; margin-top: var(--space-s); }
+  .world__reel :global(img) { width: min(70vw, 340px); border-radius: var(--radius); }
+  .world__reel .label { color: var(--orange); }
+
+  .cook { display: grid; grid-template-columns: 5fr 7fr; gap: var(--gutter); align-items: center; }
+  .cook__img :global(img) { width: 100%; max-width: 552px; margin-inline: auto; }
+  .cook__text { display: grid; gap: 1.25rem; max-width: 34rem; }
+  .cook__title { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; letter-spacing: 0.012em; font-size: clamp(2.2rem, 1.4rem + 2.8vw, 4.6rem); overflow-wrap: normal; hyphens: none; line-height: 1; text-transform: uppercase; color: var(--orange-ink); }
+  @media (max-width: 760px) { .cook { grid-template-columns: 1fr; } }
+</style>

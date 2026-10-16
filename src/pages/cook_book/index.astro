@@ -1,0 +1,29 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import HeroCard from "@/components/HeroCard.astro";
+import TabBar from "@/components/TabBar.astro";
+import CookbookList from "@/components/CookbookList.astro";
+import Lead from "@/components/Lead.astro";
+import { cookbookSections, cookbookRecipes } from "@/content/recipes";
+import { home } from "@/content/pages";
+---
+<Base title="Cook-Book" description={`${cookbookRecipes.length} recipes from the Eastern Cook Book: vegetarian, non-vegetarian and sweets.`}>
+  <PageHead title="Cook Book" />
+  <HeroCard image="wp-content/uploads/2023/11/ck-book.jpg" alt="Eastern Cook Book" ratio="9260 / 2675" />
+  <Lead><p>{home.cookbook.text}</p></Lead>
+  <TabBar label="Cook Book sections" items={cookbookSections.map((s) => ({ label: s.label, id: s.slug }))} from={`#${cookbookSections[0]!.slug}`} />
+  {cookbookSections.map((s) => (
+    <section id={s.slug} class="section sec" aria-labelledby={`${s.slug}-title`}>
+      <h2 id={`${s.slug}-title`} class="title" data-reveal>{s.label}</h2>
+      <CookbookList section={s.slug} />
+      <p class="center"><a class="pill-link" href={s.path}>{s.label}</a></p>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .sec { scroll-margin-top: 4rem; }
+  .sec .title { margin-bottom: var(--space-s); }
+  .center { text-align: center; margin-top: var(--space-s); }
+</style>

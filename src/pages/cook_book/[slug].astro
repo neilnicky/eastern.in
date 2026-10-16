@@ -1,0 +1,94 @@
+---
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import ProductTile from "@/components/ProductTile.astro";
+import RecipeCard from "@/components/RecipeCard.astro";
+import { cookbookRecipes, cookbookSections } from "@/content/recipes";
+import { getProduct } from "@/content/products";
+import { upload } from "@/lib/media";
+import type { CookbookRecipe } from "@/content/types";
+
+export function getStaticPaths() {
+  return cookbookRecipes.map((recipe) => ({ params: { slug: recipe.slug }, props: { recipe } }));
+}
+interface Props { recipe: CookbookRecipe }
+const { recipe } = Astro.props;
+const section = cookbookSections.find((s) => s.slug === recipe.section)!;
+const used = recipe.products.slice(0, 4).map(getProduct);
+const siblings = cookbookRecipes.filter((r) => r.section === recipe.section && r.slug !== recipe.slug).slice(0, 4);
+---
+<Base title={recipe.title.replace(/\.$/, "")} description={recipe.subtitle ?? `${recipe.title} — a recipe from the Eastern Cook Book (${section.label}).`}>
+  <PageHead title={recipe.title.replace(/\.$/, "")} eyebrow={`Cook Book · ${section.label}`} small>
+    {recipe.subtitle && <p class="subtitle">{recipe.subtitle}</p>}
+  </PageHead>
+
+  <figure class="card wrap">
+    <Image src={upload(recipe.images[0]!)} alt={`${recipe.title} — Eastern Cook Book card`} widths={[640, 960, 1440, 1920]} sizes="(max-width: 1200px) 100vw, 1200px" loading="eager" />
+  </figure>
+
+  <article class="recipe wrap">
+    {recipe.parts.map((part) => (
+      <section class="part">
+        {part.heading && <h2 class="part__heading">{part.heading}</h2>}
+        {part.ingredients && part.ingredients.length > 0 && (
+          <div class="part__block">
+            <h3 class="label">Ingredients</h3>
+            {part.ingredients.length === 1 ? <p class="prose">{part.ingredients[0]}</p> : <ul class="ingredients">{part.ingredients.map((i) => <li>{i}</li>)}</ul>}
+          </div>
+        )}
+        {part.method.length > 0 && (
+          <div class="part__block">
+            <h3 class="label">{part.methodTitle ?? "Method"}</h3>
+            {part.methodStyle === "paragraphs"
+              ? <div class="prose">{part.method.map((m) => <p>{m}</p>)}</div>
+              : <ol class="method">{part.method.map((m) => <li>{m}</li>)}</ol>}
+          </div>
+        )}
+      </section>
+    ))}
+    {recipe.note && <p class="prose note">{recipe.note}</p>}
+    {recipe.credit && <p class="prose note"><em>{recipe.credit}</em></p>}
+    {recipe.images.length > 1 && (
+      <figure class="card card--more">
+        {recipe.images.slice(1).map((img) => <Image src={upload(img)} alt={`${recipe.title} — Eastern Cook Book card, continued`} widths={[640, 960, 1440]} sizes="(max-width: 1200px) 100vw, 1200px" />)}
+      </figure>
+    )}
+  </article>
+
+  {used.length > 0 && (
+    <section class="section made" aria-labelledby="made-title">
+      <h2 id="made-title" class="title" data-reveal>Made with</h2>
+      <ul class="made__grid wrap">{used.map((p) => <li><ProductTile product={p} /></li>)}</ul>
+    </section>
+  )}
+
+  <section class="section" aria-labelledby="more-title">
+    <h2 id="more-title" class="title" data-reveal>More {section.label}</h2>
+    <ul class="more wrap">{siblings.map((r) => <li><RecipeCard recipe={r} /></li>)}</ul>
+    <p class="center"><a class="pill-link" href={section.path}>{section.label}</a></p>
+  </section>
+</Base>
+
+<style>
+  .subtitle { margin-top: 1.25rem; font-family: var(--font-serif); font-variation-settings: "opsz" 24; font-style: italic; font-size: var(--text-medium); }
+  .card { max-width: 1200px; margin: var(--space-s) auto 0; }
+  .card :global(img) { width: 100%; border-radius: var(--radius); }
+  .card--more { padding: 0; display: grid; gap: 1rem; margin-top: var(--space-s); }
+  .recipe { max-width: 900px; margin: 0 auto; padding-block: var(--space-l); display: grid; gap: var(--space-s); }
+  .part { display: grid; gap: 1.75rem; }
+  .part__heading { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; font-size: var(--text-large); text-transform: uppercase; color: var(--orange-ink); }
+  .part__block { display: grid; gap: 0.9rem; border-top: 1px solid var(--clove); padding-top: 1rem; }
+  .ingredients { list-style: none; columns: 2 18rem; column-gap: var(--gutter); }
+  .ingredients li { break-inside: avoid; padding: 0.55rem 0; border-bottom: 1px solid var(--rule); line-height: 1.4; }
+  .method { list-style: none; counter-reset: step; display: grid; }
+  .method li { counter-increment: step; display: grid; grid-template-columns: 2.5rem 1fr; padding: 0.7rem 0; border-bottom: 1px solid var(--rule); line-height: 1.5; }
+  .method li::before { content: counter(step, decimal-leading-zero); font-family: var(--font-serif); font-variation-settings: "opsz" 144; color: var(--orange-ink); }
+  .note { font-size: var(--text-small); color: var(--clove-soft); }
+  .made .title, .section .title { margin-bottom: var(--space-s); }
+  .made__grid { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+  .made__grid li { width: min(44vw, 260px); }
+  .more { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gutter); }
+  .center { text-align: center; margin-top: var(--space-s); }
+  @media (max-width: 700px) { .more { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

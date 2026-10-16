@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import Base from "@/layouts/Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import HeroCard from "@/components/HeroCard.astro";
+import { innovation } from "@/content/pages";
+import { siteConfig } from "@/content/site-config";
+import { upload } from "@/lib/media";
+---
+<Base title={innovation.title} description={innovation.paragraphs[0]!.slice(0, 155)}>
+  <PageHead title={innovation.title} eyebrow="M.E. Meeran" />
+  <HeroCard image={innovation.heroImage} alt={innovation.heroAlt} ratio="960 / 720" />
+
+  <div class="diamonds wrap">
+    <span class="diamond" aria-hidden="true"></span>
+    <h2 class="label">{innovation.aboutTitle}</h2>
+    {innovation.paragraphs.map((p) => <p class="lead">{p}</p>)}
+    <span class="diamond" aria-hidden="true"></span>
+  </div>
+
+  <section class="caps wrap" aria-label="What the Innovation Center does">
+    {innovation.capabilities.map((c) => (
+      <div class="caps__cell">
+        <Image class="caps__icon" src={upload(c.icon)} alt="" widths={[250]} />
+        <h3 class="label">{c.label}</h3>
+        <p>{c.text}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="section awards wrap" aria-labelledby="awards-title">
+    <h2 id="awards-title" class="title" data-reveal>{innovation.awardsTitle}</h2>
+    <ul class="awards__list">{innovation.awards.map((a) => <li>{a}</li>)}</ul>
+  </section>
+
+  <section class="papers wrap" aria-labelledby="papers-title">
+    <h2 id="papers-title" class="label">{innovation.papersTitle}</h2>
+    <ul>{innovation.papers.map((p) => <li><a class="pill-link" href={p.href} target="_blank" rel="noopener">{p.label}</a></li>)}</ul>
+    <p>{innovation.contact} <a class="inline" href={`mailto:${siteConfig.innovationEmail}`}>{siteConfig.innovationEmail}</a></p>
+    <Image class="papers__banner" src={upload(innovation.banner)} alt="M.E. Meeran Innovation Center, Eastern" widths={[760]} />
+  </section>
+</Base>
+
+<style>
+  .caps { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1100px; margin: 0 auto; border-top: 1px solid var(--rule); }
+  .caps__cell { padding: 1.5rem; display: grid; gap: 0.75rem; justify-items: center; align-content: start; text-align: center; line-height: 1.45; }
+  .caps__cell + .caps__cell { border-left: 1px solid var(--rule); }
+  .caps :global(.caps__icon) { width: 120px; height: auto; mix-blend-mode: multiply; }
+  .awards .title { margin-bottom: var(--space-s); }
+  .awards__list { list-style: none; max-width: 46rem; margin: 0 auto; border-top: 1px solid var(--clove); }
+  .awards__list li { padding: 1rem 0; border-bottom: 1px solid var(--rule); font-family: var(--font-serif); font-variation-settings: "opsz" 36; font-size: var(--text-medium); }
+  .papers { display: grid; justify-items: center; gap: 1.25rem; padding-bottom: var(--space-l); text-align: center; }
+  .papers ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+  .papers :global(.papers__banner) { margin-top: var(--space-s); max-width: min(100%, 760px); border-radius: var(--radius); }
+  @media (max-width: 760px) { .caps { grid-template-columns: 1fr; } .caps__cell + .caps__cell { border-left: 0; border-top: 1px solid var(--rule); } }
+</style>

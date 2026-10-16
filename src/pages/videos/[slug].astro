@@ -1,0 +1,14 @@
+---
+import Article from "@/layouts/Article.astro";
+import VideoPlayer from "@/components/VideoPlayer.astro";
+import { videos, type Video } from "@/content/archive";
+
+export function getStaticPaths() {
+  return videos.map((video) => ({ params: { slug: video.slug }, props: { video } }));
+}
+interface Props { video: Video }
+const { video } = Astro.props;
+---
+<Article title={video.title} eyebrow="TVCs" date={video.date} blocks={video.blocks.filter((b) => !(b.type === "p" && b.text === video.title))} back={{ label: "All videos", href: "/videos/" }} description={`Watch ${video.title} — Eastern.`}>
+  <div slot="before"><VideoPlayer youtubeId={video.youtubeId} facebookVideo={video.facebookVideo} thumb={video.thumb} title={video.title} /></div>
+</Article>
