@@ -10,6 +10,7 @@ pnpm dev            # local dev server
 pnpm build          # astro check + redirects + static build → dist/
 pnpm test           # Vitest unit tests (content integrity, URL coverage)
 pnpm test:e2e       # Playwright against the production build (run `pnpm build` first)
+pnpm spice-masks    # regenerate src/styles/spice-masks.css after editing shapes in src/lib/spices.ts (a unit test checks it is in sync)
 ```
 
 The following scripts need the local crawl snapshot in `.source-cache/` (git-ignored). Their outputs are committed, so a normal build does not need them.
