@@ -46,7 +46,7 @@ const ogImage = new URL(image, siteConfig.url).href;
     <ClientRouter fallback="swap" />
     <script is:inline>
       document.documentElement.classList.add("js");
-      try { if (!sessionStorage.getItem("eastern-intro") && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("is-intro"); } catch (e) {}
+      try { if (!sessionStorage.getItem("eastern-intro") && !matchMedia("(prefers-reduced-motion: reduce)").matches) { document.documentElement.classList.add("is-intro"); document.documentElement.dataset.intro = ""; } } catch (e) {}
     </script>
   </head>
   <body>

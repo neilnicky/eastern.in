@@ -1,13 +1,16 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { reducedMotion, onCleanup } from "./env";
+import { START_SLOTS, TAN_ANGLE, TILTS_DEG } from "@/lib/marquee-layout";
 
 /**
  * Reference M2–M4: the home pack marquee. Packs sit on a slightly tilted line and loop forever.
  * Input: scroll through the pinned stage (ScrollTrigger), mouse/touch drag, arrow keys, and focus.
  * Motion: a damped spring per frame (the reference's `velocity += ((target-value)*k - velocity*9)*dt`),
  * with tilt and a small Y-rotation driven by velocity. The badge turns with travel.
- * Without JS or with reduced motion the track is a plain horizontal scroller (CSS default).
+ * The first frame (packs at rest, entrance animation) is pure CSS in index.astro, built from the same geometry
+ * (lib/marquee-layout.ts), so the visible packs paint without JS; this module takes over after the first paint.
+ * With reduced motion, or without scripting, the track is a plain horizontal scroller (CSS).
  *
  * The ticker is demand-driven: it only runs while the hero is on-screen AND the spring is still moving.
  * Any input (scroll progress, drag, keys, focus, resize) wakes it; settling or leaving the viewport
@@ -15,12 +18,17 @@ import { reducedMotion, onCleanup } from "./env";
  */
 const K = 26, DAMP = 9.5;
 const SETTLE_EPS = 0.05; // px and px/s: below this the spring is considered at rest
-const ANGLE = (6.5 * Math.PI) / 180;
-const TILTS = [-0.053, 0.043, -0.024, 0.057, -0.048, 0.029, -0.038, 0.053].map((r) => (r * 180) / Math.PI);
 
 export default function marquee(root: HTMLElement) {
   const section = root.querySelector<HTMLElement>("[data-marquee]");
   if (!section || reducedMotion()) return;
+  // go live only after the CSS first frame has painted, so LCP never waits on this module
+  let cancelled = false, cleanup = () => {};
+  const raf = requestAnimationFrame(() => requestAnimationFrame(() => { if (!cancelled) cleanup = live(section); }));
+  onCleanup(() => { cancelled = true; cancelAnimationFrame(raf); cleanup(); });
+}
+
+function live(section: HTMLElement) {
   const stage = section.querySelector<HTMLElement>("[data-marquee-stage]")!;
   const items = [...section.querySelectorAll<HTMLElement>("[data-marquee-item]")];
   const badge = section.querySelector<HTMLElement>("[data-marquee-badge]");
@@ -31,9 +39,8 @@ export default function marquee(root: HTMLElement) {
   const measure = () => {
     const w = stage.clientWidth;
     const perView = w <= 480 ? 1.65 : w <= 1024 ? 3 : 4;
-    S = w / perView;
+    S = w / perView; // pack size follows from the same breakpoints in CSS (--S / --pw)
     L = n * S;
-    section.style.setProperty("--pack-w", `${Math.min(S * (w <= 480 ? 0.7 : 0.62), 360)}px`);
   };
   measure();
 
@@ -43,8 +50,8 @@ export default function marquee(root: HTMLElement) {
   function stop() { if (running) { running = false; gsap.ticker.remove(tick); } }
   function wake() { start(); }
 
-  const state = { value: -S * 1.5, velocity: 0 };
-  let base = -S * 1.5;
+  const state = { value: -S * START_SLOTS, velocity: 0 };
+  let base = -S * START_SLOTS;
   let scrollTravel = 0;
   const target = () => base + scrollTravel;
 
@@ -83,9 +90,9 @@ export default function marquee(root: HTMLElement) {
     for (let i = 0; i < n; i++) {
       const x = wrap(i * S - state.value);
       const focus = Math.max(0, 1 - Math.abs(x) / S); // depth order only; size stays constant
-      const y = Math.tan(ANGLE) * x;
+      const y = TAN_ANGLE * x;
       const el = items[i]!;
-      el.style.transform = `translate3d(${x}px, ${y}px, 0) rotate(${TILTS[i % TILTS.length]! + vel * 10}deg) rotateY(${vel * -22}deg)`;
+      el.style.transform = `translate3d(${x}px, ${y}px, 0) rotate(${TILTS_DEG[i % TILTS_DEG.length]! + vel * 10}deg) rotateY(${vel * -22}deg)`;
       el.style.zIndex = String(Math.round(focus * 10));
     }
     if (badge) badge.style.setProperty("--badge-rot", `${state.value * -0.045}deg`);
@@ -108,11 +115,7 @@ export default function marquee(root: HTMLElement) {
   io.observe(section);
   start();
 
-  // M3 intro: packs fade and scale in, staggered from the centre
-  gsap.fromTo(items.map((it) => it.firstElementChild), { autoAlpha: 0, scale: 0.85 }, { autoAlpha: 1, scale: 1, duration: 0.7, ease: "headermark", stagger: { each: 0.06, from: "center" }, delay: document.documentElement.classList.contains("is-intro") ? 1.1 : 0.35 });
-  if (badge) gsap.fromTo(badge, { autoAlpha: 0, y: 24, rotate: -18 }, { autoAlpha: 1, y: 0, rotate: 0, duration: 0.9, ease: "headermark", delay: document.documentElement.classList.contains("is-intro") ? 0.6 : 0.1 });
-
   const ro = new ResizeObserver(() => { const ratio = state.value / S; measure(); state.value = ratio * S; base = state.value - scrollTravel; write(); wake(); });
   ro.observe(stage);
-  onCleanup(() => { stop(); io.disconnect(); ro.disconnect(); st.kill(); ac.abort(); });
+  return () => { stop(); io.disconnect(); ro.disconnect(); st.kill(); ac.abort(); };
 }

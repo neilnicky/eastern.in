@@ -101,3 +101,63 @@ test.describe("product tile hover shapes", () => {
     for (const p of s) { expect(p.opacity).toBe("1"); expect(p.mask).toContain("data:image/svg+xml"); }
   });
 });
+
+/** Hero packs whose box intersects the viewport, with their image state. */
+const heroPacksInView = (page: Page) => page.evaluate(() => [...document.querySelectorAll<HTMLElement>(".hero__item")].flatMap((li, i) => {
+  const b = li.getBoundingClientRect(), img = li.querySelector("img")!;
+  if (b.right <= 0 || b.left >= innerWidth || b.bottom <= 0 || b.top >= innerHeight) return [];
+  return [{ i, loading: img.loading, loaded: img.complete && img.naturalWidth > 0, opacity: +getComputedStyle(li.querySelector("a")!).opacity, visibility: getComputedStyle(li).visibility }];
+}));
+
+test.describe("hero packs without JavaScript", () => {
+  test.use({ javaScriptEnabled: false });
+  test("are laid out and visible", async ({ page }) => {
+    await page.goto("/");
+    await page.waitForLoadState("load");
+    const packs = await heroPacksInView(page);
+    expect(packs.length).toBeGreaterThanOrEqual(2);
+    for (const p of packs) {
+      expect(p.loaded, `pack ${p.i} image loaded`).toBe(true);
+      expect(p.opacity).toBe(1);
+      expect(p.visibility).toBe("visible");
+    }
+  });
+});
+
+test.describe("hero first frame (LCP)", () => {
+  test("the packs on screen at load are eager and painted before the marquee goes live", async ({ page }) => {
+    // hold the marquee module back entirely: the CSS frame alone must show the packs
+    await page.route(/\/_astro\/marquee\.[^/]+\.js$/, (r) => r.abort());
+    await page.goto("/");
+    await page.waitForLoadState("load");
+    await page.waitForTimeout(1500); // entrance (scale) finished
+    await expect(page.locator("[data-marquee].is-live")).toHaveCount(0);
+    const packs = await heroPacksInView(page);
+    expect(packs.length).toBeGreaterThanOrEqual(2);
+    for (const p of packs) {
+      expect(p.loading, `pack ${p.i} is on screen at load`).toBe("eager");
+      expect(p.loaded).toBe(true);
+      expect(p.opacity).toBe(1);
+    }
+  });
+
+  test("the live marquee's resting frame matches the CSS frame (no jump when it takes over)", async ({ page }) => {
+    await page.goto("/");
+    await expect(page.locator("[data-marquee].is-live")).toBeAttached();
+    await page.waitForTimeout(3000); // spring settled at rest
+    // packs off-stage in the first frame are not rendered until live; compare the ones the CSS frame shows
+    const boxes = () => page.evaluate(() => [...document.querySelectorAll<HTMLElement>(".hero__item:not([data-far])")].map((li) => {
+      const b = li.getBoundingClientRect(); return [Math.round(b.x), Math.round(b.y), Math.round(b.width), Math.round(b.height), getComputedStyle(li).zIndex];
+    }));
+    const live = await boxes();
+    await page.evaluate(() => {
+      document.querySelector("[data-marquee]")!.classList.remove("is-live");
+      document.querySelectorAll<HTMLElement>(".hero__item").forEach((li) => { li.style.removeProperty("transform"); li.style.removeProperty("z-index"); });
+    });
+    const css = await boxes();
+    live.forEach((b, i) => {
+      for (let k = 0; k < 4; k++) expect(Math.abs((b[k] as number) - (css[i]![k] as number)), `item ${i} box[${k}]`).toBeLessThanOrEqual(1);
+      expect(b[4], `item ${i} z-index`).toBe(css[i]![4]);
+    });
+  });
+});
