@@ -48,3 +48,28 @@ test.describe("marquee ticker is demand-driven", () => {
     expect(await packMutations(page), "ticker resumes when the hero is back in view").toBeGreaterThan(0);
   });
 });
+
+test("split-text reveals leave no will-change layers behind once they have played", async ({ page }) => {
+  await page.goto("/products/");
+  await page.waitForTimeout(1500);
+  const height = await page.evaluate(() => document.documentElement.scrollHeight);
+  for (let y = 0; y < height; y += 700) {
+    await page.evaluate((v) => window.scrollTo(0, v), y);
+    await page.waitForTimeout(120);
+  }
+  await page.waitForTimeout(3500); // let the last reveal finish
+  const left = await page.evaluate(() => {
+    const chars = [...document.querySelectorAll<HTMLElement>(".char")];
+    return {
+      chars: chars.length,
+      charsWithWillChange: chars.filter((c) => getComputedStyle(c).willChange !== "auto").length,
+      charsWithInlineTransform: chars.filter((c) => c.style.transform !== "").length,
+      // the only intended compositor hint left on the page is the hero card's clip-path scrub
+      otherWillChange: [...document.querySelectorAll("*")].filter((e) => getComputedStyle(e).willChange !== "auto" && !e.classList.contains("hero-card")).map((e) => e.tagName + "." + e.className).slice(0, 5),
+    };
+  });
+  expect(left.chars, "split structure is kept (no layout shift)").toBeGreaterThan(0);
+  expect(left.charsWithWillChange, "no character keeps will-change").toBe(0);
+  expect(left.charsWithInlineTransform, "no character keeps an inline transform").toBe(0);
+  expect(left.otherWillChange).toEqual([]);
+});

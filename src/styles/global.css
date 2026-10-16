@@ -118,7 +118,7 @@ ul, ol { padding: 0; }
 
 /* text reveal masks (motion/reveal.ts). Without JS / reduced motion everything is simply visible. */
 .js [data-reveal] .line { display: block; overflow: clip; padding-bottom: 0.06em; margin-bottom: -0.06em; }
-.js [data-reveal] .char { display: inline-block; will-change: transform; }
+.js [data-reveal] .char { display: inline-block; } /* will-change is applied by reveal.ts only while a reveal runs */
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
