@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+# raw crawl snapshots stay local; the curated extracts live in docs/source/
+.source-cache/
