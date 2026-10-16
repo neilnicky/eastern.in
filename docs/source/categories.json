@@ -1,0 +1,340 @@
+[
+ {
+  "slug": "confectionery",
+  "url": "/product-category/confectionery/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/laban-orange-flavour-chews/",
+   "/products/laban-strawberry-flavour-chews/",
+   "/products/laban-fruit-flavour-chews/"
+  ],
+  "pagesSeen": [
+   "/product-category/confectionery/"
+  ],
+  "title": "Eastern Condiments | Product Categories Confectionery"
+ },
+ {
+  "slug": "straight-powders-1",
+  "url": "/product-category/straight-powders-1/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/kayam/",
+   "/products/fenugreek-powder-4/",
+   "/products/fennel-powder-4/",
+   "/products/dry-ginger-powder-4/",
+   "/products/cumin-powder-3/",
+   "/products/black-pepper-powder-4/",
+   "/products/crushed-chilly-4/"
+  ],
+  "pagesSeen": [
+   "/product-category/straight-powders-1/"
+  ],
+  "title": "Eastern Condiments | Product Categories Straight Powders"
+ },
+ {
+  "slug": "arabic-range",
+  "url": "/product-category/arabic-range/",
+  "name": "Sorry, no products matched your criteria.",
+  "description": null,
+  "products": [],
+  "pagesSeen": [
+   "/product-category/arabic-range/"
+  ],
+  "title": "Eastern Condiments | Product Categories Arabic Range"
+ },
+ {
+  "slug": "pickles-paste",
+  "url": "/product-category/pickles-paste/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/white-lime-pickle/",
+   "/products/tender-mango-pickle/",
+   "/products/kadumango-pickle/",
+   "/products/mango-pickle/",
+   "/products/lime-pickle/",
+   "/products/gooseberry-pickle/",
+   "/products/garlic-pickle/",
+   "/products/puliyinchi-pickle/",
+   "/products/amla-pickle/",
+   "/products/ginger-garlic-paste/",
+   "/products/chicken-pickle/",
+   "/products/prawn-pickle/",
+   "/products/fish-pickle/",
+   "/products/hot-sweet-lime-pickle/",
+   "/products/red-chilli-pickle/",
+   "/products/tomato-pickle/",
+   "/products/gongura-pickle/",
+   "/products/mango-thokku-pickle/",
+   "/products/mixed-veg-pickle/"
+  ],
+  "pagesSeen": [
+   "/product-category/pickles-paste/page/2/",
+   "/product-category/pickles-paste/"
+  ],
+  "title": "Eastern Condiments | Product Categories Pickles & Paste"
+ },
+ {
+  "slug": "gcc",
+  "url": "/product-category/gcc/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/chettinadu-vegetable-masala-powder-2/",
+   "/products/butter-chicken-masala-powder-2/",
+   "/products/tamarind-2/",
+   "/products/super-garam-masala-powder-2/",
+   "/products/sesame-oil-2/",
+   "/products/sambar-powder-3/",
+   "/products/rice-powder-2/",
+   "/products/rasam-powder-3/",
+   "/products/puttu-powder-white-2/",
+   "/products/puttu-powder-chemba-2/",
+   "/products/puliyinchi-pickle-3/",
+   "/products/prawn-pickle-2/",
+   "/products/channa-masala-powder-2/",
+   "/products/pani-puri-masala-powder-2/",
+   "/products/paneer-butter-masala-powder-2/",
+   "/products/palak-paneer-masala-powder-2/",
+   "/products/palada-2/",
+   "/products/meen-mulaku-masala-powder-2/",
+   "/products/methi-mutter-malai-masala-powder-2/",
+   "/products/korma-spice-mix-2/",
+   "/products/hyderabadi-biryani-mix-3/",
+   "/products/fish-fry-masala/",
+   "/products/dal-makhani-masala-powder-2/",
+   "/products/chicken-tikka-spice-mix-3/",
+   "/products/prawn-chutney-powder/",
+   "/products/pineapple-pickle-2/",
+   "/products/pickle-powder-3/",
+   "/products/pepper-chicken-masala-powder-2/",
+   "/products/pav-bhaji-masala-powder-2/",
+   "/products/pappadam-2/",
+   "/products/palada-mix-3/",
+   "/products/omani-masala-powder-2/",
+   "/products/nutmeg-pickle-2/",
+   "/products/mutton-masala-powder-2/",
+   "/products/mutton-biriyani-masala-powder-2/",
+   "/products/mustard-whole-2/",
+   "/products/mixed-vegetable-pickle-2/"
+  ],
+  "pagesSeen": [
+   "/product-category/gcc/page/2/",
+   "/product-category/gcc/",
+   "/product-category/gcc/page/3/",
+   "/product-category/gcc/page/4/"
+  ],
+  "title": "Eastern Condiments | Product Categories GCC"
+ },
+ {
+  "slug": "breakfast-mix",
+  "url": "/product-category/breakfast-mix/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/idli-podi/",
+   "/products/pathiri-podi/",
+   "/products/rice-powder-3/",
+   "/products/easy-palappam-mix-2/",
+   "/products/dosa-podi/",
+   "/products/appam-podi/",
+   "/products/chemba-puttu-podi/",
+   "/products/roasted-rava-2/",
+   "/products/idiyappam-podi/",
+   "/products/puttu-podi/"
+  ],
+  "pagesSeen": [
+   "/product-category/breakfast-mix/"
+  ],
+  "title": "Eastern Condiments | Product Categories Breakfast Mix"
+ },
+ {
+  "slug": "spices-masalas",
+  "url": "/product-category/spices-masalas/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/pav-bhaji-masala/",
+   "/products/kitchen-king/",
+   "/products/jaljeera-powder/",
+   "/products/chilly-chicken-masala/",
+   "/products/chicken-fry-masala/",
+   "/products/chat-masala/",
+   "/products/channa-masala/",
+   "/products/sambar-powder/",
+   "/products/rasam-powder/",
+   "/products/pickle-powder-2/",
+   "/products/meat-ularthu-masala/",
+   "/products/chicken-kabab-masala/",
+   "/products/garam-masala/",
+   "/products/fish-masala/",
+   "/products/egg-masala/",
+   "/products/chicken-porichathu/",
+   "/products/chicken-masala/",
+   "/products/biriyani-masala/",
+   "/products/vegetable-masala/",
+   "/products/mutton-masala-kerala/",
+   "/products/assal-kayam-sambar-powder/",
+   "/products/fish-masala-2/",
+   "/products/sambar-masala/",
+   "/products/meat-masala-2/",
+   "/products/kashmiri-chilli/",
+   "/products/coriander-powder-5/",
+   "/products/turmeric-powder-4/",
+   "/products/chilli-powder/",
+   "/products/cumin-powder/",
+   "/products/black-pepper-powder/",
+   "/products/crushed-chilly/"
+  ],
+  "pagesSeen": [
+   "/product-category/spices-masalas/page/3/",
+   "/product-category/spices-masalas/page/2/",
+   "/product-category/spices-masalas/"
+  ],
+  "title": "Eastern Condiments | Product Categories Spices & Masalas"
+ },
+ {
+  "slug": "cereals",
+  "url": "/product-category/cereals/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/rice-flakes/"
+  ],
+  "pagesSeen": [
+   "/product-category/cereals/"
+  ],
+  "title": "Eastern Condiments | Product Categories Cereals"
+ },
+ {
+  "slug": "madhuram-range",
+  "url": "/product-category/madhuram-range/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/paripu-payasam/",
+   "/products/semiya-payasam/",
+   "/products/palada-payasam/",
+   "/products/gothambu-payasam/"
+  ],
+  "pagesSeen": [
+   "/product-category/madhuram-range/"
+  ],
+  "title": "Eastern Condiments | Product Categories Madhuram Range"
+ },
+ {
+  "slug": "5-minute-breakfast",
+  "url": "/product-category/5-minute-breakfast/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/instant-ghee-upumavu/",
+   "/products/instant-idli/",
+   "/products/instant-dosa/",
+   "/products/instant-idiyappam/",
+   "/products/instant-appam-mix/",
+   "/products/instant-puttu-mix/"
+  ],
+  "pagesSeen": [
+   "/product-category/5-minute-breakfast/"
+  ],
+  "title": "Eastern Condiments | Product Categories 5 Minute Breakfast"
+ },
+ {
+  "slug": "breakfast",
+  "url": "/product-category/breakfast/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/idly-powder/",
+   "/products/rice-powder/",
+   "/products/roasted-rava/",
+   "/products/easy-palappam-mix/",
+   "/products/puttu-powder-chamba/",
+   "/products/dosa-powder/",
+   "/products/idiyappam-powder/",
+   "/products/pathiri-powder/",
+   "/products/puttu-powder/",
+   "/products/appam-powder/"
+  ],
+  "pagesSeen": [
+   "/product-category/breakfast/"
+  ],
+  "title": "Eastern Condiments | Product Categories Breakfast"
+ },
+ {
+  "slug": "whole-spices",
+  "url": "/product-category/whole-spices/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/mustard-seed/",
+   "/products/fenugreek-seed/",
+   "/products/fennel-seed/",
+   "/products/cumin-seed/"
+  ],
+  "pagesSeen": [
+   "/product-category/whole-spices/"
+  ],
+  "title": "Eastern Condiments | Product Categories whole spices"
+ },
+ {
+  "slug": "accompaniments",
+  "url": "/product-category/accompaniments/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/kasuri-methi/",
+   "/products/tamarind-pizhi-puli/"
+  ],
+  "pagesSeen": [
+   "/product-category/accompaniments/"
+  ],
+  "title": "Eastern Condiments | Product Categories Accompaniments"
+ },
+ {
+  "slug": "other-countries",
+  "url": "/product-category/other-countries/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/pav-bhaji-masala-powder/"
+  ],
+  "pagesSeen": [
+   "/product-category/other-countries/"
+  ],
+  "title": "Eastern Condiments | Product Categories Other Countries"
+ },
+ {
+  "slug": "vermicelli-macaroni",
+  "url": "/product-category/vermicelli-macaroni/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/roasted-vermicelli/",
+   "/products/vermicelli/",
+   "/products/macaroni-elbow/"
+  ],
+  "pagesSeen": [
+   "/product-category/vermicelli-macaroni/"
+  ],
+  "title": "Eastern Condiments | Product Categories Vermicelli & Macaroni"
+ },
+ {
+  "slug": "beverages",
+  "url": "/product-category/beverages/",
+  "name": "Our Products",
+  "description": null,
+  "products": [
+   "/products/chukku-kappi-powder/",
+   "/products/pure-coffee-powder/",
+   "/products/adimali-kappi/"
+  ],
+  "pagesSeen": [
+   "/product-category/beverages/"
+  ],
+  "title": "Eastern Condiments | Product Categories Beverages"
+ }
+]

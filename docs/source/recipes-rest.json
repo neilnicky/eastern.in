@@ -1,0 +1,686 @@
+[
+ {
+  "id": 27249,
+  "slug": "thani-nadan-sambar",
+  "link": "/recipes/thani-nadan-sambar/",
+  "title": "Thani Nadan Sambar",
+  "date": "2026-10-12T15:39:50",
+  "modified": "2026-10-12T15:39:50",
+  "content": "",
+  "featured_media": 27250,
+  "acf": [],
+  "class_list": [
+   "post-27249",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27247,
+  "slug": "special-chicken-curry",
+  "link": "/recipes/special-chicken-curry/",
+  "title": "Special Chicken Curry",
+  "date": "2026-10-12T15:38:59",
+  "modified": "2026-10-12T15:38:59",
+  "content": "",
+  "featured_media": 27248,
+  "acf": [],
+  "class_list": [
+   "post-27247",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27245,
+  "slug": "chicken-kondattam",
+  "link": "/recipes/chicken-kondattam/",
+  "title": "Chicken Kondattam",
+  "date": "2026-10-12T15:38:13",
+  "modified": "2026-10-12T15:38:13",
+  "content": "",
+  "featured_media": 27246,
+  "acf": [],
+  "class_list": [
+   "post-27245",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27243,
+  "slug": "nadan-chicken-curry",
+  "link": "/recipes/nadan-chicken-curry/",
+  "title": "Nadan Chicken Curry",
+  "date": "2026-10-12T15:37:28",
+  "modified": "2026-10-12T15:37:28",
+  "content": "",
+  "featured_media": 27244,
+  "acf": [],
+  "class_list": [
+   "post-27243",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27241,
+  "slug": "restaurant-style-sambar",
+  "link": "/recipes/restaurant-style-sambar/",
+  "title": "Restaurant Style Sambar",
+  "date": "2026-10-12T15:35:57",
+  "modified": "2026-10-12T15:36:44",
+  "content": "",
+  "featured_media": 27242,
+  "acf": [],
+  "class_list": [
+   "post-27241",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27239,
+  "slug": "ulli-sambar",
+  "link": "/recipes/ulli-sambar/",
+  "title": "Ulli sambar",
+  "date": "2026-10-12T15:34:54",
+  "modified": "2026-10-12T15:34:54",
+  "content": "",
+  "featured_media": 27240,
+  "acf": [],
+  "class_list": [
+   "post-27239",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27237,
+  "slug": "breakfast-sambar",
+  "link": "/recipes/breakfast-sambar/",
+  "title": "Breakfast Sambar",
+  "date": "2026-10-12T15:33:48",
+  "modified": "2026-10-12T15:33:48",
+  "content": "",
+  "featured_media": 27238,
+  "acf": [],
+  "class_list": [
+   "post-27237",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 27235,
+  "slug": "sadya-sambar",
+  "link": "/recipes/sadya-sambar/",
+  "title": "Sadya Sambar",
+  "date": "2026-10-12T15:32:46",
+  "modified": "2026-10-12T15:32:46",
+  "content": "",
+  "featured_media": 27236,
+  "acf": [],
+  "class_list": [
+   "post-27235",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9617,
+  "slug": "jeera-rice-x-cumin-seeds",
+  "link": "/recipes/jeera-rice-x-cumin-seeds/",
+  "title": "Jeera Rice x Cumin Seeds",
+  "date": "2025-02-18T11:29:17",
+  "modified": "2026-10-13T10:43:17",
+  "content": "",
+  "featured_media": 9618,
+  "acf": [],
+  "class_list": [
+   "post-9617",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9613,
+  "slug": "turmeric-powder",
+  "link": "/recipes/turmeric-powder/",
+  "title": "TURMERIC Powder",
+  "date": "2025-02-18T11:27:50",
+  "modified": "2025-02-18T11:27:50",
+  "content": "",
+  "featured_media": 9616,
+  "acf": [],
+  "class_list": [
+   "post-9613",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9610,
+  "slug": "rasam-powder",
+  "link": "/recipes/rasam-powder/",
+  "title": "Rasam Powder",
+  "date": "2025-02-18T11:26:53",
+  "modified": "2025-02-18T11:26:53",
+  "content": "",
+  "featured_media": 9611,
+  "acf": [],
+  "class_list": [
+   "post-9610",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9608,
+  "slug": "mutton-kerala",
+  "link": "/recipes/mutton-kerala/",
+  "title": "Mutton Kerala",
+  "date": "2025-02-18T11:25:48",
+  "modified": "2025-02-18T11:25:48",
+  "content": "",
+  "featured_media": 9609,
+  "acf": [],
+  "class_list": [
+   "post-9608",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9605,
+  "slug": "mutton-masala",
+  "link": "/recipes/mutton-masala/",
+  "title": "Mutton Masala",
+  "date": "2025-02-18T11:23:59",
+  "modified": "2026-10-13T10:44:26",
+  "content": "",
+  "featured_media": 9607,
+  "acf": [],
+  "class_list": [
+   "post-9605",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9603,
+  "slug": "meat-ularth-masala",
+  "link": "/recipes/meat-ularth-masala/",
+  "title": "Meat Ularth Masala",
+  "date": "2025-02-18T11:22:29",
+  "modified": "2026-10-13T10:44:40",
+  "content": "",
+  "featured_media": 9604,
+  "acf": [],
+  "class_list": [
+   "post-9603",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9601,
+  "slug": "meat-masala",
+  "link": "/recipes/meat-masala/",
+  "title": "Meat Masala",
+  "date": "2025-02-18T11:21:24",
+  "modified": "2026-10-13T10:44:53",
+  "content": "",
+  "featured_media": 9602,
+  "acf": [],
+  "class_list": [
+   "post-9601",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9598,
+  "slug": "fish-curry-x-kashmiri-chilli",
+  "link": "/recipes/fish-curry-x-kashmiri-chilli/",
+  "title": "Fish Curry x Kashmiri Chilli",
+  "date": "2025-02-18T11:20:00",
+  "modified": "2026-10-13T10:45:40",
+  "content": "",
+  "featured_media": 9600,
+  "acf": [],
+  "class_list": [
+   "post-9598",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9596,
+  "slug": "egg-curry-x-garam-masala",
+  "link": "/recipes/egg-curry-x-garam-masala/",
+  "title": "Egg Curry x Garam Masala",
+  "date": "2025-02-18T11:18:55",
+  "modified": "2026-10-13T10:45:58",
+  "content": "",
+  "featured_media": 9597,
+  "acf": [],
+  "class_list": [
+   "post-9596",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9593,
+  "slug": "fish-curry-x-fish-masala",
+  "link": "/recipes/fish-curry-x-fish-masala/",
+  "title": "Fish Curry x Fish Masala",
+  "date": "2025-02-18T11:17:49",
+  "modified": "2026-10-13T10:46:12",
+  "content": "",
+  "featured_media": 9595,
+  "acf": [],
+  "class_list": [
+   "post-9593",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9588,
+  "slug": "egg-curry-x-egg-masala",
+  "link": "/recipes/egg-curry-x-egg-masala/",
+  "title": "Egg Curry x Egg Masala",
+  "date": "2025-02-18T11:16:36",
+  "modified": "2026-10-13T10:46:30",
+  "content": "",
+  "featured_media": 9589,
+  "acf": [],
+  "class_list": [
+   "post-9588",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9586,
+  "slug": "meat-roast-x-coriander-powder",
+  "link": "/recipes/meat-roast-x-coriander-powder/",
+  "title": "Meat Roast x Coriander Powder",
+  "date": "2025-02-18T11:15:23",
+  "modified": "2026-10-13T10:46:46",
+  "content": "",
+  "featured_media": 9587,
+  "acf": [],
+  "class_list": [
+   "post-9586",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9584,
+  "slug": "fish-fry-x-chilli-powder",
+  "link": "/recipes/fish-fry-x-chilli-powder/",
+  "title": "Fish Fry x Chilli Powder",
+  "date": "2025-02-18T11:14:22",
+  "modified": "2026-10-13T10:47:03",
+  "content": "",
+  "featured_media": 9585,
+  "acf": [],
+  "class_list": [
+   "post-9584",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9582,
+  "slug": "chicken-masala-apts",
+  "link": "/recipes/chicken-masala-apts/",
+  "title": "Chicken Masala APTS",
+  "date": "2025-02-18T11:13:13",
+  "modified": "2026-10-13T10:47:14",
+  "content": "",
+  "featured_media": 9583,
+  "acf": [],
+  "class_list": [
+   "post-9582",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9580,
+  "slug": "chicken-masala",
+  "link": "/recipes/chicken-masala/",
+  "title": "Chicken Masala",
+  "date": "2025-02-18T11:12:10",
+  "modified": "2025-02-18T11:12:10",
+  "content": "",
+  "featured_media": 9581,
+  "acf": [],
+  "class_list": [
+   "post-9580",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9578,
+  "slug": "chicken-kabab-masala",
+  "link": "/recipes/chicken-kabab-masala/",
+  "title": "Chicken Kabab Masala",
+  "date": "2025-02-18T11:11:09",
+  "modified": "2025-02-18T11:11:09",
+  "content": "",
+  "featured_media": 9579,
+  "acf": [],
+  "class_list": [
+   "post-9578",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9576,
+  "slug": "black-pepper-powder",
+  "link": "/recipes/black-pepper-powder/",
+  "title": "Black Pepper Powder",
+  "date": "2025-02-18T11:10:08",
+  "modified": "2025-05-22T16:56:20",
+  "content": "",
+  "featured_media": 9577,
+  "acf": [],
+  "class_list": [
+   "post-9576",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9574,
+  "slug": "biriyani-x-biriyani-masala",
+  "link": "/recipes/biriyani-x-biriyani-masala/",
+  "title": "Biriyani x Biriyani Masala",
+  "date": "2025-02-18T11:08:57",
+  "modified": "2026-10-13T10:47:28",
+  "content": "",
+  "featured_media": 9575,
+  "acf": [],
+  "class_list": [
+   "post-9574",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9571,
+  "slug": "semiya-payasam",
+  "link": "/recipes/semiya-payasam/",
+  "title": "Semiya Payasam",
+  "date": "2025-02-18T11:07:36",
+  "modified": "2025-02-18T11:07:36",
+  "content": "",
+  "featured_media": 9573,
+  "acf": [],
+  "class_list": [
+   "post-9571",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9569,
+  "slug": "palada-payasam",
+  "link": "/recipes/palada-payasam/",
+  "title": "Palada Payasam",
+  "date": "2025-02-18T10:47:05",
+  "modified": "2025-02-18T10:47:05",
+  "content": "",
+  "featured_media": 9570,
+  "acf": [],
+  "class_list": [
+   "post-9569",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9567,
+  "slug": "gothambu-payasam",
+  "link": "/recipes/gothambu-payasam/",
+  "title": "Gothambu Payasam",
+  "date": "2025-02-18T10:45:59",
+  "modified": "2025-02-18T10:45:59",
+  "content": "",
+  "featured_media": 9568,
+  "acf": [],
+  "class_list": [
+   "post-9567",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9565,
+  "slug": "instant-ghee-upumavu",
+  "link": "/recipes/instant-ghee-upumavu/",
+  "title": "Instant Ghee Upumavu",
+  "date": "2025-02-18T10:44:48",
+  "modified": "2025-02-18T10:44:48",
+  "content": "",
+  "featured_media": 9566,
+  "acf": [],
+  "class_list": [
+   "post-9565",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9563,
+  "slug": "instant-idli",
+  "link": "/recipes/instant-idli/",
+  "title": "Instant Idli",
+  "date": "2025-02-18T10:43:43",
+  "modified": "2025-02-18T10:43:43",
+  "content": "",
+  "featured_media": 9564,
+  "acf": [],
+  "class_list": [
+   "post-9563",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9561,
+  "slug": "instant-dosa",
+  "link": "/recipes/instant-dosa/",
+  "title": "Instant Dosa",
+  "date": "2025-02-18T10:40:37",
+  "modified": "2025-02-18T10:40:37",
+  "content": "",
+  "featured_media": 9562,
+  "acf": [],
+  "class_list": [
+   "post-9561",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9557,
+  "slug": "instant-idiyappam",
+  "link": "/recipes/instant-idiyappam/",
+  "title": "Instant Idiyappam",
+  "date": "2025-02-18T10:39:42",
+  "modified": "2025-02-18T10:39:42",
+  "content": "",
+  "featured_media": 9560,
+  "acf": [],
+  "class_list": [
+   "post-9557",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9555,
+  "slug": "instant-appam-mix",
+  "link": "/recipes/instant-appam-mix/",
+  "title": "Instant Appam Mix",
+  "date": "2025-02-18T10:38:10",
+  "modified": "2025-02-18T10:38:10",
+  "content": "",
+  "featured_media": 9556,
+  "acf": [],
+  "class_list": [
+   "post-9555",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9552,
+  "slug": "instant-puttu-mix",
+  "link": "/recipes/instant-puttu-mix/",
+  "title": "Instant Puttu Mix",
+  "date": "2025-02-18T10:36:57",
+  "modified": "2025-02-18T10:36:57",
+  "content": "",
+  "featured_media": 9554,
+  "acf": [],
+  "class_list": [
+   "post-9552",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ },
+ {
+  "id": 9399,
+  "slug": "eastern-meat-masala-recipe",
+  "link": "/recipes/eastern-meat-masala-recipe/",
+  "title": "Kabsa Masala",
+  "date": "2025-02-17T11:22:22",
+  "modified": "2025-02-18T11:29:43",
+  "content": "",
+  "featured_media": 9458,
+  "acf": [],
+  "class_list": [
+   "post-9399",
+   "recipes",
+   "type-recipes",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry"
+  ]
+ }
+]

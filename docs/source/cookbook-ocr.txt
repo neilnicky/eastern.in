@@ -1,0 +1,940 @@
+=== ./0615bebd8f27a6c66315dab0dfd6768c/4.jpg
+[0.10,0.10] Masala Macaroni
+[0.11,0.24] Masala Macaroni using Eastern Macaroni
+[0.04,0.33] INGREDIENTS
+[0.02,0.38] Onion- 1 medium, Garlic, chopped- 2 tbsp, Ginger-Garlic paste- 1/2 tsp, Eastern meat
+[0.02,0.41] masala- 1/2 tsp, Eastern macaroni (cooked) - 1.5 cup, Tomato - 1 medium, Vegetables,
+[0.02,0.44] sliced- 1 cup, Green chillies- 2, Paneer- 80g, Eastern Turmeric powder- 1/2 tsp, Eastern
+[0.02,0.48] Kashmiri red chilli powder- 1.5-2 tsp, Eastern Black pepper powder- 1/2 tsp, Eastern
+[0.02,0.51] Fennel powder- 1/2 ts, Mozzarella cheese & Cheddar cheese- as needed, Chilli flakes
+[0.02,0.54] Oil- 2 tbsp + 1 tsp, Salt, Water.
+[0.03,0.62] Preparation Method
+[0.02,0.68] • Heat oil in a pan and add chopped garlic.
+[0.02,0.71] • Add chopped onion, ginger garlic paste and saute well.
+[0.02,0.74] • To this add Eastern meat masala, Turmeric powder, Kashmiri chili powder,
+[0.04,0.77] Pepper powder, Fennel powder.
+[0.02,0.80] • Now add tomato cubes and cook well.
+[0.02,0.84] • Further add sliced vegetables to the mixture with salt and water to cook.
+[0.02,0.87] • Add fried paneer to this.
+[0.02,0.90] • To this add cooked Eastern Macaroni and mix well.
+[0.02,0.93] • Garnish with grated cheese and chili flakes.
+[0.90,0.09] Eastern
+=== ./090351b9f9c044585ec28d319f385246/4.jpg
+[0.34,0.03] UA
+[0.04,0.07] Easter
+[0.43,0.27] 00 g
+[0.70,0.14] Sambar
+[0.59,0.36] INGREDIENTS
+[0.57,0.43] Dal- ½ tea cup, Eastern Sambar powder-3 tbsp, Chopped assorted vegetables-5 tea
+[0.57,0.46] cups, Chopped Lady's Finger and Tomato-1 tea cup, Red Chili, Small onion, mustard
+[0.57,0.49] and curry leaves - as required, Tamarind water and salt as required.
+[0.49,0.61] WAVA
+[0.59,0.62] Preparation Method
+[0.48,0.67] MEN
+[0.55,0.69] • Cook dal.
+[0.55,0.73] • Add chopped vegetables and salt to it cook till the vegetables are half done.
+[0.55,0.76] • Add Chopped tomato and lady's finger and cook further till done.
+[0.55,0.79] • Add tamarind water and boil.
+[0.55,0.82] • Heat oil and Crackle mustard, add Easter sambar powder, red chill, sliced small onion and
+[0.57,0.85] curry leaves and sauté.
+[0.55,0.88] • Add this to the cooked vegetables.
+=== ./17fd0ca50120a968a2e9f2fd8db93489/3.jpg
+[0.18,0.12] Avial
+[0.04,0.32] INGREDIENTS
+[0.02,0.39] Raw bananas - 500g, Drumsticks -50 g, Ash gourd - 50g, Yam - 50g, Pumpkin - 50 g,
+[0.02,0.42] Beans - 50 g, Yoghurt - 400 ml, Salt to taste.
+[0.02,0.45] For Coconut Paste: Coconut - 200g, Green chillies - 25 g, Cumin seeds - 10g,
+[0.02,0.48] Coconut oil - 50 ml, Curry leaves - 5 g.
+[0.04,0.58] Preparation Method
+[0.02,0.65] Add sufficient water and grind the coconut, chillies and cumin seeds into a fine paste.
+[0.00,0.69] • Add the whipped yoghurt to the paste and mix well.
+[0.00,0.72] • Cut all the vegetables into batons, 3 inches* 1 inch in size.
+[0.00,0.75] • Heat 300ml of water and add the vegetables. When the vegetables are half cooked.
+[0.00,0.78] • Add the coconut paste and the curry leaves.
+[-0.00,0.81] • Mix and bring it to a boil. When the vegetables are completely cooked
+[0.00,0.84] • Drizzle with coconut oil and serve hot.
+[0.90,0.09] Easter
+=== ./1f56b2f5f00a1ebffd1a07a886cb8d72/Cook-Book-05-01.jpg
+[0.05,0.12] Nutella Nawabi Samai
+[0.07,0.27] Nutella Nawabi Samai using Eastern Roasted Vermicelli
+[0.03,0.34] INGREDIENTS
+[0.39,0.40] Milk -
+[0.04,0.40] Eastern Roasted Vermicelli - 500 gms. 1 Condensed Milk - 400 gm.
+[0.37,0.42] Butter -
+[0.04,0.42] 500 ml + 500 ml. 1 Cornflour - 4 tsp. | Custard Powder - 5 tsp.
+[0.04,0.45] 100 gm. 1 Milk Powder - 6 tsp. | Powdered Sugar - 6 tsp. | Nuts (optional) -
+[0.04,0.48] a handful. | Fresh Cream - 100 ml. 1 Nutella - 300 gm.
+[0.04,0.57] How to make Nutella Nawabi Samai
+[0.04,0.62] Add 200gm Condensed Milk into 500ml warm milk. Make a mixture of 3-4 tsp corn-
+[0.04,0.64] flour and warm milk, add it to milk and bring to boil. Once boiled, set aside.
+[0.04,0.67] Similarly, make a mixture of custard powder and warm milk and add it to 500ml
+[0.04,0.69] boiling milk & 200gm Condensed Milk. Once thickened turn off the flame and set
+[0.04,0.72] aside. Add 300 gm nutella to 100ml fresh cream and mix well.
+[0.04,0.75] Toss the Eastern Roasted Vermicelli in 100gm butter and add crushed nuts(optional).
+[0.04,0.77] Now add 5-6 tsp of milk powder and powdered sugar each and set aside. Skip this
+[0.48,0.77] NA
+[0.04,0.80] step if you are not a fan of too much sweetness.
+[0.04,0.83] Now to the final step, spread one third of the Eastern Roasted Vermicelli on the setting
+[0.04,0.86] dish. Now pour over the cornflour mix. Similarly, set a second layer of Eastern Roast-
+[0.04,0.88] ed Vermicelli and pour over the custard mix. Lastly, spread across the last layer of
+[0.04,0.91] Eastern Roasted Vermicelli and pour over the nutella mix. Now add toppings of your
+[0.04,0.93] choice.
+[0.04,0.96] NUTELLA NAWABI SAMAI is now READYY!!
+[0.88,0.12] Eastern
+[0.50,0.77] 100%
+[0.50,0.82] SEMOLINA
+[0.50,0.86] OF WHEAT
+=== ./1f74c0a0659441e182e5006ce3a996bf/Cook-Book-02-03.jpg
+[0.12,0.04] Palak Mutton
+[0.10,0.12] Kheema Fingers
+[0.07,0.27] Tasty Kheema Fingers with Eastern Meat Masala
+[0.03,0.38] INGREDIENTS
+[0.03,0.43] Onion (Chopped) - ¾ medium
+[0.20,0.43] Palak (Chopped) - ¾ cup 1 Potato (Mashed)
+[0.03,0.45] - 1 big 1 Ginger garlic paste (fresh) - 1 tsp 1 Green Chilli (Chopped) - 2
+[0.03,0.48] minced mutton - 250g | Eastern Meat masala - 2 tbsp | Black pepper
+[0.03,0.51] powder - 1 ½ tsp 1 Coriander leaf (chopped) - 3 tbsp | Salt - as required
+[0.03,0.54] Oil - 5 tbsp 1 Egg -1 | Breadcrumbs - as required
+[0.03,0.61] How to make Palak Mutton Kheema Fingers
+[0.03,0.68] Cook Potato, mash and keep aside.
+[0.00,0.68] •
+[0.03,0.71] In a pan, sauté onions in oil till golden brown.
+[0.03,0.73] Add ginger garlic paste, green chilli and salt. Sauté for few minutes.
+[0.03,0.76] Add mined mutton, Eastern Meat Masala and black pepper powder.
+[0.03,0.78] Saute until mutton is cooked.
+[0.03,0.81] Add chopped palak and coriander leaves. Saute for a while.
+[0.00,0.81] •
+[0.03,0.84] Add mashed potato to the mix and mix well.
+[0.03,0.86] Shape this mix into fingers.
+[0.03,0.89] Dip in egg, roll in breadcrumbs and then fry in hot oil.
+[0.03,0.91] Palak Kheema Fingers are ready. Serve hot with mint chutney.
+[0.87,0.11] Eastern
+=== ./3fdf6f0e580c11229198b3847e7e9201/Cook-Book-05-02.jpg
+[0.09,0.14] Eastern
+[0.61,0.10] Chicken Dum Porotta
+[0.65,0.25] Dum Porotta using Eastern Chicken Masala
+[0.59,0.32] INGREDIENTS
+[0.76,0.37] 1 Eastern chicken Masala: 5tbsp | Onion:
+[0.58,0.37] Chicken - 1Kg 1 Tomato: 4pcs
+[0.64,0.40] Ginger & Garlic paste: 1tbs | Green chilli : 6pcs | Coconut oil :
+[0.58,0.40] 6 pcs
+[0.82,0.43] Coriander leaf / Curry leaf:
+[0.65,0.43] Coconut Kothu" Fried: Half cup 1
+[0.58,0.43] enough
+[0.65,0.45] Salt: enough | Porotta: 2 | Boiled egg :1/2
+[0.58,0.46] enough
+[0.58,0.54] How to make Chicken Dum Porotta
+[0.59,0.58] Add 5tbs Eastern Chicken Masala in to washed chicken for at least 15 minutes, take
+[0.59,0.61] cooker and pour 2 tbs coconut oil then, add ginger garlic, green chillies & add toma-
+[0.59,0.64] toes, which cook well, then add 1 cup onion, early fried onion in coconut oil until
+[0.58,0.67] golden Color add Masala chicken to it, cook well &turn off the fire within 2 or 3 whis-
+[0.59,0.70] tles. Then add coconut pieces that are fried early, add the rest of the fried onion,
+[0.59,0.73] coriander, leaf & curry leaves. Finaly add some raw coconut oil in to it. Gravy is
+[0.59,0.76] ready.
+[0.59,0.80] Second Step
+[0.59,0.83] Dum Porotta Making
+[0.59,0.86] Take one Porotta put in to banana leaves in a mud pot, add more gravy on top of that,
+[0.59,0.88] fried chicken, boiled egg, fried onion, coriander leaves &curry leaves. Again put a
+[0.59,0.91] Porotta on top and wrap with a foil papper or banana leaves. Do 'Dum' by placing a
+[0.59,0.94] pot on top of thick pan, or make 'Dum' in a steamer.
+=== ./45d33bbfff65f88aa2069cd3d9610390/Cook-Book-04-01.jpg
+[0.05,0.11] Mixed Palak Macaroni
+[0.09,0.28] Mixed Palak Macaroni using Eastern Macaroni
+[0.04,0.37] INGREDIENTS
+[0.12,0.43] Garlic - 2tbs 1 Milk - 20tbs | Freshcream - 1/2cup
+[0.04,0.43] Butter - 2tbs |
+[0.04,0.46] Pepper powder - 1/2tsp 1 Macaroni - 2cup (boil with salt and oil) | Salt - required
+[0.04,0.49] Shrimp - 1/2cup (cook with salt butter and garlic)
+[0.26,0.49] | Chicken - 1/2 cup (cook with salt,
+[0.04,0.51] pepper and garlic) | Palak - one bunch (blanched) | Cheese slice - 4 or 5
+[0.04,0.55] Oregano - 1/4tsp | Chilli flakes - required
+[0.03,0.63] How to make Mixed Palak Macaroni
+[0.03,0.70] Heat butter in a pan and add garlic and sauté it well and add maida and sauté it.
+[0.01,0.73] • Add milk and mix it well until we get a thick consistency
+[0.01,0.77] • Then add fresh cream into it and after that add blanched palak and boil well.
+[0.04,0.80] To this add sauted prawns and chicken
+[0.01,0.84] • Add oregano, pepper and cheese slice into this mix.
+[0.01,0.87] • When the cheese slices melt add cooked macroni and cook for two more minutes.
+[0.01,0.90] • Serve by topping it with chili flakes
+[0.77,0.14] Eastern
+[0.50,0.73] WORTH 210 FREE
+[0.51,0.76] SAMBAR PUWDER
+[0.56,0.91] Faster
+[0.57,0.97] Chail!
+=== ./45f7ae6e001dafafaaf6a5608008aa12/2.jpg
+[0.05,0.11] Eastern
+[0.61,0.12] Mohabath Ka Sharbath
+[0.61,0.29] Mohabath Ka Sharbath using Eastern Roasted Vermicelli
+[0.59,0.38] INGREDIENTS
+[0.58,0.43] Eastern Roasted Vermicelli - 3 tbsp (cooked), Milk - 2 cups, Watermelon cubes
+[0.58,0.46] - 1 cup, Condensed milk - 1 tbsp, Ice cubes - as required, Chia seeds - 1tbsp
+[0.58,0.50] (soaked), Nuts - for garnish.
+[0.59,0.62] Preparation Method
+[0.58,0.69] • In a mixing bowl, add ice cubes and milk.
+[0.58,0.72] • Add cooked Eastern Roasted Vermicelli
+[0.59,0.75] Add watermelon cubes, soaked chia seeds and condensed milk
+[0.58,0.75] •
+[0.60,0.78] Mix well
+[0.59,0.81] Top with nuts to serve.
+=== ./46df9591ee63e185ef38d6bb16ed58ed/3.jpg
+[0.07,0.14] Easter
+[0.63,0.16] South Indian Baji
+[0.66,0.32] South Indian Baji using Eastern Kayam
+[0.57,0.41] INGREDIENTS
+[0.56,0.46] Chilli (Baji Chilli) - 4 nos, Gram flour - ¾ cup, Rice Flour - ¼ cup, Eastern Kayam
+[0.56,0.49] Powder - ½ teaspoon, Eastern red chili powder - ¼ teaspoon, Baking soda - 2 pinch,
+[0.56,0.52] Water - as required to make a slightly thick battter, Salt as per taste, Oil for deep frying..
+[0.57,0.63] Preparation Method
+[0.57,0.71] Wash the chillies and slit them each lengthwise, remove seeds if required.
+[0.56,0.71] •
+[0.56,0.74] • In a bowl, Mix gram flour, Rice flour, Red chilli powder, Eastern Kayam, Salt and
+[0.58,0.77] baking soda.
+[0.56,0.80] • Add water little by little and mix well with a whisk and make a thick batter.
+[0.56,0.83] • Meanwhile, heat enough oil to fry the bajis in a kadai.
+[0.56,0.86] • Dip one by one the chillies in the prepared batter and deep fry in hot oil.
+[0.58,0.90] Serve immediately with chutney.
+=== ./596fb34f6d38cba05afad6cff3279b7e/Cook-Book-08-05.jpg
+[0.08,0.11] Dahi Vada Recipe
+[0.14,0.24] Dahi vada using eastern Kayam
+[0.03,0.33] INGREDIENTS
+[0.02,0.38] Moong Dal - 500 gram, Green Chillies -2 nos, Curd- 1 bucket, Sugar - 3 tsp Eastern,
+[0.02,0.41] Kayam Powder - a pinch, Sun flower oil-1 cup, Salt - a pinch, Mustard seeds- 1¼ tsp,
+[0.02,0.44] Coriander leaves, Curry leaves.
+[0.03,0.54] Preparation Method
+[0.02,0.60] • Soak the moongdal in plain water for almost 6-8 hours.
+[0.02,0.63] • Strain the water and wash the dal well.
+[0.02,0.66] • Add green chillies and dal in to a mixed grinder Add a pinch of Eastern Kayam
+[0.04,0.69] Powder and salt. Grind this well into a batter by adding enough water.
+[0.02,0.72] • Take a frying pan. Add enough oil and make small vadas by using the batter.
+[0.02,0.76] • Mix thick curd by adding salt and water.
+[0.02,0.79] • Splutter Mustard Seeds by adding curry leaves and coriander leaves.Add this to
+[0.04,0.82] the curd.
+[0.02,0.85] • Arrange the prepared vadas in a glass bowl. Pour the curd mix on the top of the
+[0.04,0.88] vadas and serve well by spreading Eastern Kayam Powder and Kashmiri Red
+[0.04,0.90] Chilli Powder.
+[0.02,0.93] • Delicious Dahi-Vada is ready.
+[0.90,0.09] Eastern
+=== ./5ecf1d422eacdfc2b342fec2324af729/Cook-Book-01-04.jpg
+[0.09,0.12] Vermicelli Upuma
+[0.09,0.28] Upma using Eastern Roasted Vermicelli
+[0.03,0.40] INGREDIENTS
+[0.04,0.45] Eastern Roasted Vermicelli- 2 cups 1 Oil -2 tbsp 1 Mustard -1/4 tsp I
+[0.04,0.48] Channa dhal-1tsp | Cashew nuts 1 tsp 1 Green chillies cut in pieces-2 nos
+[0.04,0.51] Curry leaves-1 sprig | Chopped ginger-1/2 tsp | Onion chopped - 1 no
+[0.04,0.53] Water-500g | Salt -to taste
+[0.03,0.61] How to make Vermicelli Upuma
+[0.04,0.68] Heat oil in a pan add mustard seeds.
+[0.04,0.71] Add channa dal and cashew nuts.
+[0.01,0.74] •
+[0.04,0.74] Saute till done.
+[0.04,0.78] Add green chillies, curry leaves, ginger and saute.
+[0.01,0.78] •
+[0.04,0.81] Add onion and saute till done,add water and salt.
+[0.01,0.81] •
+[0.05,0.84] Once water start boiling add vermicelli and cook for 8 mintues in medium
+[0.04,0.88] flame.
+[0.01,0.91] • Serve hot
+[0.86,0.11] Eastern
+[0.85,0.78] 100%
+[0.85,0.82] SEMOLINA
+[0.85,0.87] OF WHEAT
+=== ./5edc3c8d35f77619d6f4e10f1229c646/5.jpg
+[0.05,0.07] Eastern
+[0.64,0.04] Beef Bruschetta
+[0.63,0.17] BEEF BRUSCHETTA using Eastern Meat masala
+[0.58,0.24] INGREDIENTS
+[0.78,0.29] •
+[0.80,0.29] 1/2 teaspoon kosher salt
+[0.58,0.29] Eastern meat masala - 50 grams
+[0.80,0.32] 1/4 teaspoon coarse grind black pepper
+[0.58,0.33] 1 beef tenderioin (about 8 500 grams)
+[0.79,0.35] 1 cup diced Roma tomatoes, seeded, ribs
+[0.58,0.35] 5 cloves garlic, smashed
+[0.79,0.38] removed (about 4 medium tomatoes)
+[0.58,0.39] 2 tablespoons vegetable oil
+[0.77,0.41] • 1/3 cup packed Kalamata olives, cut in half
+[0.58,0.41] 2 tablespoons olive oil
+[0.80,0.44] lengthwise then into 1/4-inch half moons
+[0.58,0.44] 1 loaf ciabatta bread (11 to 14 ounces)
+[0.77,0.47] • 1/3 cup thinly sliced fresh basil leaves
+[0.58,0.47] 3/4 cup feta cheese crumbles
+[0.58,0.54] Preparation Method
+[0.59,0.59] Preheat oven to 375°F. Heat garlic, vegetable oil and olive oil in a small sauce pan over medium-low heat. Cook
+[0.57,0.59] •
+[0.59,0.62] 8 to 10 minutes or until the garlic begins to brown. Remove from heat; set aside to cool.
+[0.59,0.65] Drain garlic from oil. Reserve 2 tablespoons oil for bread and 2 tablespoons oil for tomato mixture; set aside.
+[0.59,0.67] Cut ciabatta in half lengthwise. Slice into 18, 1/2-inch pieces; place on shallow-rimmed baking sheet. (You may
+[0.59,0.69] have some leftover ciabatta.) Brush each piece with reserved 2 tablespoons garlic oil. Bake in 375°F oven 10
+[0.59,0.75] Chop cooled garlic and return to same sauce pan; add feta. Heat on medium heat; cook 4 to 5 minutes until
+[0.59,0.77] cheese is melted and looks like ricotta cheese. Keep warm.
+[0.58,0.80] Marinate beef with eastern meat masala and salt and pepper. Place steak on grid over medium, ash-covered
+[0.59,0.82] coals. Grill, covered, 10 to 14 minutes (over medium heat on preheated grill, covered, 12 to 16 minutes) for
+[0.59,0.85] medium rare (145°F) to medium (160°F) doneness, turning occasionally.
+[0.59,0.88] Combine tomatoes, olives, basil and remaining 2 tablespoons oil in small bowl; set aside.
+[0.59,0.90] Spread 2 teaspoons garlic-feta mixture on each piece toasted ciabatta. Carve steak into 1/4-inch slices. Cut each
+[0.59,0.93] slice into 1-1/2-inch pieces. Place two steak pieces on each piece ciabatta. Top with 1 tablespoon tomato
+[0.59,0.95] mixture.
+=== ./608ba8db530ff2385da4fd4306b5049a/1.jpg
+[0.12,0.13] Fried Chicken
+[0.07,0.29] Fried Chicken using Eastern Chicken Porichathu Masala
+[0.04,0.38] INGREDIENTS
+[0.02,0.42] Chicken Breast - 2 nos, Eastern Chicken Porichathu Masala - 3tbsp, Eastern pepper
+[0.02,0.46] powder - 1 tsp, Garlic powder - ¼ tsp, Oregano - ¼ tsp, Lemon Juice - 2 tbsp, Red
+[0.02,0.49] Chilli Flakes - ½ tsp, Corn Flakes - 2 cups (crushed), Mixed herbs - as per require-
+[0.02,0.52] ment, Eggs - 2, Salt to taste, Water - as per requirement.
+[0.03,0.62] Preparation Method
+[0.02,0.67] • In a bowl, mix Eastern Chicken Porichathu Masala, garlic powder, red chilli flakes,
+[0.04,0.71] oregano, pepper, lime juice, water and salt together
+[0.02,0.74] • Marinate chicken breast in the above masala and keep it aside
+[0.02,0.77] • In another bowl, whisk egg.
+[0.02,0.80] • Take crushed corn flakes in a plate and add mixed herbs and a pinch of salt to it
+[0.02,0.83] • Dip the marinated chicken in the egg and then coat it well in corn flakes mixture
+[0.02,0.86] • Can air fry/deep fry until golden brown colour
+[0.02,0.90] • Serve with barbeque sauce/mayonnaise
+[0.88,0.12] Eastern
+=== ./609d24ea41abc5a01f76105373b58dcc/1.jpg
+[0.05,0.07] Easter
+[0.64,0.12] Kurukku Kalan
+[0.59,0.29] INGREDIENTS
+[0.57,0.34] Raw Banana - 1 nos, Yam/Chena - 150 g, Eastern Pepper Powder - 3/4 tsp, Eastern
+[0.57,0.37] Turmeric Powder - ½ tsp, Coconut Grated - 1½ cup, Green Chillies - 2 or 3 nos, Few
+[0.57,0.40] Curry Leaves, Eastern cumin seeds - ¼ tsp, Salt as required, Water - 1 cup, Curd - ½ liter,
+[0.57,0.43] a pinch of Fenugreek Powder. For Tampering: Coconut Oil - 2 tbsp, a pinch of Eastern
+[0.57,0.46] Fenugreek Seeds - ¼ tsp, Dry Red Chillies - 3 to 4 nos, Few curry leaves.
+[0.59,0.53] Preparation Method
+[0.57,0.58] Firstly peel, rinse, and then chop the elephant yam (suran) and raw banana) in cubes or squares.
+[0.57,0.61] Now transfer these veggies to a cooking pan. Add 1 cup water, 3/4 tsp pepper powder, and 1/2 tsp
+[0.57,0.63] turmeric powder to the pan.
+[0.57,0.66] Once the water starts to boil, turn the flame to low. Cover and cook until the vegetables are cooked
+[0.57,0.68] completely.
+[0.57,0.71] Meanwhile, let us prepare the masala. For that add 11/2 cup of freshly grated coconut, 1 some curry
+[0.57,0.73] leaves, 1 or 2 green chilies, 1/2 tsp cumin powder, or 1/4 tsp cumin seeds. Crush it once.
+[0.57,0.75] Then add 1/2 a cup of curd from the 1/2 liter curd. Grind it to a fine paste and keep it aside.
+[0.57,0.78] Once the veggies are cooked, add 1/4 tsp ghee & salt as required. Mix the veggies gently.
+[0.57,0.80] Whisk or beat the remaining curd using a spoon or wired whisk till smooth. Using sour curd makes
+[0.57,0.83] the dish tastier.
+[0.56,0.85] Add the beaten curd to the veggies. Continue stirring & bring to boil. Continuous stirring will avoid
+[0.55,0.85] •
+[0.57,0.87] curdling formation. The gravy should be thickened for this recipe. So continue stirring until it gets
+[0.57,0.90] thickened.
+[0.57,0.92] Then add the ground masala & mix it gently.
+[0.55,0.93] • •
+[0.57,0.95] There is no need to boil the gravy after adding the masala. Once the masala gets heated up switch off
+[0.57,0.97] the flame
+=== ./62e55d72cd4b34f981b33adbdb1f345f/Cook-Book-01-05.jpg
+[0.05,0.10] Eastern
+[0.46,0.74] GOODNE
+[0.42,0.74] TURAL
+[0.44,0.80] 100%
+[0.44,0.85] SEMOLINA
+[0.44,0.89] OF WHEATE
+[0.62,0.09] Meethi Vermicelli
+[0.61,0.26] Meethi Seviyan using Eastern Roasted Vermicelli
+[0.58,0.36] INGREDIENTS
+[0.59,0.41] Ghee - 1tbsp | Eastern roasted vermicelli - 1 cup 1 Milk- 2 cups
+[0.59,0.44] (500ml) Cardamom powder- ½ tsp
+[0.93,0.44] 1 Raisins
+[0.78,0.44] 1 Milk Powder - 1/4cup
+[0.59,0.47] -10-12 nos | Sugar_1/4 cup 1 Almond sliced - 5 nos |
+[0.59,0.50] Pistachios sliced-5 nos
+[0.72,0.50] 1 Cashews sliced-5nos
+[0.58,0.57] How to make Meethi Vermicelli
+[0.60,0.62] Heat a pan and then add 1 tbsp ghee.
+[0.59,0.65] Let the ghee melt and then add 1 cup of semiya.
+[0.60,0.67] On a low to medium flame, with frequent stirring roast the semiya for 1 minute
+[0.59,0.71] Add all the chopped dry nuts and raisins. Stir them nicely.
+[0.59,0.74] Lower the flame and pour 2 cups of milk.
+[0.59,0.77] Stir and mix very well. Then continue to stir for 2 to 3 minutes.
+[0.60,0.80] Now add sugar. Keep stirring the mixture.
+[0.51,0.81] SS
+[0.59,0.82] Add milk powder
+[0.60,0.86] Sprinkle cardamom powder and stir well.
+[0.59,0.88] The mixture will start thickening and the vermicelli will begin to absorb milk,
+[0.59,0.91] and cook till the milk get absorbed. Switch off the flame.
+[0.59,0.94] Can add fruits for garnishing
+=== ./63766456a521056fc069561d40d78fa7/upperi.jpg
+[0.17,0.14] Upperi
+[0.03,0.38] INGREDIENTS
+[0.02,0.45] Raw Banana - 500 g, Salt- as needed, Eastern Turmeric powder- ½ tsp, Eastern Coco-
+[0.02,0.48] nut Oil - to fry.
+[0.04,0.60] Preparation Method
+[0.04,0.66] Peel the skin of raw banana and cut it to small pieces.
+[0.02,0.66] •
+[0.02,0.69] • Mix the pieces in salt and turmeric powder.
+[0.02,0.72] • Heat oil.
+[0.04,0.75] Add the slices in small batches.
+[0.02,0.76] •
+[0.02,0.78] • Fry until golden and transfer onto a paper napkin.
+[0.02,0.82] • Sprinkle with salt and let it cool.
+[0.88,0.12] Eastern
+=== ./6f40e1cd3eebb725249b286682180c50/Cook-Book-09-02.jpg
+[0.05,0.11] Eastern
+[0.66,0.12] Sharkkaravaratti
+[0.59,0.35] INGREDIENTS
+[0.58,0.42] Raw Banana - 500 g, Jaggery- 250 g, Cumin powder- ½ tsp, Dry ginger powder - ½ tsp,
+[0.58,0.45] Cardamom powder - ½ tsp, Powdered sugar- 2 tbsp, Rice flour- 1 tbsp, Oil-for fry.
+[0.59,0.56] Preparation Method
+[0.58,0.63] Pat dry the washed and peeled bananas with the cloth/ kitchen tissue.
+[0.56,0.66] • Slice in to thin half moon shape of even thickness.
+[0.56,0.69] • Deep fry in to oil till crysp.
+[0.58,0.73] Remove the chips from the oil place in a tissue paper.
+[0.56,0.76] • Cool completely.
+[0.56,0.79] • Desolve the jaggerry in 1 cup water.
+[0.56,0.82] • Add friend banana chips to syrup.
+[0.58,0.85] Sprinkle the cumin ,cardamom, dry ginger powder, rice flour and sugar powder.
+[0.58,0.88] Mix well and let it cool.
+=== ./79b86ab7dba894a1442007a57cda8cbc/Cook-Book-02-01.jpg
+[0.09,0.12] Chicken Sandwich
+[0.08,0.27] Club Sandwich using Eastern Chicken Masala
+[0.03,0.38] INGREDIENTS
+[0.04,0.44] Salt - ¼ tsp | Chicken - 125g | Pepper - ¼ tsp | Chicken masala - 1 tsp
+[0.04,0.46] Lime juice - ½ tsp I Water - ¼ cup 1 Garlic Mayonnaise - 3 tsp
+[0.16,0.49] Capsicum - as required
+[0.04,0.49] Mayonnaise - 2 tsp
+[0.27,0.49] Sandwich bread - as required
+[0.04,0.52] Lettuce leaf - as required 1 Butter - as required
+[0.03,0.61] How to make Chicken Sandwich
+[0.01,0.68] • Marinate chicken in salt, pepper powder, chicken masala and lime juice for
+[0.04,0.71] 30 minutes.
+[0.01,0.74] • Pressure cook chicken and evaporate excess water.
+[0.01,0.77] • Once cooked, shred the chicken and keep aside.
+[0.00,0.81] •In a bowl, mix shredded chicken, mayonnaise, garlic mayonnaise and
+[0.04,0.84] capsicum.
+[0.01,0.88] • Butter the bread and place on a flat surface.
+[0.01,0.91] • Layer it with lettuce leaf and then spread the chicken mix on top.
+[0.04,0.94] Cover it with another slice of bread and serve.
+[0.01,0.95] •
+[0.86,0.11] Easter
+=== ./7ff18f1b364e6be2a3289feb591e2f52/Cook-Book-04-04.jpg
+[0.10,0.12] Eastern
+[0.66,0.10] Béchamel Pasta
+[0.65,0.25] Béchamel Pasta using Eastern Macaroni
+[0.57,0.36] Step-4 For Béchamel Sauce
+[0.58,0.40] Chicken stock water - 2 cups. | Chicken cube - 1. 1 Milk powder - 100g. |
+[0.58,0.43] Flour - 1/2 cup | Salt & pepper - if required. | Fresh cream - 1 cup. 1
+[0.58,0.46] Mozzarella cheese - 2 cups.
+[0.55,0.52] • Add the chicken cube and milk powder into the chicken stock water and
+[0.58,0.55] whisk well.
+[0.58,0.58] Melt butter in a saucepan, add in the flour and stir continuously.
+[0.55,0.58] •
+[0.58,0.61] Cook it for two minutes till the raw smell disappears.
+[0.58,0.64] Now add the chicken stock water slowly and cook till it becomes a smooth sauce.
+[0.58,0.67] Finally add 1 cup of fresh cream and mix till it gets combined well.
+[0.55,0.67] •
+[0.57,0.72] Step-5 Layering
+[0.58,0.76] Take a greased glass dish and spread half of the chicken masala, boiled pasta
+[0.55,0.76] •
+[0.58,0.79] & béchamel sauce.
+[0.55,0.82] • Sprinkle some cheese, oregano and chilli flakes. Repeat to make two more
+[0.58,0.85] layers similarly.
+[0.58,0.88] Bake it in a preheated oven for about 20-25 minutes at 180 degrees.
+[0.55,0.88] •
+=== ./82853d13d686b143527fd00fb9ec77da/Cook-Book-08-04.jpg
+[0.07,0.14] Eastern
+[0.62,0.12] Healthy Paniyaram
+[0.66,0.28] Paniyaram recipe using Eastern Kayam
+[0.58,0.37] INGREDIENTS
+[0.57,0.42] Idli Batter - 1 bowl, Salt- to taste, Green Chillies - 2 copped, Onion Chopped - 1 nos,
+[0.57,0.46] Carrot Grated - 1 nos, Betroot Grated - 1 nos, Eastern Kayam - 1 pinch
+[0.57,0.49] Chopped Corriander leaves - 1 tbsp, Chopped Curry leaves - 1 tbsp
+[0.57,0.52] For Tampering : Coconut Oil - 1 tbsp, Mustard Seeds - 1 tsp, Urad Daal - 1 tbsp, Green
+[0.57,0.55] chillies Chopped -2 nos, Ginger Chopped -1 small piece, Eastern Kayam - 1 pinch pinch.
+[0.58,0.64] Preparation Method
+[0.59,0.72] Take idli batter add salt, combine all the ingredients above (except for the one for
+[0.59,0.75] tampering) Mix well.
+[0.57,0.78] • Add oil to a pan and tamper all the ingredients and pour to batter, blend well.
+[0.59,0.80] Batter for paniyaram is ready.
+[0.59,0.84] Now take apaniyaram pan (if u want less oil take a non stick pan) drizzle oil.
+[0.59,0.87] Pour batter using a spoon cover and cook in medium flame for 5 mins.
+[0.57,0.87] •
+[0.59,0.90] Now flip it and cook for another 2 mins.
+[0.59,0.93] Your Paniyaram is ready. Serve hot with chutney of choice and filter coffee!
+[0.57,0.93] •
+[0.90,0.97] Recipe courtsey - Laya
+=== ./94df497c62e4db00999b8b16fe361a50/Cook-Book-06-01.jpg
+[0.08,0.12] Chicken Porichathu.
+[0.08,0.29] Chicken Porichathu using Eastern Chicken Porichathu
+[0.04,0.38] INGREDIENTS
+[0.04,0.43] Chicken - 500g | Eastern Chicken Porichathu Masala - 6.5tbsp | Ginger Garlic
+[0.04,0.46] paste (freshly ground) - 3tsp 1 Curd - 4tbsp
+[0.26,0.46] Fennel - Itsp Crushed Chili
+[0.08,0.49] | Curry leaf -1 stalks | Green Chili - 2 | Coconut oil-as required for
+[0.04,0.49] - tbsp.
+[0.04,0.52] deep frying
+[0.04,0.62] How to make Chicken Porichathu
+[0.01,0.70] • Add all ingredients to chicken and marinate in refrigerated condition for 30 mins.
+[0.01,0.76] • Deep fry chicken pieces in boiling coconut oil till colour turns red.
+[0.88,0.12] Easter
+=== ./a25622bbfe349d162c2b4f8dac3b8121/Cook-Book-02-02.jpg
+[0.04,0.10] Eastern
+[0.65,0.10] Loaded Nachos
+[0.64,0.26] Loaded Nachos using Eastern Chicken Masala
+[0.59,0.38] INGREDIENTS
+[0.90,0.43] 1 Yogurt
+[0.59,0.43] Chicken - 150g | Salt - ½ tsp 1
+[0.77,0.43] Ginger garlic paste - ½ tsp
+[0.88,0.45] Olive oil -
+[0.62,0.45] 1 Lime juice - ½ tsp
+[0.74,0.45] Chicken Masala - 3 tsp
+[0.59,0.48] 1 tsp 1
+[0.63,0.48] Tomato puree - 3 tbsp White Sauce - as required
+[0.91,0.49] 1 Onion
+[0.58,0.51] (Chopped) - as required | Tomato (Chopped) - as required | Capsicum
+[0.71,0.54] 1 Plain Nachos - as required
+[0.58,0.54] (Chopped) - as required
+[0.58,0.62] How to make Loaded Nachos
+[0.59,0.69] Marinate chicken pieces in salt, ginger garlic paste, yogurt, lime juice, olive oil
+[0.59,0.72] and chicken masala for 15 minutes.
+[0.59,0.75] In a pan, toast the marinated chicken pieces until both sides are cooked.
+[0.59,0.78] Shred the chicken pieces and keep aside.
+[0.59,0.81] In a pan, add tomato puree and stir until cooked profile is obtained.
+[0.59,0.84] Add in the shredded chicken and stir well. Keep aside.
+[0.59,0.87] In a serving plate, arrange nachos in a layer.
+[0.59,0.90] Top it with the shredded chicken, onion, capsicum and tomato.
+[0.59,0.93] Drizzle white sauce on top and serve.
+=== ./a2a3e513c02ad224c90ad05ba1d9bec4/Cook-Book-08-01.jpg
+[0.12,0.12] Mac & Cheese
+[0.10,0.29] Mac & Cheese using Eastern Elbow Macaroni
+[0.03,0.38] INGREDIENTS
+[0.02,0.42] Eastern Macaroni - 1 ½ cup, Butter - 3 tbsp, All-purpose flour - 2 tbsp, Salt - ½ tsp,
+[0.02,0.46] Ground black pepper - ⅛ tsp, Milk - 1 ½ cup, Cheddar cheese (Shredded) - 2½ cup,
+[0.02,0.49] Parsley - for garnish.
+[0.04,0.60] Preparation Method
+[0.02,0.66] • Cook the macaroni to al dente, until cooked through but firm to bite, 8 minutes.
+[0.04,0.69] Drain and set aside.
+[0.02,0.72] • At the same time, melt butter in a sauce pan over medium heat Add flour salt, and
+[0.04,0.75] pepper and stir until smooth, about 5 minutes. Pour in milk slowly, while stirring
+[0.04,0.77] Continuously Continue to cook and stir until mixture is smooth and bubbling,
+[0.04,0.80] about 5 minutes, making sure the milk doesn't burn.
+[0.02,0.83] • Add Cheddar cheese and stir until melted, 2 to 4 minutes.
+[0.02,0.86] • Drain macaroni and fold into the sauce until coated.
+[0.02,0.90] • Transfer it into a serving tray, check for the seasoning, garnish with chopped
+[0.04,0.93] parsley and grated cheese and serve hot.
+[0.88,0.12] Eastern
+=== ./a381a98897e76a4b87e51eb311ba5220/Cook-Book-05-04.jpg
+[0.09,0.14] Eastern
+[0.69,0.10] Pish Kesari
+[0.65,0.24] Pish Kesari with Eastern Roasted Vermicelli
+[0.59,0.33] INGREDIENTS
+[0.58,0.39] Ghee - 1/2 cup
+[0.66,0.39] 1 Vermicelli - 2 cup | Condensed milk - 1 cup | Water - 2
+[0.63,0.41] Salt - 1/2 tsp| Cardamom powder- 1 tbs 1 Rose water-1 table
+[0.58,0.42] cup
+[0.63,0.44] 1 Orange color optional
+[0.58,0.45] spoon
+[0.58,0.56] How to make Pish Kesari
+[0.59,0.64] Roast vermicelli in ghee and add hot water to cook. While cooking add salt, carda-
+[0.58,0.66] mom and rose water. Once vermicelli is cooked and the water is reduced by half add
+[0.58,0.69] color and mix well. Add condensed milk to it and cook the water get reduced fully.
+[0.59,0.72] Add extra ghee to the mixture and transfer to a greased baking tray. Decorates with
+[0.58,0.75] crushed green pistachios. Cool down till it reach the room temperature. Perfect pish
+[0.58,0.78] kesari is ready to serve.
+=== ./a8288e98d4afe0b2a7aacc4b137cd77a/Cook-Book-03-01.jpg
+[0.04,0.10] Eastern
+[0.65,0.10] Chicken Samosa
+[0.64,0.27] Chicken Samosa using Eastern Chicken Masala
+[0.59,0.38] INGREDIENTS
+[0.58,0.44] Onion chopped 3/4 medium I Carrot grated 1/4 cup | Ginger garlic paste
+[0.58,0.46] (fresh) 1 tsp I Green Chilli (Chopped) 1 I Chicken (Chopped) 100g 1
+[0.58,0.49] Eastern Chicken Masala 1 tsp | Eastern Garam Masala 1 tsp 1 Salt as required
+[0.58,0.52] 1 Oil 2 tbsp
+[0.58,0.62] For the Chicken Samosa
+[0.60,0.67] In a pan, sauté onions in oil till golden brown.
+[0.61,0.69] Add ginger garlic paste, green chilli and salt. Sauté for few minutes.
+[0.61,0.72] Add Eastern Chicken Masala and Eastern Garam Masala. Sauté for a while.
+[0.61,0.75] Add chopped chicken and cook until done.
+[0.61,0.78] Add in carrot and sauté for a while.
+[0.61,0.81] Chicken stuffing is ready, keep aside.
+[0.58,0.83] For the Samosa
+[0.61,0.86] Take a samosa sheet and form a triangular shape.
+[0.61,0.89] Fill in with the chicken stuffing.
+[0.61,0.92] Close the open end and fry it until golden brown.
+[0.61,0.94] Chicken Samosa is ready. Serve hot with mint chutney or sauce of your choice.
+=== ./ab678dc27e20b7b1d31c9e366744f83f/Cook-Book-09-04.jpg
+[0.37,0.02] LAVOUR
+[0.37,0.04] LOCK
+[0.07,0.14] Eastern
+[0.71,0.13] Pachadi
+[0.59,0.37] INGREDIENTS
+[0.57,0.43] Ash gourd (peeled and deseeded, chopped) - 300g, Green chillies (halved) - 2 nos,
+[0.57,0.46] Grated coconut - 1 ½ cups, Green chillies - 2 nos, Eastern mustard seeds - ½ tsp, Curd
+[0.57,0.49] (slightly sour) - 1 cup, Salt as required, Eastern coconut oil -1 ½ tbsp, Eastern fenu-
+[0.57,0.52] greek seeds - ¼ tsp, Dried chillies (chopped) - 2 nos, Curry leaves.
+[0.59,0.60] Preparation Method
+[0.56,0.66] Cook the ash gourd pieces and green chillies with just enough water, in an earthen vessel.
+[0.55,0.69] • Grind the grated coconut into fine paste.
+[0.55,0.72] • Crush the mustard seeds and green chillies and mix it with the coconut paste.
+[0.55,0.75] • Add this paste into the cooked ash gourd.
+[0.55,0.78] • Add salt as required and mix well.
+[0.55,0.82] • When this mixture begins to boil, add in the curd and give it a good mix.
+[0.55,0.85] • When the kichadi begins to bubble up, take it off the heat.
+[0.55,0.88] • Make sure that the dish does not boil rapidly after the curd is added.
+[0.55,0.91] • Prepare a tempering by spluttering mustard and fenugreek seeds.
+[0.55,0.94] • Roast the dried chillies and curry leaves.
+[0.55,0.97] • Pour this spiced tempering into the kichadi and mix well.
+=== ./b2fdffffa2b00b0a62f81a3a6e5d5379/Cook-Book-09-03.jpg
+[0.15,0.13] Inji Curry
+[0.04,0.37] INGREDIENTS
+[0.02,0.43] Ginger - 100 g, Eastern Tamarind - Small lime size, Eastern Chilly powder - 2 tsp,
+[0.02,0.46] Eastern Coriander powder - 3 tsp, Gooseberry size Jaggery, Eastern Mustard - 1 tsp,
+[0.02,0.50] Eastern Fenugreek powder - ¼ tsp, Curry leaves, Salt, Eastern Coconut oil.
+[0.04,0.59] Preparation Method
+[0.01,0.66] Cut the cleaned ginger in round slices. Fry them in coconut oil, till it's golden brown.
+[0.00,0.66] •
+[0.02,0.69] Crush the fried ginger.
+[-0.00,0.72] • Add 2 tbsp of water to tamarind and make a pulp. Add chilly powder, coriander powder,
+[0.02,0.75] jaggery and salt. Mix well.
+[0.01,0.78] Add crushed ginger and 1/2cup of water to this and mix well.
+[0.00,0.81] • Heat oil in the same pan (you can use the remaining oil) in which you fried ginger and
+[0.02,0.84] splutter mustard.
+[0.02,0.87] Add curry leaves and the tamarind, jaggery & ginger mixture.
+[0.01,0.90] Let it boil till it becomes thick, around 8 - 10 mins. Add fenugreek powder & mix. Remove
+[0.00,0.90] •
+[0.02,0.93] from fire.
+[0.88,0.12] Eastern
+=== ./b7842e5b7f92fa72d41fb36c32f8e4f9/Cook-Book-04-03.jpg
+[0.10,0.12] Easter
+[0.66,0.10] Béchamel Pasta
+[0.64,0.24] Béchamel Pasta using Eastern Macaroni
+[0.57,0.31] Step-1 Cook Macaroni
+[0.57,0.35] Macaroni - 3 Cups : Cook Macaroni as per the instructions on the packet, adding
+[0.57,0.38] 1 tsp oil and salt. After cooking, drain left over water and run cold water over it, and
+[0.57,0.40] drain again and keep aside.
+[0.57,0.45] Step-2 For Shredded Chicken
+[0.75,0.49] 1 Salt - To taste 1 Pepper - To taste
+[0.57,0.49] Ingredients: Chicken breast - 250g
+[0.57,0.52] Method - Boil the chicken with salt, pepper and water. Shred the cooked chicken into
+[0.57,0.55] big pieces and keep aside.
+[0.57,0.60] Step-3 For Veggies & Shredded Chicken Mix
+[0.56,0.66] Ingredients: Garlic - 4-5 Cloves.
+[0.73,0.66] I Tomato paste - 2 tbsp. | Oregano - 1 tsp
+[0.70,0.69] 1 Salt & pepper - To taste. | Carrot - 1 (grated).
+[0.56,0.69] 1 Arabic Spices - 2 tsp.
+[0.58,0.72] Red & green capsicum - 1. | Green chilli - 2. I Chicken broth - 1/2 cup.
+[0.56,0.73] -
+[0.56,0.78] Method
+[0.59,0.81] Saute garlic in oil with tomato paste and mix well until the oil separates.
+[0.59,0.84] Add all the spices with chicken stock water and mix well.
+[0.59,0.87] Then add all the veggies and cook for a minute.
+[0.59,0.90] Finally add in the shredded chicken and mix well.
+[0.59,0.93] Keep it closed and cook for 1-2 min in low flame.
+[0.86,0.93] to be continued
+=== ./bed721e6c2a45a01fde279103f4b0a7a/Cook-Book-01-01.jpg
+[0.05,0.13] Eastern
+[0.44,0.85] SEMOLINA
+[0.44,0.90] OF WHEAT
+[0.71,0.06] Roasted
+[0.62,0.14] Vermicelli Payasam
+[0.64,0.30] Semiya Payasam using Eastern Roated Vermicelli
+[0.58,0.41] INGREDIENTS
+[0.59,0.47] Milk-1 litre
+[0.68,0.47] Eastern Roasted Vermicelli - 100g 1 Sugar -120g
+[0.59,0.51] (1 cup) | Cashew split - 6 nos 1 Raisins - 6nos | Ghee - 2tsp
+[0.59,0.54] Cardamom powder - 1/4 tsp
+[0.58,0.62] How to make Payasam
+[0.60,0.71] Boil milk in a heavy bottom vessel.
+[0.59,0.74] Add Vermicelli and cook for 8 minutes on low flame.
+[0.59,0.77] Add sugar and cook for 5 minutes and add cardamom powder.
+[0.59,0.81] Switch off the flame
+[0.60,0.84] Heat ghee in a pan and add cashews and raisin and fry
+[0.59,0.86] Add it into the payasam
+=== ./cf5012de084e3e2e804993064e1e6d6d/Cook-Book-03-02.jpg
+[0.04,0.10] Eastern
+[0.43,0.77] 100%
+[0.43,0.82] SEMOLINA
+[0.43,0.87] OF WHEAT
+[0.61,0.10] Bird's Nest/Kilikoodu
+[0.62,0.26] Birds Nest / Kilikkoodu using Eastern Chicken Masala
+[0.59,0.38] INGREDIENTS
+[0.58,0.44] Quail Egg 5 nos 1 Potato 500gm | Boiled Chicken 200gm 1 Ginger paste
+[0.58,0.46] 1/2 teaspoon 1 Garlic paste 1/4 teaspoon 1 Green chilli 4 nos
+[0.91,0.47] I Eastern
+[0.58,0.49] Chicken Masala -3/4 teaspoon | Oil 200gm | Eastern Roasted Vermicelli -
+[0.58,0.52] 100gm | Salt 1 tablespoon for taste 1 Bread crumbs 200gm
+[0.58,0.62] How to make Kilikoodu
+[0.59,0.68] Boil eggs and potato for 5 minutes to cook well. Remove outer coverings
+[0.58,0.69] Add 1 tablespoon ol in a pan and ad chili ginger, garlic, boiled chickenand saute for 3 mins
+[0.59,0.73] Add Eastern Chicken Masala and switch off heat after 2 minutes
+[0.58,0.77] Make mixture using above cooked masala, bread crumbs and potato by
+[0.58,0.79] mixing all together
+[0.59,0.82] Cut the boiled eggs into half and cover each egg with the above mixture
+[0.59,0.85] Dip each roll in beaten egg and cover fully with Eastern Roasted Vermicelli
+[0.59,0.88] Heat oil in a pan under low flame. dip the fully coated vermicelli roll in to the oil and fry
+[0.59,0.91] until it becomes brown color
+[0.59,0.94] Bird's nest snack is ready for serving
+=== ./d29470e7a3d366cbe4b017e3326ecbcc/Cook-Book-08-03.jpg
+[0.05,0.12] Macaroni Egg Coleslaw
+[0.07,0.29] Macaroni Egg Coleslaw using Eastern Elbow Macaroni
+[0.03,0.38] INGREDIENTS
+[0.02,0.43] Eastern Macaroni - 1 cup, Boiled eggs - 4 nos, Mayonnaise - 225 gms, Onion
+[0.02,0.47] (cubed) - 1 nos, Carrots (cubed) - 1 nos, Apple vinegar - few drops, Cabbage
+[0.02,0.50] (cubed) - ¼ cup, White pepper - 1 tsp, Honey - 1 tsp.
+[0.03,0.59] Preparation Method
+[0.02,0.68] • In a small mixing bowl whisk together the mayonnaise, apple cider vinegar and
+[0.04,0.71] honey. If needed season with a bit of salt.
+[0.02,0.74] • Cook the macaroni to al dente, until cooked through but firm to bite, 8 minutes.
+[0.04,0.76] Drain and set aside.
+[0.02,0.80] • In a mixing bowl add cubed onions, carrots, cabbage and cubed boiled eggs, pour
+[0.04,0.82] the dressing mixture over.
+[0.02,0.86] • Now add the cooled macaroni into this and mix it so that the dressing coats
+[0.04,0.88] evenly.
+[0.02,0.91] • Serve it right away while the cabbage is nice and crisp.
+[0.88,0.12] Eastern
+=== ./d4b57825eadc16470ec698f2a97b0b6c/Cook-Book-03-03.jpg
+[0.04,0.10] Eastern
+[0.65,0.10] Chicken Popcorn
+[0.63,0.26] Chicken Popcorn using Eastern Chicken Fry Masala
+[0.59,0.38] INGREDIENTS
+[0.58,0.44] For Marination - Chicken - ½ Kg | Eastern Chicken Fry Masala - 3-4 tbsp,
+[0.58,0.48] Salt - to taste.
+[0.58,0.50] For coating - Egg-1 Bread Crumbs-1 cup i Oil-for frying
+[0.59,0.60] How to make Chicken Popcort
+[0.61,0.70] Take bite sized chicken in a mixing bowl
+[0.61,0.73] Add Marination ingredients and keep aside for 30 minutes
+[0.61,0.76] Coat the chicken pieces by dipping them in egg mixture
+[0.61,0.79] Roll them in bread crumbs.
+[0.61,0.82] Heat oil in a frying pan
+[0.61,0.86] Drop coated chicken pieces one by one
+[0.61,0.89] Deep fry till golden
+=== ./d711d87b12ef81d8941c99fa1be3919b/Cook-Book-01-02.jpg
+[0.11,0.12] Vermicelli Pakoda
+[0.10,0.27] Crispy Pakodas with Eastern Roasted Vermicelli
+[0.03,0.39] INGREDIENTS
+[0.04,0.44] Eastern Roasted Vermicelli - ½ cup | Big Onion -2 Nos
+[0.32,0.44] 1 Potato -1 No 1 Gram flour -
+[0.04,0.47] 1/2 cup Rice flour-1 tbsp 1
+[0.32,0.47] 1 Ginger finely chopped -2 tsp
+[0.19,0.47] Green chilli slit -2 nos
+[0.17,0.49] i Red chilli powder -1/2 tsp
+[0.04,0.50] Asafoetida / Hing -2 pinch
+[0.32,0.50] Mint & Coriander leaves finely
+[0.04,0.53] chopped -2 tbsp | Curry leaves -1 sprig | Hot oil- 1btsp 1 Cumin seeds -1 tsp I
+[0.04,0.55] Salt as needed 1 Oil to deep fry.
+[0.03,0.62] How to make Vermicelli Pakoda
+[0.01,0.67] • Wash and cook potato firstly. You can cook by your way - Either by open pot boiling until
+[0.04,0.70] fork tender or pressure cook for 3 whistle with lots of water and salt.
+[0.01,0.73] • Once done, peel off the skin and mash it.
+[0.01,0.76] • Cook the vermicelli in 2 cups of water until tender. Do not over cook. Drain the water
+[0.04,0.79] completely and set aside.
+[0.01,0.82] • Add it to cold water immediately and drain it again, keep aside.
+[0.04,0.85] Slice onion lengthwise.
+[0.04,0.88] In a mixing bowl, mix all the ingredients gently without adding water.
+[0.01,0.91] • Heat oil in kadai and add as small pakoras.
+[0.01,0.94] • Cook both sides in medium flame and drain in paper towel.
+[0.89,0.12] Eastern
+[0.55,0.78] KRAL COON
+[0.56,0.83] 100%
+[0.56,0.88] SEMOLINA
+[0.56,0.92] OF WHEAT
+=== ./d8648efc885e612af1380cc63fbfc890/Cook-Book-04-05.jpg
+[0.15,0.05] Vermicelli
+[0.10,0.11] Mutton Biriyani
+[0.03,0.26] Vermicelli Mutton Biriyani using Eastern Roasted Vermicelli
+[0.03,0.34] NGREDIENTS
+[0.11,0.38] 1 Chilli powder: 1 tbsp. I Salt: 1/2 tbsp. 1 Turmeric
+[0.03,0.39] Mutton: 500gm.
+[0.03,0.41] powder: 1/2 tbsp.
+[0.14,0.44] 1 Add 5-6 cups water
+[0.29,0.44] Pressure cook mutton for
+[0.03,0.44] Marinate for 15 mins
+[0.03,0.47] half an hour 1 After half an hour mutton is well cooked, keep it a side
+[0.37,0.49] 1/2 tbsp salt
+[0.20,0.49] Add 3 tbsp of sunflower oil
+[0.03,0.49] For Vermicelli 1
+[0.27,0.52] Sauté vermicelli in low flame
+[0.03,0.52] Once hot, add 2.5 cup of eastern vermicelli
+[0.03,0.55] Other ingredients: Ginger garlic paste: 2 tspn.
+[0.26,0.55] 1Onions Onions: 1-5 cups (4 large)
+[0.15,0.57] Mint leaves: 1/4 cup
+[0.03,0.57] Coriander: 1/4 cup 1
+[0.03,0.64] How to make Vermicelli Mutton Biriyani
+[0.04,0.71] Put a Kadai on flame add sunflower oil, Once hot
+[0.04,0.73] Add onions, ginger garlic paste
+[0.04,0.76] Sauté till onions are light brown,add
+[0.01,0.76] •
+[0.04,0.78] Salt : 1 tbsp, Chilli powder : 2 tbsp, Turmeric powder : 1/2 tbsp
+[0.01,0.79] •
+[0.04,0.81] Coriander powder: 1/2 tbsp, Biriyani Masala: 1 tbsp, Mutton masala : 2 tbsp
+[0.01,0.81] •
+[0.04,0.84] Add coriander and mint leaves
+[0.04,0.86] Add mutton and cook for 3-4 mins
+[0.01,0.86] •
+[0.04,0.89] Add cooked vermicelli to the mix, Cook for 5-7 mins
+[0.01,0.91] •
+[0.04,0.91] Ready to serve,garnish it with roasted onion, cashews and raisins,
+[0.04,0.94] coriander leaves.
+[0.81,0.12] Eastern
+[0.51,0.80] 100%
+[0.58,0.82] in
+[0.51,0.84] SEMOLINA
+[0.51,0.89] OF WHEAT
+=== ./d8f748bbe0b748f8ea8c8820ebaa1ac8/Cook-Book-05-03.jpg
+[0.07,0.12] Spicy Chicken Curry
+[0.06,0.26] Spicy Chicken Curry using Eastern Spicy Chicken Masala
+[0.03,0.35] INGREDIENTS
+[0.08,0.39] Chicken 1 Big onion -1 1 Fried onion - as required 1 Ginger garl
+[0.37,0.39] Ginger garlic
+[0.04,0.40] 750gms Chicken
+[0.03,0.43] paste -1/2 tsp
+[0.27,0.43] Turmeric powder -1/4 tsp
+[0.14,0.43] Lemon juice - as required
+[0.04,0.45] Eastern Spicy Masala - 1tsp | Capsicum- 1/2 | Tomato - 1 I Coriander
+[0.03,0.49] leaves - as required | Salt - as per taste 1 Oil - as required
+[0.04,0.57] How to make Spicy Chicken Curry
+[0.03,0.62] Marinate the chicken in turmeric 1/4 tsp, Ginger garlic paste - ½, salt,1 tsp Spicy
+[0.01,0.62] •
+[0.04,0.65] Chicken Masala powder, oil for 20 mins. (while the chicken is marinaing do the
+[0.03,0.68] rest of the prep work and saute onions)
+[0.01,0.71] • Heat a heavy bottomed vessel, saute onions,ginger garlic paste, green chilly
+[0.03,0.74] (optional)
+[0.01,0.77] • Add turmeric powder 1/4 tsp, 1 tsp spicy chicken masala
+[0.01,0.81] • Add 1 tomato and saute them well. Then add marinated chicken & fried onions.
+[0.04,0.84] Pour water add salt lemon juice and few coriander leaves. Mix them well and close with
+[0.04,0.87] a lid.Add capsicum mix them well.
+[0.01,0.90] • You can make them as semi gravy or dry. Your spicy chicken curry is ready. Now garnish
+[0.04,0.93] with coriander leaves and onions.
+[0.88,0.12] Eastern
+=== ./e09105e8c7c466ecb7a4d5a448061eb1/Cook-Book-01-06.jpg
+[0.05,0.11] Eastern
+[0.39,0.81] 100%
+[0.39,0.86] SEMOLINA
+[0.39,0.90] OF WHEAT
+[0.61,0.08] Vermicelli Custard
+[0.61,0.22] Fruit Custard with Eastern Roasted Vermicelli
+[0.58,0.33] INGREDIENTS
+[0.59,0.38] Roasted vermicelli - ½ cup 1 Milk - 4 ½ cup 1 Saffron - 1/4th tsp
+[0.59,0.41] Custard powder - 2 tbsp 1 Chia seeds - 2tbsp
+[0.85,0.41] 1 Pomegranate - 2tbsp
+[0.59,0.44] Grapes - 5 chopped | Mango - 2tbsp chopped
+[0.85,0.44] 1 Apple - 2tbsp chopped
+[0.59,0.47] Nuts - 2 tbsp chopped | Tutti Frutti - 2 tbsp | Cherry 1
+[0.58,0.54] How to make Vermicelli Custard
+[0.59,0.60] Boil 4 cups of a milk in a pan with saffron
+[0.59,0.63] Once boiled well, add Eastern roasted vermicelli to it.
+[0.59,0.66] Add sugar and stir well
+[0.59,0.69] Boil the mixture for 7 minutes
+[0.59,0.72] Mix custard powder with ½ cup milk and add it to the boiling mixture.
+[0.59,0.76] Refrigerate the mixture for 2 hours
+[0.59,0.80] Take a dessert glass and start layering:
+[0.73,0.83] Custard vermicelli 1/4th cup
+[0.59,0.83] Chia seeds 2tbsp
+[0.59,0.86] Pomegranate • Chopped Grapes
+[0.59,0.90] Chopped Mango
+[0.69,0.90] • Chopped Apple • Chopped nuts
+[0.90,0.93] Cherry
+[0.59,0.93] Vermicelli custard 1/4th cup
+[0.79,0.93] Tutti Frutti
+=== ./e3da782b655a25c499563f01245f73e6/Cook-Book-04-02.jpg
+[0.09,0.14] Eastern
+[0.62,0.10] Spicy Chicken Kizhi
+[0.63,0.24] Chicken Kizhi using Eastern Spicy Chicken Masala
+[0.59,0.33] INGREDIENTS
+[0.58,0.38] Chicken - 1Kg 1 Eastern spicy chicken masala - 5tsp | Eastern turmeric
+[0.68,0.41] Eastern chilly powder - 2tsp Eastern coriander powder -
+[0.58,0.42] powder - 1 tsp
+[0.59,0.44] 2tsp | Salt - as required | Onion -6 | Tomato - 3 | Ginger crushed - 1
+[0.58,0.47] tsp | Garlic crushed - 1tsp I Green chilly crushed - 1tsp 1 Curry leaves
+[0.58,0.50] 1 Coconu milk - 1cup | Eastern dry chilly flakes - 2 tsp
+[0.58,0.58] How to make Spicy Chicken Kizhi
+[0.59,0.62] Wash the chicken and add 2 table spoon eastern spicy chicken masala,one table
+[0.59,0.66] spoon eastern chilly powder one table spoon eastern coriander powder 1/2 table
+[0.59,0.69] spoon eastern turmeric powder ,mix with required salt and coconut oil..keep it a side
+[0.58,0.71] for 10 minutes.Keep an 'urli(traditional cookware of South)on the stove,pour
+[0.59,0.74] enough oil to shallow fry the chicken add some curry leaves to the same,keep the
+[0.59,0.77] chicken in a bowl,now in the same oil let's roast some onion, add enough salt
+[0.59,0.86] for 10 mins in low flame.Now add coconut milk to it and off the stove. Tie these
+[0.59,0.88] cooked chicken in a piece of heated banana leaf and tie it and put it on a frying pan
+[0.59,0.91] or tawa pour a little water on the tawa to get it steamed..Eastern spicy chicken kizhi
+[0.59,0.94] is now ready.
+=== ./f0e4e2508dbfe107f584054ae8a25d44/Cook-Book-02-04.jpg
+[0.04,0.09] Eastern
+[0.65,0.10] Chicken Pockets
+[0.62,0.26] Chicken Pockets using Eastern Chicken Masala
+[0.59,0.36] INGREDIENTS
+[0.59,0.41] Onion chopped - ¾ medium 1 Carrot grated - ¼ cup 1 Ginger garlic paste
+[0.58,0.44] (fresh) - 1 tsp 1 Green Chilli (Chopped) - 1 | Chicken (Chopped) - 100g
+[0.92,0.47] Salt -
+[0.59,0.47] Eastern Chicken masala - 1 tsp | Eastern Garam Masala - 1 tsp I
+[0.58,0.49] as required 1 Oil - 2 tbsp 1 Samosa sheets - as required
+[0.58,0.58] How to make Chicken Pockets
+[0.59,0.64] In a pan, sauté onions in oil till golden brown.
+[0.59,0.66] Add ginger garlic paste, green chilli and salt. Sauté for few minutes.
+[0.59,0.69] Add Eastern Chicken Masala and Eastern Garam Masala. Sauté for a while.
+[0.59,0.72] Add chopped chicken and cook until done.
+[0.59,0.75] Add in carrot and sauté for a while.
+[0.59,0.78] Chicken stuffing is ready and keep aside.
+[0.59,0.80] Place two samosa sheets in the form of a cross, place the stuffing in the middle
+[0.59,0.84] portion and fold in the sides to form a pocket.
+[0.59,0.87] Make pockets until the stuffing finishes.
+[0.59,0.90] Fry these pockets in hot oil and serve hot with tomato sauce.
+[0.56,0.94] Note: Can also use the filling to form other shapes using samosa sheets.
+=== ./f5a07d438e11462a1dac812ff6db28ed/Cook-Book-01-03.jpg
+[0.06,0.14] Eastern
+[0.06,0.82] 100%
+[0.06,0.87] SEMOLINA
+[0.06,0.91] OF WHEAT
+[0.69,0.13] Curd Semiya
+[0.65,0.30] Curd Semiya using Eastern Roasted Vermicelli
+[0.58,0.40] INGREDIENTS
+[0.60,0.44] stern Roasted Vermicelli - 1/2 cup Curd -1 cup 1 For tempering 1
+[0.59,0.48] Mustard - 1 teaspoon | Urud Dhal Split - 1/2 teaspoon 1 Asafoetida - a
+[0.63,0.51] 1 Curry leaves -1 sprig | Oil - 2 teaspoon | Peanuts - 1 tbsp
+[0.59,0.51] pinch
+[0.59,0.54] Cashew nuts, for garnishing
+[0.58,0.61] How to make Curd Semiya
+[0.59,0.67] Boil the vermicelli in 2 cups water. Drain it and spread on a colander.
+[0.56,0.71] • Pass cold water through it. This ensures that the vermicelli does not become
+[0.59,0.74] sticky. Keep it aside and let it cool down.
+[0.59,0.77] Heat a kadai/wok and add oil. Add the peanuts and roast till it turns brownish.
+[0.59,0.81] Remove and keep it aside.
+[0.59,0.84] In the same kadai, add more oil if needed and add the mustard seeds and after
+[0.59,0.87] it splutters add the other ingredients meant for tempering.
+[0.59,0.91] Add the boiled vermicelli and mix everything. Add salt to taste and mix.
+[0.59,0.93] Finally just before serving add curd and mix well. Add peanut and cashew nuts.
+=== ./f5af088833bd132beba3f1d50c630251/Cook-Book-08-02.jpg
+[0.05,0.11] Eastern
+[0.58,0.06] Baked Chicken & Macaroni
+[0.71,0.14] Casserole
+[0.64,0.29] Chicken Casserole using Eastern Elbow Macaroni
+[0.59,0.36] INGREDIENTS
+[0.58,0.41] Eastern Macaroni - 2 cup, Butter - 4 tbsp, All-purpose flour - ¼ cup, Black pepper - 4 tsp,
+[0.58,0.44] Garlic - 8 pods, Cheddar cheese (Shredded) - 4 cup, Onion - 1 nos, Cooked chicken
+[0.57,0.47] (boneless cubes) - 2 cup, Broccoli florets - 1 cup, Milk - 3 cup, Breadcrumbs - 1 cup.
+[0.59,0.54] Preparation Method
+[0.59,0.59] Preheat the oven to 325 degrees and lightly grease a square baking dish.
+[0.57,0.59] •
+[0.57,0.62] • Cook the macaroni to al dente, until cooked through but firm to bite, 8 minutes.
+[0.59,0.65] Drain and set aside.
+[0.57,0.68] • At the same time, melt butter in a sauce pan over medium heat .Add flour salt, and
+[0.59,0.71] pepper and stir until smooth, about 5 minutes. Pour in milk slowly, while stirring
+[0.59,0.74] Continuously Continue to cook and stir until mixture is smooth and bubbling,
+[0.59,0.77] about 5 minutes, making sure the milk doesn't burn.
+[0.59,0.80] Add Cheddar cheese and stir until melted, 2 to 4 minutes.
+[0.57,0.80] •
+[0.57,0.83] • Drain macaroni and fold into the sauce until coated, add the cooked chicken,
+[0.59,0.86] cooked broccoli florets, sautéed onion and garlic and season it with salt and
+[0.59,0.89] pepper.
+[0.57,0.92] •
+[0.58,0.92] Transfer it into a serving tray, sprinkle breadcrumbs on the top layer to cover the
+[0.59,0.94] mixture. And bake it in a preheated oven for 20 minutes and serve hot.
+=== ./f5df0e6eb9bc6a4119835518486090e9/2.jpg
+[0.19,0.12] Olan
+[0.04,0.34] INGREDIENTS
+[0.02,0.41] Coconut oil - 1 tsp, Curry leaves - 2 sprigs, Green chillies (slit) - 6 to 7 nos, Ash gourd
+[0.02,0.44] diced - 300 g, Black eyed pea (cooked) - ¼ cup, Salt - 1 tsp, Coconut milk - 1 ½ cup.
+[0.04,0.58] Preparation Method
+[0.02,0.65] Add sufficient water and grind the coconut, chillies and cumin seeds into a fine paste.
+[0.00,0.65] •
+[0.00,0.69] • Add the whipped yoghurt to the paste and mix well.
+[0.00,0.72] • Cut all the vegetables into batons, 3 inches* 1 inch in size.
+[0.00,0.75] • Heat 300ml of water and add the vegetables. When the vegetables are half cooked.
+[0.00,0.78] • Add the coconut paste and the curry leaves.
+[-0.00,0.81] • Mix and bring it to a boil. When the vegetables are completely cooked
+[0.00,0.84] • Drizzle with coconut oil and serve hot.
+[0.82,-0.01] and ground rhizone
+[0.82,0.02] add zest and
+[0.82,0.04] natural
+[0.82,0.06] colour to
+[0.82,0.07] your food.
+[0.90,0.09] Easter
+[0.83,0.21] 100g)
