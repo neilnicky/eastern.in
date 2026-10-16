@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import { pack } from "@/lib/media";
+import { categoryUrl } from "@/content/product-categories";
+import { productsIn } from "@/content/products";
+import type { ProductCategory } from "@/content/types";
+interface Props { category: ProductCategory }
+const { category } = Astro.props;
+const items = productsIn(category.slug);
+const fan = items.slice(0, 3);
+---
+<a class="ctile" href={categoryUrl(category.slug)} data-cursor="See the range" style={`--flood:${category.flood};--flood-ink:${category.floodInk}`}>
+  <span class="ctile__packs" aria-hidden="true">
+    {fan.map((p, i) => <Image class={`ctile__pack ctile__pack--${i}`} src={pack(p.slug)} alt="" widths={[200, 320]} sizes="(max-width: 600px) 30vw, 12vw" />)}
+  </span>
+  <span class="ctile__name">{category.title}</span>
+  <span class="ctile__count">{items.length} {items.length === 1 ? "product" : "products"}</span>
+</a>
+
+<style>
+  .ctile { position: relative; display: grid; grid-template-rows: 1fr auto auto; justify-items: center; gap: 0.3rem; aspect-ratio: 0.9; padding: 1.25rem 0.75rem 1rem; background: var(--tile); transition: background-color 0.5s var(--ease-soft), color 0.5s; overflow: hidden; }
+  .ctile__packs { position: relative; width: 100%; height: 100%; }
+  .ctile :global(.ctile__pack) { position: absolute; bottom: 4%; left: 50%; width: 46%; height: 82%; object-fit: contain; object-position: 50% 100%; filter: drop-shadow(0 10px 14px rgba(59, 22, 15, 0.18)); transition: transform 0.6s var(--ease-soft); }
+  .ctile :global(.ctile__pack--0) { transform: translateX(-95%) rotate(-9deg) scale(0.86); }
+  .ctile :global(.ctile__pack--1) { transform: translateX(-50%); z-index: 1; }
+  .ctile :global(.ctile__pack--2) { transform: translateX(-5%) rotate(9deg) scale(0.86); }
+  .ctile__name { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; letter-spacing: 0.012em; font-size: clamp(1.1rem, 0.9rem + 0.7vw, 1.6rem); line-height: 1.05; text-transform: uppercase; text-align: center; text-wrap: balance; }
+  .ctile__count { font-size: 0.75rem; opacity: 0.75; }
+  @media (hover: hover) {
+    .ctile:hover, .ctile:focus-visible { background: var(--flood); color: var(--flood-ink); }
+    .ctile:hover :global(.ctile__pack--0) { transform: translateX(-112%) rotate(-14deg) scale(0.9); }
+    .ctile:hover :global(.ctile__pack--1) { transform: translateX(-50%) translateY(-6%) rotate(-3deg) scale(1.04); }
+    .ctile:hover :global(.ctile__pack--2) { transform: translateX(12%) rotate(14deg) scale(0.9); }
+  }
+</style>

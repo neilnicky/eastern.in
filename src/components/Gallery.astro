@@ -1,0 +1,29 @@
+---
+// Reference M13: horizontal drag gallery (motion/gallery.ts). Children are the slides.
+interface Props { label: string; class?: string; cursor?: string }
+const { label, class: className, cursor = "Drag" } = Astro.props;
+---
+<div class:list={["gallery", className]} data-gallery>
+  <div class="gallery__strip" data-gallery-strip tabindex="0" role="region" aria-label={`${label} — use the arrow keys to browse`} data-cursor={cursor}>
+    <slot />
+  </div>
+  <div class="gallery__controls wrap">
+    <button type="button" class="gallery__btn" data-gallery-prev aria-label={`Previous — ${label}`}>←</button>
+    <button type="button" class="gallery__btn" data-gallery-next aria-label={`Next — ${label}`}>→</button>
+  </div>
+</div>
+
+<style>
+  .gallery__strip {
+    display: flex; gap: var(--gutter); overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity; scrollbar-width: none; padding-inline: max(var(--pad), 7vw);
+    scroll-padding-inline: max(var(--pad), 7vw);
+  }
+  .gallery__strip::-webkit-scrollbar { display: none; }
+  .gallery__strip :global(> *) { flex: 0 0 auto; scroll-snap-align: center; }
+  .gallery__strip:global(.is-dragging) { cursor: grabbing; scroll-snap-type: none; user-select: none; }
+  .gallery__strip:global(.is-dragging) :global(a), .gallery__strip:global(.is-dragging) :global(img) { pointer-events: none; }
+  .gallery__controls { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; }
+  .gallery__btn { width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid currentColor; font-size: 1rem; transition: background-color 0.3s, color 0.3s; }
+  .gallery__btn:hover { background: var(--clove); color: var(--cream); }
+</style>

@@ -1,0 +1,81 @@
+---
+import { primaryNav, secondaryNav, categoryNav } from "@/content/navigation";
+import { siteConfig } from "@/content/site-config";
+interface Props { current: string }
+const { current } = Astro.props;
+const isActive = (href: string) => (href === "/" ? current === "/" : current.startsWith(href));
+---
+<div class="menu" id="site-menu" data-menu hidden>
+  <nav class="menu__inner" aria-label="Main">
+    <ul class="menu__primary">
+      {primaryNav.map((l, i) => (
+        <li class="menu__item" style={`--i:${i}`}>
+          <a href={l.href} class="menu__link" aria-current={isActive(l.href) ? "page" : undefined} data-menu-link>
+            <span class="menu__text" data-split>{l.label}</span>
+            {isActive(l.href) && <span class="diamond menu__diamond" aria-hidden="true"></span>}
+          </a>
+          <span class="menu__rule" aria-hidden="true"></span>
+        </li>
+      ))}
+    </ul>
+    <div class="menu__secondary">
+      {secondaryNav.map((g) => (
+        <div class="menu__group">
+          <p class="menu__group-label">{g.label}</p>
+          <ul>
+            {g.links.map((l) => (
+              <li><a href={l.href} data-menu-link {...(l.external ? { target: "_blank", rel: "noopener" } : {})}>{l.label}{l.external && <span aria-hidden="true"> ↗</span>}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      <div class="menu__group menu__group--cats">
+        <p class="menu__group-label">Products</p>
+        <ul>{categoryNav.map((l) => <li><a href={l.href} data-menu-link>{l.label}</a></li>)}</ul>
+      </div>
+      <div class="menu__group">
+        <p class="menu__group-label">Follow</p>
+        <ul>{siteConfig.social.map((s) => <li><a href={s.href} target="_blank" rel="noopener">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+  .menu {
+    position: fixed; inset: 0; z-index: 55; background: var(--menu); color: var(--clove);
+    overflow-y: auto; overscroll-behavior: contain;
+    clip-path: inset(0 0 100% 0);
+  }
+  .menu[hidden] { display: none; }
+  .menu__inner { min-height: 100%; display: grid; align-content: end; gap: clamp(2rem, 5vh, 4rem); padding: calc(var(--header-offset) + var(--logo-w) + 2rem) var(--pad) var(--pad); }
+  .menu__primary { list-style: none; }
+  .menu__item { position: relative; }
+  /* staircase: each item steps right, the last sits flush right (reference §2 menu) */
+  .menu__link {
+    display: flex; align-items: center; gap: 0.35em; width: max-content; max-width: 100%;
+    margin-left: calc(var(--i) * clamp(0px, 6.5vw, 9rem));
+    font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; letter-spacing: 0.012em;
+    font-size: clamp(2.6rem, 1.6rem + 5.2vw, 7rem); line-height: 1.02; text-transform: uppercase;
+    padding: 0.08em 0;
+  }
+  .menu__item:last-child .menu__link { margin-left: auto; }
+  .menu__link[aria-current="page"] { color: var(--cream); }
+  .menu__link:hover { color: var(--cream); }
+  .menu__diamond { width: 0.14em; height: 0.14em; margin: 0 0 0 0.1em; background: currentColor; }
+  .menu__rule { display: block; height: 1px; background: color-mix(in srgb, var(--clove) 45%, transparent); transform-origin: 0 50%; }
+  .menu__secondary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gutter); font-size: var(--text-small); }
+  .menu__group ul { list-style: none; display: grid; gap: 0.35rem; }
+  .menu__group a { display: inline-block; padding: 0.2rem 0; }
+  .menu__group a:hover { color: var(--cream); }
+  .menu__group-label { font: 600 var(--text-label)/1.2 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; color: var(--clove); opacity: 0.7; }
+  .menu__group--cats ul { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
+  @media (max-width: 900px) {
+    .menu__secondary { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2rem; }
+    .menu__link { margin-left: calc(var(--i) * 4vw); }
+  }
+  @media (max-width: 480px) {
+    .menu__secondary { grid-template-columns: 1fr 1fr; }
+    .menu__group--cats { grid-column: 1 / -1; }
+  }
+</style>

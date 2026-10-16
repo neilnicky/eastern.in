@@ -1,0 +1,10 @@
+---
+// Reference pattern: a centred intro paragraph bracketed by ◆ diamonds.
+interface Props { class?: string }
+const { class: className } = Astro.props;
+---
+<div class:list={["diamonds wrap", className]}>
+  <span class="diamond" aria-hidden="true"></span>
+  <div class="lead"><slot /></div>
+  <span class="diamond" aria-hidden="true"></span>
+</div>

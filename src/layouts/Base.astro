@@ -1,0 +1,90 @@
+---
+import "@fontsource-variable/fraunces/opsz.css";
+import "@fontsource-variable/fraunces/opsz-italic.css";
+import "@fontsource-variable/figtree/wght.css";
+import "@/styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Header from "@/components/Header.astro";
+import Menu from "@/components/Menu.astro";
+import Footer from "@/components/Footer.astro";
+import { siteConfig } from "@/content/site-config";
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Absolute or root-relative image for social cards. */
+  image?: string;
+  footer?: boolean;
+  /** Page theme hook for CSS (e.g. "home", "contact"). */
+  page?: string;
+  noindex?: boolean;
+}
+const { title, description = siteConfig.description, image = "/og-default.jpg", footer = true, page = "", noindex = false } = Astro.props;
+const fullTitle = siteConfig.titleTemplate(title);
+const canonical = new URL(Astro.url.pathname, siteConfig.url).href;
+const ogImage = new URL(image, siteConfig.url).href;
+---
+<!doctype html>
+<html lang="en" data-page={page}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Eastern" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#FBF2E6" />
+    <link rel="icon" type="image/png" href="/fav-icon.png" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <ClientRouter fallback="swap" />
+    <script is:inline>
+      document.documentElement.classList.add("js");
+      try { if (!sessionStorage.getItem("eastern-intro") && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("is-intro"); } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <Header transition:persist="header" />
+    <Menu current={Astro.url.pathname} />
+    <main id="main" class="main" tabindex="-1">
+      <slot />
+    </main>
+    {footer && <Footer />}
+    <div class="page-cover" aria-hidden="true" transition:persist="cover"></div>
+    <div class="cursor" aria-hidden="true" data-cursor-el transition:persist="cursor"><span class="cursor__dot"></span><span class="cursor__label" data-cursor-label></span></div>
+    <script>
+      import { boot } from "@/motion/main";
+      boot();
+    </script>
+  </body>
+</html>
+
+<style>
+  .main { position: relative; z-index: 1; background: var(--cream); display: block; outline: none; }
+  :global([data-page="contact"]) .main, :global([data-page="home"]) .main { background: var(--cream); }
+  .page-cover {
+    position: fixed; inset: 0; z-index: 90; background: var(--clove);
+    transform: translateY(100%); pointer-events: none; visibility: hidden;
+  }
+  /* First-visit intro (motion/transition.ts). The safety animation reveals the page even if JS never runs. */
+  :global(html.is-intro) .page-cover { visibility: visible; transform: none; background: var(--orange); animation: intro-safety 0s 1.6s forwards; }
+  @keyframes intro-safety { to { visibility: hidden; } }
+  .cursor {
+    position: fixed; left: 0; top: 0; z-index: 80; pointer-events: none;
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.4rem 0.75rem 0.4rem 0.45rem; border-radius: 99px; background: var(--cream); color: var(--orange-text);
+    box-shadow: 0 6px 24px rgba(59, 22, 15, 0.12);
+    font: 600 0.625rem/1 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase;
+    opacity: 0; transform: translate3d(-100px, -100px, 0) scale(0.6); transition: opacity 0.25s, scale 0.35s var(--ease-soft);
+  }
+  .cursor__dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--orange); }
+  :global(html.cursor-on) .cursor { opacity: 1; }
+  @media (hover: none), (pointer: coarse) { .cursor { display: none; } }
+</style>

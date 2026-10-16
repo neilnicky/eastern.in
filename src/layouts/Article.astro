@@ -1,0 +1,37 @@
+---
+import Base from "./Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import Blocks from "@/components/Blocks.astro";
+import type { Block } from "@/content/types";
+interface Props {
+  title: string;
+  eyebrow: string;
+  date?: string | null;
+  blocks?: Block[];
+  back: { label: string; href: string };
+  description?: string;
+}
+const { title, eyebrow, date, blocks = [], back, description } = Astro.props;
+const firstText = blocks.find((b) => b.type === "p") as { text: string } | undefined;
+const desc = description ?? (firstText ? firstText.text.slice(0, 155) : undefined);
+---
+<Base title={title} description={desc}>
+  <PageHead title={title} eyebrow={eyebrow} small>
+    {date && <p class="date">{date}</p>}
+  </PageHead>
+  <slot name="lead" />
+  <article class="article wrap">
+    <slot name="before" />
+    {blocks.length > 0 && <Blocks blocks={blocks} />}
+    <slot />
+    <p class="back"><a class="pill-link" href={back.href}>{back.label}</a></p>
+  </article>
+</Base>
+
+<style>
+  .date { margin-top: 1.25rem; font-size: var(--text-small); }
+  .article { max-width: 46rem; margin: 0 auto; padding-block: var(--space-s) var(--space-l); display: grid; gap: 2rem; justify-items: start; }
+  .article > :global(*) { width: 100%; }
+  .back { margin-top: var(--space-s); }
+  .article > .back { width: auto; }
+</style>

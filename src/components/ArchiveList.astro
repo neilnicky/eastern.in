@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import { upload, hasUpload } from "@/lib/media";
+interface Item { href: string; title: string; meta?: string | null; image?: string | null; badge?: string | null }
+interface Props { items: Item[] }
+const { items } = Astro.props;
+---
+<ul class="alist wrap">
+  {items.map((it) => (
+    <li>
+      <a class="alist__row" href={it.href}>
+        <span class="alist__img">{it.image && hasUpload(it.image) && <Image src={upload(it.image)} alt="" widths={[160, 320]} sizes="160px" />}</span>
+        <span class="alist__text">
+          {it.meta && <span class="alist__meta">{it.meta}</span>}
+          <span class="alist__title">{it.title}</span>
+        </span>
+        {it.badge && <span class="pill alist__badge">{it.badge}</span>}
+        <span class="alist__arrow" aria-hidden="true">→</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .alist { list-style: none; max-width: 64rem; margin: 0 auto; border-top: 1px solid var(--clove); }
+  .alist li { border-bottom: 1px solid var(--rule); }
+  .alist__row { display: grid; grid-template-columns: 6.5rem 1fr auto auto; align-items: center; gap: 1.25rem; padding: 0.9rem 0; }
+  .alist__img { display: block; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: var(--cream-deep); }
+  .alist__img :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .alist__text { display: grid; gap: 0.3rem; }
+  .alist__meta { font-size: 0.75rem; opacity: 0.75; }
+  .alist__title { font-family: var(--font-serif); font-variation-settings: "opsz" 36; font-size: clamp(1.1rem, 1rem + 0.5vw, 1.45rem); line-height: 1.15; }
+  .alist__row:hover .alist__title { color: var(--orange-ink); }
+  .alist__badge { font-size: 0.6875rem; min-height: 1.75rem; }
+  @media (max-width: 600px) { .alist__row { grid-template-columns: 4.5rem 1fr auto; } .alist__badge { display: none; } }
+</style>

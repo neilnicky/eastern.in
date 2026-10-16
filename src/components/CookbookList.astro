@@ -1,0 +1,17 @@
+---
+import RecipeCard from "./RecipeCard.astro";
+import { cookbookRecipes } from "@/content/recipes";
+import type { CookbookSection } from "@/content/types";
+interface Props { section: CookbookSection; headingLevel?: "h2" | "h3" }
+const { section, headingLevel = "h3" } = Astro.props;
+const items = cookbookRecipes.filter((r) => r.section === section);
+---
+<ul class="book wrap">
+  {items.map((r) => <li><RecipeCard recipe={r} headingLevel={headingLevel} /></li>)}
+</ul>
+
+<style>
+  .book { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-s) var(--gutter); }
+  @media (max-width: 900px) { .book { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .book { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

@@ -1,0 +1,17 @@
+---
+import Base from "./Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import Blocks from "@/components/Blocks.astro";
+import { legalPages } from "@/content/pages";
+interface Props { path: string }
+const page = legalPages.find((p) => p.path === Astro.props.path)!;
+const first = page.blocks.find((b) => b.type === "p" || b.type === "ol") as { text?: string; items?: string[] } | undefined;
+---
+<Base title={page.title} description={(first?.text ?? first?.items?.[0] ?? page.title).slice(0, 155)}>
+  <PageHead title={page.title} small />
+  <article class="legal wrap"><Blocks blocks={page.blocks} /><slot /></article>
+</Base>
+<style>
+  .legal { max-width: 46rem; margin: 0 auto; padding-block: var(--space-s) var(--space-l); }
+  .legal :global(.prose) { max-width: none; }
+</style>

@@ -1,0 +1,30 @@
+---
+// Renders extracted CMS blocks (verbatim text). Social embeds become a plain "View the original post" link.
+import { Image } from "astro:assets";
+import { upload, hasUpload } from "@/lib/media";
+import type { Block } from "@/content/types";
+interface Props { blocks: Block[]; skipImages?: boolean }
+const { blocks, skipImages = false } = Astro.props;
+const net = { facebook: "Facebook", instagram: "Instagram", x: "X (Twitter)" } as const;
+const isUrl = (s: string) => /^https?:\/\//.test(s);
+const linkLabel = (b: { text: string; href: string }) => (b.text && !isUrl(b.text) ? b.text : b.href.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""));
+---
+<div class="prose blocks">
+  {blocks.map((b) => {
+    if (b.type === "p") return <p>{b.text}</p>;
+    if (b.type === "h") return <h2>{b.text}</h2>;
+    if (b.type === "ul") return <ul>{b.items.map((i) => <li>{i}</li>)}</ul>;
+    if (b.type === "ol") return <ol>{b.items.map((i) => <li>{i}</li>)}</ol>;
+    if (b.type === "img") return skipImages || !hasUpload(b.src) ? null : <figure class="blocks__img"><Image src={upload(b.src)} alt={b.alt} widths={[480, 800, 1200]} sizes="(max-width: 800px) 100vw, 44rem" /></figure>;
+    if (b.type === "link") return b.href.startsWith("mailto:") || b.href.startsWith("#") ? null : <p><a href={b.href} target="_blank" rel="noopener">{linkLabel(b)}<span aria-hidden="true"> ↗</span></a></p>;
+    if (b.type === "original") return b.href ? <p class="blocks__original"><a href={b.href} target="_blank" rel="noopener">View the original post on {net[b.network]}<span aria-hidden="true"> ↗</span></a></p> : null;
+    if (b.type === "video") return <p><a href={b.href} target="_blank" rel="noopener">Watch the video<span aria-hidden="true"> ↗</span></a></p>;
+    return null;
+  })}
+</div>
+
+<style>
+  .blocks__img { margin-block: 1.5em; }
+  .blocks__img :global(img) { border-radius: var(--radius); width: auto; max-width: 100%; }
+  .blocks__original { font-size: var(--text-small); }
+</style>

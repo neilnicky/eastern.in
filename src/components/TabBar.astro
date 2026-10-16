@@ -1,0 +1,30 @@
+---
+// Reference M16: floating pill tab bar, bottom-centre, tracking the section in view (motion/tabbar.ts).
+interface Props { label: string; items: { label: string; id: string }[]; from?: string }
+const { label, items, from } = Astro.props;
+---
+<nav class="tabbar" aria-label={label} data-tabbar data-tabbar-from={from}>
+  <ul>
+    {items.map((it, i) => <li><a href={`#${it.id}`} class:list={{ "is-active": i === 0 }}>{it.label}</a></li>)}
+  </ul>
+</nav>
+
+<style>
+  .tabbar {
+    position: fixed; left: 50%; bottom: max(14px, env(safe-area-inset-bottom)); z-index: 30; width: max-content; max-width: calc(100% - 2 * var(--pad));
+    transform: translateX(-50%); padding: 0.3rem; border-radius: 99px; background: var(--cream);
+    box-shadow: 0 8px 30px rgba(59, 22, 15, 0.14); overflow-x: auto; scrollbar-width: none;
+  }
+  :global(.js) .tabbar { opacity: 0; translate: 0 12px; pointer-events: none; transition: opacity 0.4s, translate 0.5s var(--ease-soft); }
+  :global(.js) .tabbar:global(.is-visible), :global(.js) .tabbar:focus-within { opacity: 1; translate: 0 0; pointer-events: auto; }
+  :global(html:not(.js)) .tabbar { position: static; transform: none; margin: var(--space-s) auto 0; }
+  .tabbar::-webkit-scrollbar { display: none; }
+  ul { list-style: none; display: flex; gap: 0.15rem; }
+  a {
+    display: inline-flex; align-items: center; min-height: 2.25rem; padding: 0 0.95rem; border-radius: 99px; white-space: nowrap;
+    font: 600 0.75rem/1 var(--font-sans); transition: background-color 0.3s, color 0.3s;
+  }
+  a:hover { color: var(--orange-text); }
+  a:global(.is-active) { background: var(--orange); color: var(--cream); }
+  @media (prefers-reduced-motion: reduce) { :global(.js) .tabbar { opacity: 1; translate: none; } }
+</style>

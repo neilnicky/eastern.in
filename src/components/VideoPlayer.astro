@@ -1,0 +1,27 @@
+---
+// Click-to-load YouTube player (motion/video.ts). Local thumbnail + real link until played; works without JS.
+import { Image } from "astro:assets";
+import { upload, hasUpload } from "@/lib/media";
+interface Props { youtubeId?: string; facebookVideo?: string; thumb?: string | null; title: string }
+const { youtubeId, facebookVideo, thumb, title } = Astro.props;
+const href = youtubeId ? `https://www.youtube.com/watch?v=${youtubeId}` : facebookVideo;
+---
+<div class="video" data-video={youtubeId} data-video-title={title}>
+  {thumb && hasUpload(thumb) && <Image class="video__thumb" src={upload(thumb)} alt="" widths={[480, 640]} sizes="(max-width: 700px) 100vw, 640px" />}
+  {href && (
+    <a class="video__play" href={href} target="_blank" rel="noopener" data-video-play>
+      <span class="video__btn" aria-hidden="true">▶</span>
+      <span class="video__label">{youtubeId ? "Play video" : "Watch on Facebook"}<span class="sr-only">: {title}</span></span>
+    </a>
+  )}
+</div>
+
+<style>
+  .video { position: relative; aspect-ratio: 16 / 9; background: var(--clove); border-radius: var(--radius); overflow: hidden; max-width: 960px; margin-inline: auto; }
+  .video__thumb { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; }
+  .video__play { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 0.75rem; color: var(--cream); }
+  .video__btn { width: 4.5rem; height: 4.5rem; border-radius: 50%; display: grid; place-items: center; background: var(--orange); font-size: 1.25rem; padding-left: 0.2rem; transition: transform 0.4s var(--ease-soft); }
+  .video__play:hover .video__btn { transform: scale(1.08); }
+  .video__label { font: 600 0.75rem/1 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
+  .video :global(.video__frame) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>

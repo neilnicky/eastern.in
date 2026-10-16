@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import { upload, hasUpload } from "@/lib/media";
+import { recipeUrl } from "@/content/recipes";
+import type { Recipe } from "@/content/types";
+interface Props { recipe: Recipe; headingLevel?: "h2" | "h3" }
+const { recipe, headingLevel = "h3" } = Astro.props;
+const Heading = headingLevel;
+const img = recipe.kind === "video" ? recipe.thumb : recipe.images[0];
+const kicker = recipe.kind === "video" ? "Video recipe" : recipe.section === "non-vegetarian" ? "Cook Book · Non-Vegetarian" : recipe.section === "sweets" ? "Cook Book · Sweets" : "Cook Book · Vegetarian";
+// cookbook spreads: photo half sits left or right; crop to the photo (object-position chosen per card side)
+const pos = recipe.kind === "cookbook" ? (recipe.photoSide === "left" ? "0% 50%" : "100% 50%") : "50% 50%";
+---
+<a class:list={["rcard", `rcard--${recipe.kind}`]} href={recipeUrl(recipe)} data-cursor={recipe.kind === "video" ? "Watch the recipe" : "Read the recipe"}>
+  <span class="rcard__img">
+    {img && hasUpload(img) && <Image src={upload(img)} alt="" widths={[360, 540]} sizes="(max-width: 600px) 80vw, 26vw" style={`object-position:${pos}`} />}
+    {recipe.kind === "video" && <span class="rcard__play" aria-hidden="true">▶</span>}
+  </span>
+  <span class="label rcard__kicker">{kicker}</span>
+  <Heading class="rcard__title">{recipe.title}</Heading>
+</a>
+
+<style>
+  .rcard { display: grid; gap: 0.6rem; min-width: 0; }
+  .rcard__title { overflow-wrap: anywhere; }
+  .rcard__img { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: var(--cream-deep); }
+  .rcard--cookbook .rcard__img { aspect-ratio: 4 / 5; }
+  .rcard__img :global(img) { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease-soft); }
+  .rcard:hover .rcard__img :global(img) { transform: scale(1.05); }
+  .rcard__play { position: absolute; left: 0.9rem; bottom: 0.9rem; width: 2.5rem; height: 2.5rem; border-radius: 50%; display: grid; place-items: center; background: var(--orange); color: var(--cream); font-size: 0.75rem; padding-left: 0.15rem; }
+  .rcard__title { font-family: var(--font-serif); font-variation-settings: "opsz" 144; font-weight: 400; font-size: 1.375rem; line-height: 1.1; text-transform: uppercase; letter-spacing: 0.012em; }
+  .rcard:hover .rcard__title { color: var(--orange-ink); }
+</style>

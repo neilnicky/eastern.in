@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import Spice from "./Spice.astro";
+import { pack } from "@/lib/media";
+import { getCategory } from "@/content/product-categories";
+import { productUrl } from "@/content/products";
+import type { Product } from "@/content/types";
+interface Props { product: Product; showPack?: boolean; loading?: "lazy" | "eager"; headingLevel?: "h2" | "h3" | "p" }
+const { product, showPack = true, loading = "lazy", headingLevel = "h3" } = Astro.props;
+const cat = getCategory(product.category);
+const Heading = headingLevel;
+---
+<a class="tile" href={productUrl(product.slug)} data-cursor="Discover the product" style={`--flood:${cat.flood};--flood-ink:${cat.floodInk}`}>
+  <span class="tile__shapes" aria-hidden="true">
+    {cat.spices.map((s, i) => <Spice name={s} class={`tile__shape tile__shape--${i}`} color={cat.floodInk === "#FBF2E6" ? "rgba(251,242,230,.22)" : "rgba(59,22,15,.16)"} />)}
+  </span>
+  <span class="tile__pack">
+    <Image src={pack(product.slug)} alt="" widths={[220, 340, 480]} sizes="(max-width: 600px) 45vw, (max-width: 1100px) 30vw, 22vw" loading={loading} />
+  </span>
+  <Heading class="tile__name">{product.name}</Heading>
+  {showPack && product.pack && <span class="tile__meta">{product.pack}</span>}
+</a>
+
+<style>
+  .tile {
+    position: relative; display: grid; grid-template-rows: 1fr auto auto; justify-items: center; gap: 0.35rem;
+    aspect-ratio: 0.78; padding: clamp(1rem, 2vw, 1.75rem) 0.75rem 1rem; background: var(--tile); overflow: hidden;
+    transition: background-color 0.5s var(--ease-soft), color 0.5s var(--ease-soft);
+    isolation: isolate;
+  }
+  .tile__pack { position: relative; z-index: 1; align-self: center; display: grid; place-items: center; width: 74%; height: 100%; min-height: 0; transition: transform 0.6s var(--ease-soft); }
+  .tile__pack :global(img) { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 14px 18px rgba(59, 22, 15, 0.18)); }
+  .tile__name { position: relative; z-index: 1; font: 600 0.8125rem/1.25 var(--font-sans); text-align: center; text-wrap: balance; }
+  .tile__meta { position: relative; z-index: 1; font-size: 0.75rem; opacity: 0.75; }
+  .tile__shapes { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .tile :global(.tile__shape) { position: absolute; width: 46%; opacity: 0; transform: scale(0.4) rotate(-30deg); transition: transform 0.7s var(--ease-soft), opacity 0.35s; }
+  .tile :global(.tile__shape--0) { left: -8%; top: 6%; }
+  .tile :global(.tile__shape--1) { right: -10%; top: 30%; width: 40%; }
+  .tile :global(.tile__shape--2) { left: 18%; bottom: -12%; width: 38%; }
+  @media (hover: hover) {
+    .tile:hover, .tile:focus-visible { background: var(--flood); color: var(--flood-ink); }
+    .tile:hover .tile__pack, .tile:focus-visible .tile__pack { transform: rotate(-6deg) scale(1.04); }
+    .tile:hover :global(.tile__shape), .tile:focus-visible :global(.tile__shape) { opacity: 1; transform: none; }
+    .tile:hover :global(.tile__shape--1) { transition-delay: 0.05s; }
+    .tile:hover :global(.tile__shape--2) { transition-delay: 0.1s; }
+  }
+</style>

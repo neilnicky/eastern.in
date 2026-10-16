@@ -1,0 +1,24 @@
+---
+// Reference page opening: the page name huge, centred, in display caps (text-veil on load).
+interface Props { title: string; eyebrow?: string; left?: string; right?: string; small?: boolean }
+const { title, eyebrow, left, right, small = false } = Astro.props;
+---
+<header class="page-head wrap">
+  {eyebrow && <p class="label page-head__eyebrow">{eyebrow}</p>}
+  <h1 class:list={["hero-title", { "page-head__small": small }]} data-reveal="hero">{title}</h1>
+  {(left || right) && (
+    <div class="page-head__sides" aria-hidden={!left && !right}>
+      <span>{left}</span><span>{right}</span>
+    </div>
+  )}
+  <slot />
+</header>
+
+<style>
+  .page-head { text-align: center; }
+  .page-head__eyebrow { margin-bottom: 1.25rem; }
+  .page-head__small { font-size: clamp(2.6rem, 1.6rem + 4.6vw, 7.5rem); }
+  .page-head__sides { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1.5rem; font-family: var(--font-serif); font-variation-settings: "opsz" 24; font-size: var(--text-medium); line-height: 1.2; text-align: left; }
+  .page-head__sides span:last-child { text-align: right; }
+  .page-head__sides span { max-width: 10rem; }
+</style>

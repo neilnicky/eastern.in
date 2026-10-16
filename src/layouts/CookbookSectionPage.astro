@@ -1,0 +1,26 @@
+---
+import Base from "./Base.astro";
+import PageHead from "@/components/PageHead.astro";
+import CookbookList from "@/components/CookbookList.astro";
+import { cookbookSections, cookbookRecipes } from "@/content/recipes";
+import type { CookbookSection } from "@/content/types";
+interface Props { section: CookbookSection }
+const { section } = Astro.props;
+const meta = cookbookSections.find((s) => s.slug === section)!;
+const count = cookbookRecipes.filter((r) => r.section === section).length;
+---
+<Base title={meta.label} description={`${count} ${meta.label.toLowerCase()} recipes from the Eastern Cook Book.`}>
+  <PageHead title={meta.label} eyebrow="Cook Book" small>
+    <nav class="sections" aria-label="Cook Book sections">
+      <a class="pill" href="/cook_book/">All</a>
+      {cookbookSections.map((s) => <a class="pill" href={s.path} aria-current={s.slug === section ? "page" : undefined}>{s.label}</a>)}
+    </nav>
+  </PageHead>
+  <div class="list"><CookbookList section={section} headingLevel="h2" /></div>
+</Base>
+
+<style>
+  .sections { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; margin-top: 1.5rem; }
+  .sections [aria-current="page"] { background: var(--orange); border-color: var(--orange); color: var(--cream); }
+  .list { padding-block: var(--space-s) var(--space-l); }
+</style>

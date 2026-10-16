@@ -1,0 +1,13 @@
+---
+// Flat, faceted "cut-paper" spice silhouettes — Eastern's counterpart to the reference's fruit shapes.
+// Each is a spice Eastern sells (whole spices, straight powders, coconut-milk powder). Decorative only.
+import type { SpiceName } from "@/content/types";
+import { SPICES } from "@/lib/spices";
+interface Props { name: SpiceName; color?: string; class?: string; style?: string }
+const { name, color, class: className, style } = Astro.props;
+
+const s = SPICES[name];
+---
+<svg class:list={["spice", `spice--${name}`, className]} style={style} viewBox="0 0 100 100" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+  <polygon points={s.points} fill={color ?? s.color} />
+</svg>
