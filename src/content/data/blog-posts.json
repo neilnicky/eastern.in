@@ -1,0 +1,108 @@
+[
+ {
+  "slug": "boat-race-alleppey",
+  "path": "/blog-post/boat-race-alleppey/",
+  "title": "Boat Race @Alleppey",
+  "date": "Tuesday, August 1, 2023",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/boat_race.png",
+    "alt": ""
+   }
+  ],
+  "sourceUrl": "https://eastern.in/blog-post/boat-race-alleppey/"
+ },
+ {
+  "slug": "canter-van-activity",
+  "path": "/blog-post/canter-van-activity/",
+  "title": "Canter Van Activity",
+  "date": "Tuesday, August 1, 2023",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/centervan_cvr.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/Canter_Van_1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/Canter_Van_2.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/Canter_Van_3.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/Canter_Van_4.jpg",
+    "alt": ""
+   }
+  ],
+  "sourceUrl": "https://eastern.in/blog-post/canter-van-activity/"
+ },
+ {
+  "slug": "eastern-perfect-onam-song-undo-unde",
+  "path": "/blog-post/eastern-perfect-onam-song-undo-unde/",
+  "title": "Onam Song ‘Undo Unde’",
+  "date": "Tuesday, August 1, 2023",
+  "blocks": [
+   {
+    "type": "video",
+    "href": "https://www.youtube.com/embed/YjdxLT950tE"
+   },
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/sithara_2022.jpg",
+    "alt": ""
+   }
+  ],
+  "sourceUrl": "https://eastern.in/blog-post/eastern-perfect-onam-song-undo-unde/"
+ },
+ {
+  "slug": "onam-2023-song",
+  "path": "/blog-post/onam-2023-song/",
+  "title": "Atham Pathum Perfectakkam",
+  "date": "Tuesday, August 1, 2023",
+  "blocks": [
+   {
+    "type": "video",
+    "href": "https://www.youtube.com/embed/T7o_hKVUjKI"
+   },
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/sithara_2023.jpg",
+    "alt": ""
+   }
+  ],
+  "sourceUrl": "https://eastern.in/blog-post/onam-2023-song/"
+ },
+ {
+  "slug": "onam-song",
+  "path": "/blog-post/onam-song/",
+  "title": "Listen to “ഓണം തിരുവോണം..” song",
+  "date": "Friday, August 11, 2023",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "wp-content/uploads/2023/08/cvr_sitara.jpg",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "Now Enjoy"
+   },
+   {
+    "type": "p",
+    "text": "Our Onam Song On"
+   }
+  ],
+  "sourceUrl": "https://eastern.in/blog-post/onam-song/"
+ }
+]

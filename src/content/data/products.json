@@ -1,0 +1,1774 @@
+[
+ {
+  "slug": "semiya-payasam",
+  "name": "Semiya Payasam",
+  "category": "madhuram-range",
+  "categoryOrder": 1,
+  "image": "wp-content/uploads/2025/02/semiya-payasam.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/semiya-payasam/"
+ },
+ {
+  "slug": "palada-2",
+  "name": "Palada",
+  "category": "gcc",
+  "categoryOrder": 16,
+  "image": "wp-content/uploads/2023/01/Palada-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/palada-2/"
+ },
+ {
+  "slug": "kasuri-methi",
+  "name": "Kasuri Methi",
+  "category": "accompaniments",
+  "categoryOrder": 0,
+  "pack": "25 g Duplex",
+  "image": "wp-content/uploads/2023/01/Kasuri-Methi-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/kasuri-methi/"
+ },
+ {
+  "slug": "cumin-powder-3",
+  "name": "Cumin Powder",
+  "category": "straight-powders-1",
+  "categoryOrder": 4,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Cumin-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Cumin-Powder-100g/dp/B018TLE1I8/ref=sr_1_5?crid=3TB1UQRQR3SLD&keywords=Eastern+Cumin+Powder%2C+100g&qid=1674536979&sprefix=eastern+cumin+powder%2C+100g%2Caps%2C216&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/cumin-powder-3/"
+ },
+ {
+  "slug": "idli-podi",
+  "name": "Idli Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 0,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/idlipodi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/idli-podi/"
+ },
+ {
+  "slug": "dal-makhani-masala-powder-2",
+  "name": "Dal Makhani Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 22,
+  "image": "wp-content/uploads/2023/01/Dal-Makhani-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/dal-makhani-masala-powder-2/"
+ },
+ {
+  "slug": "butter-chicken-masala-powder-2",
+  "name": "Butter Chicken Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 1,
+  "image": "wp-content/uploads/2023/01/Butter-Chicken-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/butter-chicken-masala-powder-2/"
+ },
+ {
+  "slug": "pathiri-powder",
+  "name": "Pathiri Powder",
+  "category": "breakfast",
+  "categoryOrder": 7,
+  "pack": "1kg pouch",
+  "image": "wp-content/uploads/2023/01/Pathiri-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pathiri-powder/"
+ },
+ {
+  "slug": "rasam-powder-3",
+  "name": "Rasam Powder",
+  "category": "gcc",
+  "categoryOrder": 7,
+  "image": "wp-content/uploads/2023/01/Rasam-Powder-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/rasam-powder-3/"
+ },
+ {
+  "slug": "hyderabadi-biryani-mix-3",
+  "name": "Hyderabadi Biryani Mix",
+  "category": "gcc",
+  "categoryOrder": 20,
+  "image": "wp-content/uploads/2023/01/Hyderabadi-Biryani-Mix-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/hyderabadi-biryani-mix-3/"
+ },
+ {
+  "slug": "chilli-powder",
+  "name": "Chilli Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 27,
+  "image": "wp-content/uploads/2023/02/chilli-p.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/s?k=eastern+chilli+powder+250g&i=nowstore&crid=ACNYY0HVBL07&sprefix=eastern+chilli+powder+250g%2Cnowstore%2C223&ref=nb_sb_ss_ts-doa-p_2_26",
+  "sourceUrl": "https://eastern.in/products/chilli-powder/"
+ },
+ {
+  "slug": "kadumango-pickle",
+  "name": "Kadumango Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 2,
+  "pack": "400 g Bottle",
+  "image": "wp-content/uploads/2023/01/Kadumango-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/kadumango-pickle/"
+ },
+ {
+  "slug": "tamarind-pizhi-puli",
+  "name": "Tamarind (Pizhi Puli)",
+  "category": "accompaniments",
+  "categoryOrder": 1,
+  "pack": "200 g Pouch",
+  "image": "wp-content/uploads/2023/01/Tamirant-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/tamarind-pizhi-puli/"
+ },
+ {
+  "slug": "white-lime-pickle",
+  "name": "White Lime Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 0,
+  "pack": "400 g Bottle",
+  "image": "wp-content/uploads/2023/01/White-Lime-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/white-lime-pickle/"
+ },
+ {
+  "slug": "omani-masala-powder-2",
+  "name": "Omani Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 31,
+  "image": "wp-content/uploads/2023/01/Omani-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/omani-masala-powder-2/"
+ },
+ {
+  "slug": "puttu-powder-white-2",
+  "name": "Puttu Powder White",
+  "category": "gcc",
+  "categoryOrder": 8,
+  "image": "wp-content/uploads/2023/01/Puttu-Powder-White-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/puttu-powder-white-2/"
+ },
+ {
+  "slug": "puttu-powder-chemba-2",
+  "name": "Puttu Powder Chemba",
+  "category": "gcc",
+  "categoryOrder": 9,
+  "image": "wp-content/uploads/2023/01/Puttu-Powder-Chemba-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/puttu-powder-chemba-2/"
+ },
+ {
+  "slug": "sesame-oil-2",
+  "name": "Sesame Oil",
+  "category": "gcc",
+  "categoryOrder": 4,
+  "image": "wp-content/uploads/2023/01/Sesame-Oil-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/sesame-oil-2/"
+ },
+ {
+  "slug": "easy-palappam-mix-2",
+  "name": "Easy Palappam Mix",
+  "category": "breakfast-mix",
+  "categoryOrder": 3,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/palappam-podi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/easy-palappam-mix-2/"
+ },
+ {
+  "slug": "pav-bhaji-masala-powder",
+  "name": "Pav Bhaji Masala Powder",
+  "category": "other-countries",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2023/01/Pav-Bhaji-Masala-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pav-bhaji-masala-powder/"
+ },
+ {
+  "slug": "pathiri-podi",
+  "name": "Pathiri Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 1,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/pathiri-podi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/pathiri-podi/"
+ },
+ {
+  "slug": "laban-fruit-flavour-chews",
+  "name": "Laban – Fruit Flavour Chews",
+  "category": "confectionery",
+  "categoryOrder": 2,
+  "pack": "Rs.10 Sachet",
+  "image": "wp-content/uploads/2023/01/FOP-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/laban-fruit-flavour-chews/"
+ },
+ {
+  "slug": "pineapple-pickle-2",
+  "name": "Pineapple Pickle",
+  "category": "gcc",
+  "categoryOrder": 25,
+  "image": "wp-content/uploads/2023/01/Pineapple-Pickle-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pineapple-pickle-2/"
+ },
+ {
+  "slug": "dosa-podi",
+  "name": "Dosa Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 4,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/dosa-podi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/dosa-podi/"
+ },
+ {
+  "slug": "fish-fry-masala",
+  "name": "Fish Fry Masala",
+  "category": "gcc",
+  "categoryOrder": 21,
+  "image": "wp-content/uploads/2023/01/Fish-Fry-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/fish-fry-masala/"
+ },
+ {
+  "slug": "pav-bhaji-masala-powder-2",
+  "name": "Pav Bhaji Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 28,
+  "image": "wp-content/uploads/2023/01/Pav-Bhaji-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pav-bhaji-masala-powder-2/"
+ },
+ {
+  "slug": "mustard-whole-2",
+  "name": "Mustard Whole",
+  "category": "gcc",
+  "categoryOrder": 35,
+  "image": "wp-content/uploads/2023/01/Mustard-Whole-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mustard-whole-2/"
+ },
+ {
+  "slug": "puttu-podi",
+  "name": "Puttu Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 9,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/puttu-podi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/puttu-podi/"
+ },
+ {
+  "slug": "appam-podi",
+  "name": "Appam Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 5,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/appam-podi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/appam-podi/"
+ },
+ {
+  "slug": "cumin-seed",
+  "name": "Cumin Seed",
+  "category": "whole-spices",
+  "categoryOrder": 3,
+  "image": "wp-content/uploads/2025/02/cumin-seed.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/cumin-seed/"
+ },
+ {
+  "slug": "rasam-powder",
+  "name": "Rasam Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 8,
+  "image": "wp-content/uploads/2023/01/rasam-powder-3.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Rasam-Powder-100g-Pack/dp/B08WKCFLJN/ref=sr_1_5?crid=21G8HE31JITGO&keywords=Eastern+Rasam+Powder%2C+100g&qid=1674538254&sprefix=eastern+rasam+powder%2C+100g%2Caps%2C239&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/rasam-powder/"
+ },
+ {
+  "slug": "rice-powder-2",
+  "name": "Rice Powder",
+  "category": "gcc",
+  "categoryOrder": 6,
+  "image": "wp-content/uploads/2023/01/Rice-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/rice-powder-2/"
+ },
+ {
+  "slug": "mutton-masala-powder-2",
+  "name": "Mutton Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 33,
+  "image": "wp-content/uploads/2023/01/Mutton-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mutton-masala-powder-2/"
+ },
+ {
+  "slug": "fenugreek-powder-4",
+  "name": "Fenugreek Powder",
+  "category": "straight-powders-1",
+  "categoryOrder": 1,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Fenugreek-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/fenugreek-powder-4/"
+ },
+ {
+  "slug": "chukku-kappi-powder",
+  "name": "Chukku Kappi Powder",
+  "category": "beverages",
+  "categoryOrder": 0,
+  "pack": "100 g Duplex",
+  "image": "wp-content/uploads/2023/01/Chukku-Kappi-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/chukku-kappi-powder/"
+ },
+ {
+  "slug": "pickle-powder-3",
+  "name": "Pickle Powder",
+  "category": "gcc",
+  "categoryOrder": 26,
+  "image": "wp-content/uploads/2023/01/Pickle-Powder-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pickle-powder-3/"
+ },
+ {
+  "slug": "meen-mulaku-masala-powder-2",
+  "name": "Meen Mulaku Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 17,
+  "image": "wp-content/uploads/2023/01/Meen-Mulaku-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/meen-mulaku-masala-powder-2/"
+ },
+ {
+  "slug": "pure-coffee-powder",
+  "name": "Pure Coffee Powder",
+  "category": "beverages",
+  "categoryOrder": 1,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Pure-Coffee-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pure-coffee-powder/"
+ },
+ {
+  "slug": "instant-idli",
+  "name": "Instant Idli",
+  "category": "5-minute-breakfast",
+  "categoryOrder": 1,
+  "image": "wp-content/uploads/2025/02/insta-idli.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/instant-idli/"
+ },
+ {
+  "slug": "mango-pickle",
+  "name": "Mango Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 3,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Mango-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mango-pickle/"
+ },
+ {
+  "slug": "gongura-pickle",
+  "name": "Gongura Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 16,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Gongura-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/gongura-pickle/"
+ },
+ {
+  "slug": "pickle-powder-2",
+  "name": "Pickle Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 9,
+  "image": "wp-content/uploads/2023/01/pickle-powder-3.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Pickle-Masala-Powder-100g/dp/B00HTX37WY/ref=sr_1_1_sspa?crid=2MHR90SUUCMTD&keywords=Eastern+Pickle+Masala+Powder%2C+100g&qid=1674537529&sprefix=eastern+pickle+masala+powder%2C+100g%2Caps%2C222&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  "sourceUrl": "https://eastern.in/products/pickle-powder-2/"
+ },
+ {
+  "slug": "meat-masala-2",
+  "name": "Meat Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 23,
+  "image": "wp-content/uploads/2023/02/meat-masala.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Masala-Meat-100g/dp/B08GLTZG49/ref=sr_1_1_sspa?crid=84LGTK5COCLN&keywords=Eastern+Meat+Masala+Powder%2C+100g&qid=1674537014&sprefix=eastern+meat+masala+powder%2C+100g%2Caps%2C342&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  "sourceUrl": "https://eastern.in/products/meat-masala-2/"
+ },
+ {
+  "slug": "mutton-masala-kerala",
+  "name": "Mutton Masala Kerala",
+  "category": "spices-masalas",
+  "categoryOrder": 19,
+  "image": "wp-content/uploads/2025/02/muttonmasala-kerala.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/mutton-masala-kerala/"
+ },
+ {
+  "slug": "kayam",
+  "name": "Kayam",
+  "category": "straight-powders-1",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2023/01/kayam-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/kayam/"
+ },
+ {
+  "slug": "channa-masala-powder-2",
+  "name": "Channa Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 12,
+  "image": "wp-content/uploads/2023/01/Channa-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/channa-masala-powder-2/"
+ },
+ {
+  "slug": "meat-ularthu-masala",
+  "name": "Meat Ularthu Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 10,
+  "image": "wp-content/uploads/2023/01/meat-ularathu.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/meat-ularthu-masala/"
+ },
+ {
+  "slug": "garam-masala",
+  "name": "Garam Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 12,
+  "image": "wp-content/uploads/2023/01/garam-masala-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Garam-Masala-100g/dp/B01MQ0EGMA/ref=sr_1_fkmr3_1_f3_wg?almBrandId=ctnow&crid=1KT5YD33GS9KX&fpw=alm&keywords=Eastern+Masala%2C+Garam%2C+100g+Carton&qid=1674537390&s=nowstore&sprefix=eastern+masala%2C+garam%2C+100g+carton%2Cnowstore%2C230&sr=1-1-fkmr3",
+  "sourceUrl": "https://eastern.in/products/garam-masala/"
+ },
+ {
+  "slug": "easy-palappam-mix",
+  "name": "Easy Palappam Mix",
+  "category": "breakfast",
+  "categoryOrder": 3,
+  "pack": "1 kg Pouch",
+  "image": "wp-content/uploads/2023/01/Easy-Palappam-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/easy-palappam-mix/"
+ },
+ {
+  "slug": "instant-puttu-mix",
+  "name": "Instant Puttu Mix",
+  "category": "5-minute-breakfast",
+  "categoryOrder": 5,
+  "image": "wp-content/uploads/2025/02/puttu.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/instant-puttu-mix/"
+ },
+ {
+  "slug": "puliyinchi-pickle-3",
+  "name": "Puliyinchi Pickle",
+  "category": "gcc",
+  "categoryOrder": 10,
+  "image": "wp-content/uploads/2023/01/Puliyinchi-Pickle-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/puliyinchi-pickle-3/"
+ },
+ {
+  "slug": "fennel-powder-4",
+  "name": "Fennel Powder",
+  "category": "straight-powders-1",
+  "categoryOrder": 2,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Fennel-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/fennel-powder-4/"
+ },
+ {
+  "slug": "chicken-porichathu",
+  "name": "Chicken Porichathu",
+  "category": "spices-masalas",
+  "categoryOrder": 15,
+  "image": "wp-content/uploads/2023/01/chicken-porichatthu.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/chicken-porichathu/"
+ },
+ {
+  "slug": "puttu-powder-chamba",
+  "name": "Puttu Powder Chamba",
+  "category": "breakfast",
+  "categoryOrder": 4,
+  "pack": "500 g Pouch",
+  "image": "wp-content/uploads/2023/01/Puttu-Powder-Chamba-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/puttu-powder-chamba/"
+ },
+ {
+  "slug": "fish-masala",
+  "name": "Fish Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 13,
+  "image": "wp-content/uploads/2023/01/fish-masala-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Powder-Fish-Masala-Pouch/dp/B002UOYPV4/ref=sr_1_5_f3_0o_fs?crid=2UUXR9TQABY7T&keywords=Eastern+Fish+Masala%2C+100g&qid=1674538177&sprefix=eastern+fish+masala%2C+100g%2Caps%2C256&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/fish-masala/"
+ },
+ {
+  "slug": "sambar-masala",
+  "name": "Sambar Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 22,
+  "image": "wp-content/uploads/2023/02/sambarpowder.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Sambar-Powder-100g/dp/B01MRLY195/ref=sr_1_1?crid=1JLE5QZS97KD0&keywords=Eastern+Sambar+Powder%2C+100g&qid=1674538137&s=everyday-essentials&sprefix=eastern+sambar+powder%2C+100g%2Ceveryday-essentials%2C237&sr=1-1&srs=5756143031",
+  "sourceUrl": "https://eastern.in/products/sambar-masala/"
+ },
+ {
+  "slug": "mutton-biriyani-masala-powder-2",
+  "name": "Mutton Biriyani Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 34,
+  "image": "wp-content/uploads/2023/01/Mutton-Biriyani-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mutton-biriyani-masala-powder-2/"
+ },
+ {
+  "slug": "lime-pickle",
+  "name": "Lime Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 4,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Lime-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/lime-pickle/"
+ },
+ {
+  "slug": "nutmeg-pickle-2",
+  "name": "Nutmeg Pickle",
+  "category": "gcc",
+  "categoryOrder": 32,
+  "image": "wp-content/uploads/2023/01/Nutmeg-Pickle-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/nutmeg-pickle-2/"
+ },
+ {
+  "slug": "roasted-rava-2",
+  "name": "Roasted Rava",
+  "category": "breakfast-mix",
+  "categoryOrder": 7,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/roasted-rava.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/roasted-rava-2/"
+ },
+ {
+  "slug": "pappadam-2",
+  "name": "Pappadam",
+  "category": "gcc",
+  "categoryOrder": 29,
+  "image": "wp-content/uploads/2023/01/Pappadam-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pappadam-2/"
+ },
+ {
+  "slug": "super-garam-masala-powder-2",
+  "name": "Super Garam Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 3,
+  "image": "wp-content/uploads/2023/01/Super-Garam-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/super-garam-masala-powder-2/"
+ },
+ {
+  "slug": "crushed-chilly-4",
+  "name": "Crushed Chilly",
+  "category": "straight-powders-1",
+  "categoryOrder": 6,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Crushed-Chilly-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/crushed-chilly-4/"
+ },
+ {
+  "slug": "vermicelli",
+  "name": "Vermicelli",
+  "category": "vermicelli-macaroni",
+  "categoryOrder": 1,
+  "pack": "400 g Pouch (long)",
+  "image": "wp-content/uploads/2023/01/Vermicelli-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/vermicelli/"
+ },
+ {
+  "slug": "instant-idiyappam",
+  "name": "Instant Idiyappam",
+  "category": "5-minute-breakfast",
+  "categoryOrder": 3,
+  "image": "wp-content/uploads/2025/02/idiyappam-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/instant-idiyappam/"
+ },
+ {
+  "slug": "assal-kayam-sambar-powder",
+  "name": "Assal Kayam Sambar Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 20,
+  "image": "wp-content/uploads/2025/02/asal-kayam-sambar.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/assal-kayam-sambar-powder/"
+ },
+ {
+  "slug": "rice-powder",
+  "name": "Rice Powder",
+  "category": "breakfast",
+  "categoryOrder": 1,
+  "pack": "5 KG Pouch",
+  "image": "wp-content/uploads/2023/01/Rice-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/rice-powder/"
+ },
+ {
+  "slug": "laban-strawberry-flavour-chews",
+  "name": "Laban – Strawberry Flavour Chews",
+  "category": "confectionery",
+  "categoryOrder": 1,
+  "pack": "Rs.10 Sachet",
+  "image": "wp-content/uploads/2023/01/Laban-Strawberry-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/laban-strawberry-flavour-chews/"
+ },
+ {
+  "slug": "methi-mutter-malai-masala-powder-2",
+  "name": "Methi Mutter Malai Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 18,
+  "image": "wp-content/uploads/2023/01/Methi-Mutter-Malai-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/methi-mutter-malai-masala-powder-2/"
+ },
+ {
+  "slug": "dosa-powder",
+  "name": "Dosa Powder",
+  "category": "breakfast",
+  "categoryOrder": 5,
+  "pack": "500g pouch",
+  "image": "wp-content/uploads/2023/01/Dosa-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/dosa-powder/"
+ },
+ {
+  "slug": "mixed-vegetable-pickle-2",
+  "name": "Mixed Vegetable Pickle",
+  "category": "gcc",
+  "categoryOrder": 36,
+  "image": "wp-content/uploads/2023/01/Mixed-Vegetable-Pickle-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mixed-vegetable-pickle-2/"
+ },
+ {
+  "slug": "crushed-chilly",
+  "name": "Crushed Chilly",
+  "category": "spices-masalas",
+  "categoryOrder": 30,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/chilli-flakes.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/crushed-chilly/"
+ },
+ {
+  "slug": "egg-masala",
+  "name": "Egg Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 14,
+  "image": "wp-content/uploads/2023/01/egg-masala-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Topps-Eastern-Egg-Masala-100g/dp/B0963ZH3RT/ref=sr_1_2?crid=3EDNIHJATZHJS&keywords=Eastern+Egg+masala+100+g&qid=1674538770&sprefix=eastern+egg+masala+100+g%2Caps%2C223&sr=8-2",
+  "sourceUrl": "https://eastern.in/products/egg-masala/"
+ },
+ {
+  "slug": "dry-ginger-powder-4",
+  "name": "Dry Ginger Powder",
+  "category": "straight-powders-1",
+  "categoryOrder": 3,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Dry-Ginger-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Dry-Ginger-Powder-100g/dp/B01CHIKBD8/ref=sr_1_5?crid=2ST45YSCDN0JF&keywords=Eastern+Dry+Ginger+Powder%2C+100g&qid=1674536080&sprefix=eastern+dry+ginger+powder%2C+100g%2Caps%2C223&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/dry-ginger-powder-4/"
+ },
+ {
+  "slug": "appam-powder",
+  "name": "Appam Powder",
+  "category": "breakfast",
+  "categoryOrder": 9,
+  "pack": "1 kg Pouch",
+  "image": "wp-content/uploads/2023/01/Appam-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/appam-powder/"
+ },
+ {
+  "slug": "roasted-rava",
+  "name": "Roasted Rava",
+  "category": "breakfast",
+  "categoryOrder": 2,
+  "pack": "500 g Pouch",
+  "image": "wp-content/uploads/2023/01/Roasted-Rava-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/roasted-rava/"
+ },
+ {
+  "slug": "chemba-puttu-podi",
+  "name": "Chemba Puttu Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 6,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/chemba-puttu.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/chemba-puttu-podi/"
+ },
+ {
+  "slug": "paripu-payasam",
+  "name": "Paripu Payasam",
+  "category": "madhuram-range",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2025/02/parippu-payasam.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/paripu-payasam/"
+ },
+ {
+  "slug": "chilly-chicken-masala",
+  "name": "Chilly Chicken Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 3,
+  "image": "wp-content/uploads/2023/01/Chilly-Chicken-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/chilly-chicken-masala/"
+ },
+ {
+  "slug": "chicken-tikka-spice-mix-3",
+  "name": "Chicken Tikka Spice Mix",
+  "category": "gcc",
+  "categoryOrder": 23,
+  "image": "wp-content/uploads/2023/01/Chicken-Tikka-Spice-Mix-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/chicken-tikka-spice-mix-3/"
+ },
+ {
+  "slug": "tomato-pickle",
+  "name": "Tomato Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 15,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Tomato-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/tomato-pickle/"
+ },
+ {
+  "slug": "chat-masala",
+  "name": "Chat Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 5,
+  "image": "wp-content/uploads/2023/01/Chatt-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/chat-masala/"
+ },
+ {
+  "slug": "fish-masala-2",
+  "name": "Fish Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 21,
+  "image": "wp-content/uploads/2023/01/fish-masala-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Powder-Fish-Masala-Pouch/dp/B002UOYPV4/ref=sr_1_5_f3_0o_fs?crid=2UUXR9TQABY7T&keywords=Eastern+Fish+Masala%2C+100g&qid=1674538177&sprefix=eastern+fish+masala%2C+100g%2Caps%2C256&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/fish-masala-2/"
+ },
+ {
+  "slug": "mixed-veg-pickle",
+  "name": "Mixed Veg Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 18,
+  "pack": "1 Kg Bottle",
+  "image": "wp-content/uploads/2023/01/Mixed-Veg-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mixed-veg-pickle/"
+ },
+ {
+  "slug": "pepper-chicken-masala-powder-2",
+  "name": "Pepper Chicken Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 27,
+  "image": "wp-content/uploads/2023/01/Pepper-Chicken-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pepper-chicken-masala-powder-2/"
+ },
+ {
+  "slug": "prawn-pickle",
+  "name": "Prawn Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 11,
+  "pack": "150 g Bottle",
+  "image": "wp-content/uploads/2023/01/Prawn-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/prawn-pickle/"
+ },
+ {
+  "slug": "macaroni-elbow",
+  "name": "Macaroni Elbow",
+  "category": "vermicelli-macaroni",
+  "categoryOrder": 2,
+  "pack": "400 g Pouch",
+  "image": "wp-content/uploads/2023/01/Macaroni-Elbow-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/macaroni-elbow/"
+ },
+ {
+  "slug": "palada-mix-3",
+  "name": "Palada Mix",
+  "category": "gcc",
+  "categoryOrder": 30,
+  "image": "wp-content/uploads/2023/01/Palada-Mix-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/palada-mix-3/"
+ },
+ {
+  "slug": "fenugreek-seed",
+  "name": "Fenugreek Seed",
+  "category": "whole-spices",
+  "categoryOrder": 1,
+  "image": "wp-content/uploads/2025/02/fenugreen-seed.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/fenugreek-seed/"
+ },
+ {
+  "slug": "garlic-pickle",
+  "name": "Garlic Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 6,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Garlic-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/garlic-pickle/"
+ },
+ {
+  "slug": "chicken-masala",
+  "name": "Chicken Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 16,
+  "image": "wp-content/uploads/2023/01/chickenmasala.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Chilly-Chicken-Masala-100g/dp/B013QO7YAA/ref=sr_1_1_sspa?crid=3ULW4593IMAKY&keywords=Eastern+Chicken+Masala%2C+100g&qid=1674538221&sprefix=eastern+chicken+masala%2C+100g%2Caps%2C261&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  "sourceUrl": "https://eastern.in/products/chicken-masala/"
+ },
+ {
+  "slug": "idiyappam-powder",
+  "name": "Idiyappam Powder",
+  "category": "breakfast",
+  "categoryOrder": 6,
+  "pack": "1 kg Pouch",
+  "image": "wp-content/uploads/2023/01/Idiyappam-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/idiyappam-powder/"
+ },
+ {
+  "slug": "hot-sweet-lime-pickle",
+  "name": "Hot & Sweet Lime Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 13,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Hot-Sweet-Lime-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/hot-sweet-lime-pickle/"
+ },
+ {
+  "slug": "pav-bhaji-masala",
+  "name": "Pav Bhaji Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2023/01/Pav-Bhaji-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pav-bhaji-masala/"
+ },
+ {
+  "slug": "idiyappam-podi",
+  "name": "Idiyappam Podi",
+  "category": "breakfast-mix",
+  "categoryOrder": 8,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/idiyappam-podi.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/idiyappam-podi/"
+ },
+ {
+  "slug": "amla-pickle",
+  "name": "Amla pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 8,
+  "pack": "400g bottle",
+  "image": "wp-content/uploads/2023/01/Amla-pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/amla-pickle/"
+ },
+ {
+  "slug": "turmeric-powder-4",
+  "name": "Turmeric Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 26,
+  "image": "wp-content/uploads/2023/02/turmeric-masala.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Turmeric-Powder-250g/dp/B005FIVLUK/ref=sr_1_1_f3_wg_sspa?almBrandId=ctnow&crid=3LSR0NKKYPD6Y&fpw=alm&keywords=Eastern+Turmeric+Powder%2C+250g&qid=1674534121&s=nowstore&sprefix=eastern+turmeric+powder%2C+250g%2Cnowstore%2C224&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  "sourceUrl": "https://eastern.in/products/turmeric-powder-4/"
+ },
+ {
+  "slug": "chicken-kabab-masala",
+  "name": "Chicken Kabab Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 11,
+  "image": "wp-content/uploads/2023/01/chicken-kabab-masala-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/chicken-kabab-masala/"
+ },
+ {
+  "slug": "instant-ghee-upumavu",
+  "name": "Instant Ghee Upumavu",
+  "category": "5-minute-breakfast",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2025/02/gheeuppumavu.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/instant-ghee-upumavu/"
+ },
+ {
+  "slug": "paneer-butter-masala-powder-2",
+  "name": "Paneer Butter Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 14,
+  "image": "wp-content/uploads/2023/01/Paneer-Butter-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/paneer-butter-masala-powder-2/"
+ },
+ {
+  "slug": "roasted-vermicelli",
+  "name": "Roasted Vermicelli",
+  "category": "vermicelli-macaroni",
+  "categoryOrder": 0,
+  "pack": "400 g Pouch",
+  "image": "wp-content/uploads/2023/01/Roasted-Vermicelli-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/roasted-vermicelli/"
+ },
+ {
+  "slug": "channa-masala",
+  "name": "Channa Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 6,
+  "image": "wp-content/uploads/2023/01/Channa-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/channa-masala/"
+ },
+ {
+  "slug": "korma-spice-mix-2",
+  "name": "Korma Spice Mix",
+  "category": "gcc",
+  "categoryOrder": 19,
+  "image": "wp-content/uploads/2023/01/Korma-Spice-Mix-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/korma-spice-mix-2/"
+ },
+ {
+  "slug": "prawn-chutney-powder",
+  "name": "Prawn Chutney Powder",
+  "category": "gcc",
+  "categoryOrder": 24,
+  "image": "wp-content/uploads/2023/01/Prawn-Chutney-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/prawn-chutney-powder/"
+ },
+ {
+  "slug": "chicken-pickle",
+  "name": "Chicken Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 10,
+  "pack": "150 g Bottle",
+  "image": "wp-content/uploads/2023/01/Chicken-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/chicken-pickle/"
+ },
+ {
+  "slug": "instant-dosa",
+  "name": "Instant Dosa",
+  "category": "5-minute-breakfast",
+  "categoryOrder": 2,
+  "image": "wp-content/uploads/2025/02/insta-dosa.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/instant-dosa/"
+ },
+ {
+  "slug": "black-pepper-powder-4",
+  "name": "Black Pepper Powder",
+  "category": "straight-powders-1",
+  "categoryOrder": 5,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Black-Pepper-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Black-Pepper-100g/dp/B01CHIKBBU/ref=sr_1_2?crid=4KWBJXT589TG&keywords=Eastern+Black+Pepper%2C+100g&qid=1674535989&sprefix=eastern+black+pepper%2C+100g%2Caps%2C220&sr=8-2",
+  "sourceUrl": "https://eastern.in/products/black-pepper-powder-4/"
+ },
+ {
+  "slug": "adimali-kappi",
+  "name": "Adimali Kappi",
+  "category": "beverages",
+  "categoryOrder": 2,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/Adimali-Kappi-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/adimali-kappi/"
+ },
+ {
+  "slug": "mango-thokku-pickle",
+  "name": "Mango Thokku Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 17,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Mango-Thokku-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/mango-thokku-pickle/"
+ },
+ {
+  "slug": "laban-orange-flavour-chews",
+  "name": "Laban – Orange Flavour Chews",
+  "category": "confectionery",
+  "categoryOrder": 0,
+  "pack": "Rs.10 Sachet",
+  "image": "wp-content/uploads/2023/01/Laban-Osum-Orange-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/laban-orange-flavour-chews/"
+ },
+ {
+  "slug": "cumin-powder",
+  "name": "Cumin Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 28,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/cumin-powder-2.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Cumin-Powder-100g/dp/B018TLE1I8/ref=sr_1_5?crid=3TB1UQRQR3SLD&keywords=Eastern+Cumin+Powder%2C+100g&qid=1674536979&sprefix=eastern+cumin+powder%2C+100g%2Caps%2C216&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/cumin-powder/"
+ },
+ {
+  "slug": "prawn-pickle-2",
+  "name": "Prawn Pickle",
+  "category": "gcc",
+  "categoryOrder": 11,
+  "image": "wp-content/uploads/2023/01/Prawn-Pickle-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/prawn-pickle-2/"
+ },
+ {
+  "slug": "fennel-seed",
+  "name": "Fennel Seed",
+  "category": "whole-spices",
+  "categoryOrder": 2,
+  "image": "wp-content/uploads/2025/02/fennel-seed.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/fennel-seed/"
+ },
+ {
+  "slug": "tender-mango-pickle",
+  "name": "Tender Mango Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 1,
+  "pack": "400 g Bottle",
+  "image": "wp-content/uploads/2023/01/Tender-Mango-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/tender-mango-pickle/"
+ },
+ {
+  "slug": "sambar-powder",
+  "name": "Sambar Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 7,
+  "image": "wp-content/uploads/2023/02/sambarpowder.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Sambar-Powder-100g/dp/B01MRLY195/ref=sr_1_1?crid=1JLE5QZS97KD0&keywords=Eastern+Sambar+Powder%2C+100g&qid=1674538137&s=everyday-essentials&sprefix=eastern+sambar+powder%2C+100g%2Ceveryday-essentials%2C237&sr=1-1&srs=5756143031",
+  "sourceUrl": "https://eastern.in/products/sambar-powder/"
+ },
+ {
+  "slug": "ginger-garlic-paste",
+  "name": "Ginger Garlic Paste",
+  "category": "pickles-paste",
+  "categoryOrder": 9,
+  "image": "wp-content/uploads/2023/01/Ginger-Garlic-Paste-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/ginger-garlic-paste/"
+ },
+ {
+  "slug": "gooseberry-pickle",
+  "name": "Gooseberry Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 5,
+  "pack": "400 g Bottle",
+  "image": "wp-content/uploads/2023/01/Gooseberry-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/gooseberry-pickle/"
+ },
+ {
+  "slug": "idly-powder",
+  "name": "Idly Powder",
+  "category": "breakfast",
+  "categoryOrder": 0,
+  "pack": "500g Pouch",
+  "image": "wp-content/uploads/2023/01/Idly-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/idly-powder/"
+ },
+ {
+  "slug": "mustard-seed",
+  "name": "Mustard Seed",
+  "category": "whole-spices",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2025/02/mustard-seed.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/mustard-seed/"
+ },
+ {
+  "slug": "pani-puri-masala-powder-2",
+  "name": "Pani Puri Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 13,
+  "image": "wp-content/uploads/2023/01/Pani-Puri-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/pani-puri-masala-powder-2/"
+ },
+ {
+  "slug": "rice-flakes",
+  "name": "Rice Flakes",
+  "category": "cereals",
+  "categoryOrder": 0,
+  "pack": "500 g Pouch",
+  "image": "wp-content/uploads/2023/01/Rice-Flakes-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/rice-flakes/"
+ },
+ {
+  "slug": "coriander-powder-5",
+  "name": "Coriander Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 25,
+  "image": "wp-content/uploads/2023/02/coriander-powder.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Coriander-Powder-250g-Pack/dp/B01MT3HSZL/ref=sr_1_1_f3_wg?almBrandId=ctnow&crid=3EUYTWIGXO3KD&fpw=alm&keywords=Eastern+Powder%2C+Coriander%2C+250g+Pouch&qid=1674534164&s=nowstore&sprefix=eastern+powder%2C+coriander%2C+250g+pouch%2Cnowstore%2C221&sr=1-1",
+  "sourceUrl": "https://eastern.in/products/coriander-powder-5/"
+ },
+ {
+  "slug": "palak-paneer-masala-powder-2",
+  "name": "Palak Paneer Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 15,
+  "image": "wp-content/uploads/2023/01/Palak-Paneer-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/palak-paneer-masala-powder-2/"
+ },
+ {
+  "slug": "kitchen-king",
+  "name": "Kitchen King",
+  "category": "spices-masalas",
+  "categoryOrder": 1,
+  "image": "wp-content/uploads/2023/01/Kitchen-King-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/kitchen-king/"
+ },
+ {
+  "slug": "jaljeera-powder",
+  "name": "Jaljeera Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 2,
+  "image": "wp-content/uploads/2023/01/Jaljeera-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/jaljeera-powder/"
+ },
+ {
+  "slug": "rice-powder-3",
+  "name": "Rice Powder",
+  "category": "breakfast-mix",
+  "categoryOrder": 2,
+  "pack": "500g",
+  "image": "wp-content/uploads/2026/06/rice-powder.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/rice-powder-3/"
+ },
+ {
+  "slug": "puttu-powder",
+  "name": "Puttu Powder",
+  "category": "breakfast",
+  "categoryOrder": 8,
+  "pack": "1 kg Pouch",
+  "image": "wp-content/uploads/2023/01/Puttu-Powder-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/puttu-powder/"
+ },
+ {
+  "slug": "chicken-fry-masala",
+  "name": "Chicken Fry Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 4,
+  "image": "wp-content/uploads/2023/01/Chicken-Fry-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Kabab-Masala-100g/dp/B01CHIKDSG/ref=sr_1_5_f3_0o_fs?crid=2EH6CYAMAB4OZ&keywords=Eastern+Kabab+Masala%2C+100g&qid=1674536662&sprefix=eastern+kabab+masala%2C+100g%2Caps%2C219&sr=8-5",
+  "sourceUrl": "https://eastern.in/products/chicken-fry-masala/"
+ },
+ {
+  "slug": "tamarind-2",
+  "name": "Tamarind",
+  "category": "gcc",
+  "categoryOrder": 2,
+  "image": "wp-content/uploads/2023/01/Tamarind-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/tamarind-2/"
+ },
+ {
+  "slug": "black-pepper-powder",
+  "name": "Black Pepper Powder",
+  "category": "spices-masalas",
+  "categoryOrder": 29,
+  "pack": "100 g Pouch",
+  "image": "wp-content/uploads/2023/01/black-pepper-powder-3.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Black-Pepper-100g/dp/B01CHIKBBU/ref=sr_1_2?crid=4KWBJXT589TG&keywords=Eastern+Black+Pepper%2C+100g&qid=1674535989&sprefix=eastern+black+pepper%2C+100g%2Caps%2C220&sr=8-2",
+  "sourceUrl": "https://eastern.in/products/black-pepper-powder/"
+ },
+ {
+  "slug": "fish-pickle",
+  "name": "Fish Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 12,
+  "pack": "150 g Bottle",
+  "image": "wp-content/uploads/2023/01/Fish-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/fish-pickle/"
+ },
+ {
+  "slug": "vegetable-masala",
+  "name": "Vegetable Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 18,
+  "image": "wp-content/uploads/2023/01/Vegetable-Masala-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/vegetable-masala/"
+ },
+ {
+  "slug": "biriyani-masala",
+  "name": "Biriyani Masala",
+  "category": "spices-masalas",
+  "categoryOrder": 17,
+  "image": "wp-content/uploads/2023/01/biriyani-masala-1.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Biriyani-Masala-Powder-100g/dp/B01CHIKM5A/ref=sr_1_1_sspa?crid=21PGMALW7RISM&keywords=eastern+biryani+masala+powder%2C+100g&qid=1674536414&sprefix=eastern+biriyani+masala+powder%2C+100g%2Caps%2C230&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  "sourceUrl": "https://eastern.in/products/biriyani-masala/"
+ },
+ {
+  "slug": "palada-payasam",
+  "name": "Palada Payasam",
+  "category": "madhuram-range",
+  "categoryOrder": 2,
+  "image": "wp-content/uploads/2025/02/palad-payasam.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/palada-payasam/"
+ },
+ {
+  "slug": "sambar-powder-3",
+  "name": "Sambar Powder",
+  "category": "gcc",
+  "categoryOrder": 5,
+  "image": "wp-content/uploads/2023/01/Sambar-Powder-2-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/sambar-powder-3/"
+ },
+ {
+  "slug": "instant-appam-mix",
+  "name": "Instant Appam Mix",
+  "category": "5-minute-breakfast",
+  "categoryOrder": 4,
+  "image": "wp-content/uploads/2025/02/appam.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/instant-appam-mix/"
+ },
+ {
+  "slug": "gothambu-payasam",
+  "name": "Gothambu Payasam",
+  "category": "madhuram-range",
+  "categoryOrder": 3,
+  "image": "wp-content/uploads/2025/02/gothamu-payasam.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "sourceUrl": "https://eastern.in/products/gothambu-payasam/"
+ },
+ {
+  "slug": "puliyinchi-pickle",
+  "name": "Puliyinchi pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 7,
+  "pack": "400g bottle",
+  "image": "wp-content/uploads/2023/01/Puliyinchi-pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/puliyinchi-pickle/"
+ },
+ {
+  "slug": "red-chilli-pickle",
+  "name": "Red Chilli Pickle",
+  "category": "pickles-paste",
+  "categoryOrder": 14,
+  "pack": "300 g Bottle",
+  "image": "wp-content/uploads/2023/01/Red-Chilli-Pickle-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/red-chilli-pickle/"
+ },
+ {
+  "slug": "chettinadu-vegetable-masala-powder-2",
+  "name": "Chettinadu Vegetable Masala Powder",
+  "category": "gcc",
+  "categoryOrder": 0,
+  "image": "wp-content/uploads/2023/01/Chettinadu-Vegetable-Masala-Powder-1-scaled.jpg",
+  "imageSize": [
+   2339,
+   2560
+  ],
+  "sourceUrl": "https://eastern.in/products/chettinadu-vegetable-masala-powder-2/"
+ },
+ {
+  "slug": "kashmiri-chilli",
+  "name": "Kashmiri Chilli",
+  "category": "spices-masalas",
+  "categoryOrder": 24,
+  "image": "wp-content/uploads/2023/02/kashirchilli.jpg",
+  "imageSize": [
+   548,
+   600
+  ],
+  "buyUrl": "https://www.amazon.in/Eastern-Kashmiri-Chilly-Powder-250g/dp/B01CHIKBCO/ref=sr_1_2_f3_wg_sspa?almBrandId=ctnow&crid=14K2FWI7VOAZQ&fpw=alm&keywords=eastern+kashmiri+chilli+powder%2C+250g&qid=1674534043&s=nowstore&sprefix=eastern+kashmiri+chilly+powder%2C+250g%2Cnowstore%2C515&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  "sourceUrl": "https://eastern.in/products/kashmiri-chilli/"
+ }
+]

@@ -1,0 +1,49 @@
+{
+ "path": "/contact/",
+ "title": "Contact",
+ "blocks": [
+  {
+   "type": "h",
+   "text": "Registered Office"
+  },
+  {
+   "type": "h",
+   "text": "Orkla India Limited (formerly known as ‘Orkla India Private Limited’ and ‘MTR Foods Private Limited’)\nNo.1.2nd & 3rd Floor,\n100 Feet Inner Ring Road, Ejipura,\nAshwini Layout, Vivek Nagar,\nBangalore – 560047"
+  },
+  {
+   "type": "p",
+   "text": "1800 425 5122"
+  },
+  {
+   "type": "p",
+   "text": "feedback@orklaindia.com"
+  },
+  {
+   "type": "link",
+   "text": "feedback@orklaindia.com",
+   "href": "mailto:feedback@orklaindia.com"
+  },
+  {
+   "type": "h",
+   "text": "Regional Office"
+  },
+  {
+   "type": "h",
+   "text": "Eastern Division\nNo. 34/137 A ,\nNH Bypass, Edapally (P.O),\nKochi, India 682024"
+  },
+  {
+   "type": "p",
+   "text": "feedback@eastern.in"
+  },
+  {
+   "type": "p",
+   "text": "For Media enquiries, please write to us at mediacell@orklaindia.com"
+  },
+  {
+   "type": "link",
+   "text": "mediacell@orklaindia.com",
+   "href": "mailto:mediacell@orklaindia.com"
+  }
+ ],
+ "sourceUrl": "https://eastern.in/contact/"
+}

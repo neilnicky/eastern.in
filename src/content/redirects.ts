@@ -1,0 +1,55 @@
+// Permanent redirects for retired or consolidated eastern.in URLs (docs/eastern-page-mapping.md §2).
+// Consumed by astro.config.mjs (static redirect pages) and scripts that write public/_redirects.
+
+const to = (target: string) => ({ status: 301 as const, destination: target });
+
+const products = "/products/";
+const pagination = (base: string, pages: number[]) => Object.fromEntries(pages.map((n) => [`${base}page/${n}/`, to(base)]));
+
+export const legacyRedirects: Record<string, { status: 301; destination: string }> = {
+  "/eastern-contact/": to("/contact/"),
+  "/kabsa-masala/": to("/products/kabsa-masala/"),
+  "/shawarma-masala/": to("/products/shawarma-masala/"),
+  "/puttu/": to("/products/instant-puttu-mix/"),
+  "/chemba-puttu/": to("/products/chemba-puttu-podi/"),
+  "/idiyappam_/": to("/products/instant-idiyappam/"),
+  "/idly/": to("/products/instant-idli/"),
+  "/dosa/": to("/products/instant-dosa/"),
+  "/palappam/": to("/products/instant-appam-mix/"),
+  "/ghee-upmavu/": to("/products/instant-ghee-upumavu/"),
+  "/featured-products/": to(products),
+  "/featured-recipes/": to("/recipes/"),
+  "/digital-brochure/": to(products),
+  "/game-page/": to("/"),
+  "/game/": to("/"),
+  "/shop/": to(products),
+  "/cart/": to(products),
+  "/checkout/": to(products),
+  "/my-account/": to("/"),
+  "/my-account/lost-password/": to("/"),
+  "/profile/": to("/"),
+  "/login/": to("/"),
+  "/my-recipes/": to("/recipes/"),
+  "/add-recipe/": to("/recipes/"),
+  "/edit-recipe/": to("/recipes/"),
+  "/test/": to("/"),
+  "/test-2/": to("/"),
+  "/test-3/": to("/"),
+  "/test1/": to("/"),
+  "/testhd/": to("/"),
+  "/test123/": to("/"),
+  "/test-page/": to("/"),
+  "/blog-post/test/": to("/blogs/"),
+  "/sliders/9815/": to("/"),
+  "/sliders/banner-2/": to("/"),
+  "/sliders/banner-3/": to("/"),
+  "/sliders/banner-5/": to("/"),
+  "/sliders/banner-6/": to("/"),
+  "/category/breakfast/": to("/product-category/breakfast/"),
+  "/category/biriyani-range/": to("/product-category/spices-masalas/"),
+  "/onam-function/": to("/blogs/"),
+  ...pagination(products, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+  ...pagination("/product-category/spices-masalas/", [2, 3]),
+  ...pagination("/product-category/pickles-paste/", [2]),
+  ...pagination("/product-category/gcc/", [2, 3, 4]),
+};

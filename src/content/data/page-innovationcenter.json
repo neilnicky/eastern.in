@@ -1,0 +1,94 @@
+{
+ "path": "/innovationcenter/",
+ "title": "Innovation Center",
+ "blocks": [
+  {
+   "type": "img",
+   "src": "wp-content/uploads/2017/09/banner-mic-easter.png",
+   "alt": "M E Meeran Innovation center"
+  },
+  {
+   "type": "h",
+   "text": "About us"
+  },
+  {
+   "type": "img",
+   "src": "wp-content/uploads/2017/09/bottle.png",
+   "alt": ""
+  },
+  {
+   "type": "p",
+   "text": "M.E.Meeran Innovation Center is a Flagship unit of Eastern Condiments Pvt. Ltd which was formed in the remembrance of Eastern Group Founder Chairman M.E.Meeran. Keeping in mind the changing consumer outlook and the amazing advancement in technology, we have set out to establish an innovation center for conducting testing and research of food products."
+  },
+  {
+   "type": "p",
+   "text": "M.E.Meeran Innovation Center is an independent and indispensable laboratory for testing & development of food products. It is a NABL accredited laboratory which is also open for external customers. The foundation of this establishment lies in the core values such as commitment to high quality & remarkable relationship with customers. Our objective is to support food industry with analytical test results and R&D solutions that are globally accepted. We strive to provide timely, accurate, reliable, reproducible and traceable test results meeting customer requirements by adopting standard test methods and using sophisticated testing equipments."
+  },
+  {
+   "type": "p",
+   "text": "AWARDS & RECOGNITION"
+  },
+  {
+   "type": "p",
+   "text": "· ISO/IEC 17025:2017 NABL Accredited."
+  },
+  {
+   "type": "p",
+   "text": "· ISO 14001:2015 (Environment Management System) UKAS Certified."
+  },
+  {
+   "type": "p",
+   "text": "· M.E MEERAN INNOVATION CENTER has published 3 Research Papers."
+  },
+  {
+   "type": "img",
+   "src": "wp-content/uploads/2017/10/1.png",
+   "alt": "Product development"
+  },
+  {
+   "type": "p",
+   "text": "Develops food products based on the present market trends. Incorporates the latest technologies and novel ingredients to produce products that satisfy the consumers needs."
+  },
+  {
+   "type": "img",
+   "src": "wp-content/uploads/2017/10/2.png",
+   "alt": "Research"
+  },
+  {
+   "type": "p",
+   "text": "It conducts studies on research based projects."
+  },
+  {
+   "type": "img",
+   "src": "wp-content/uploads/2017/10/3.png",
+   "alt": "Food testing"
+  },
+  {
+   "type": "p",
+   "text": "It is the most vital part of the innovation center. It carries out the chemical analysis of food products as well as the estimation of sensory parameters and shelf life of food products. It conducts studies on research based projects."
+  },
+  {
+   "type": "p",
+   "text": "For more information contact us at info.mic@eastern.in"
+  },
+  {
+   "type": "p",
+   "text": "Published Research Papers :"
+  },
+  {
+   "type": "link",
+   "text": "Research Paper #1",
+   "href": "https://l.eastern.in/2z0VxXZ"
+  },
+  {
+   "type": "p",
+   "text": "Research Paper #2"
+  },
+  {
+   "type": "link",
+   "text": "Research Paper #2",
+   "href": "https://l.eastern.in/2gvEcLk"
+  }
+ ],
+ "sourceUrl": "https://eastern.in/innovationcenter/"
+}
