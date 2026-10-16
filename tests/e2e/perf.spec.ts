@@ -161,3 +161,32 @@ test.describe("hero first frame (LCP)", () => {
     });
   });
 });
+
+test.describe("italic Fraunces is fetched only where it is used", () => {
+  const italic = /fraunces-latin-opsz-italic\.[\w-]+\.woff2$/;
+
+  test("not on load on /products/, but once the footer wordmark nears the viewport, without moving the footer", async ({ page }) => {
+    const requested: string[] = [];
+    page.on("request", (r) => { if (italic.test(r.url())) requested.push(r.url()); });
+    await page.goto("/products/");
+    await page.waitForLoadState("networkidle");
+    expect(requested, "italic face fetched on load").toHaveLength(0);
+
+    const box = () => page.evaluate(() => { const r = document.querySelector(".footer__w2")!.getBoundingClientRect(); return [r.height, r.y + scrollY, document.documentElement.scrollHeight]; });
+    const skipped = await box();
+    await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+    await expect.poll(() => requested.length).toBe(1);
+    await expect.poll(() => page.evaluate(() => document.fonts.check('italic 400 20px "Fraunces Variable"'))).toBe(true);
+    const rendered = await box();
+    expect(rendered[0], "wordmark line height unchanged once rendered").toBeCloseTo(skipped[0]!, 1);
+    expect(rendered[2], "document height unchanged once rendered").toBe(skipped[2]);
+  });
+
+  test("still on load on cookbook pages, which use it above the fold", async ({ page }) => {
+    const requested: string[] = [];
+    page.on("request", (r) => { if (italic.test(r.url())) requested.push(r.url()); });
+    await page.goto("/cook_book/bechamel-pasta/");
+    await page.waitForLoadState("networkidle");
+    expect(requested).toHaveLength(1);
+  });
+});

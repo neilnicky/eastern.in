@@ -53,6 +53,10 @@ const year = new Date().getFullYear();
   }
   .footer__w1, .footer__w2 { display: block; }
   .footer__w2 { font-style: italic; text-transform: none; font-size: 0.82em; letter-spacing: 0; }
+  /* The only italic on most pages: skip rendering it until it nears the viewport, so its font isn't fetched on load.
+     One word, so always one line: the placeholder is that line's height (line-height 0.86), so layout (and the
+     footer-lift ScrollTrigger) is identical rendered or not; the clip margin lets glyphs overhang the tight line box. */
+  .footer__w2 { content-visibility: auto; contain-intrinsic-block-size: auto 0.86em; overflow-clip-margin: 0.5em; }
   .footer__grid { display: grid; grid-template-columns: 1.1fr repeat(4, 1fr) 1.4fr; gap: var(--gutter); margin-top: clamp(3rem, 7vw, 6rem); font-size: 0.8125rem; line-height: 1.45; }
   .footer__logo { width: 64px; height: auto; margin-bottom: 1.25rem; }
   .footer__label { font: 600 var(--text-label)/1.2 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.9rem; }
