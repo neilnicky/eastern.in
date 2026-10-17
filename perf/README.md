@@ -30,3 +30,17 @@ To measure a baseline, build the older commit in a `git worktree`, serve it on a
   hundreds between runs. Prefer `--method devtools`, which throttles the real page load.
 - Results from this harness are not comparable with the earlier ad-hoc scratch runs (different Chromium build).
   Re-measure the baseline with the same harness.
+
+## Known artifact: bimodal FCP/LCP in `--method devtools`
+
+On this machine, devtools-throttled Lighthouse runs of the site land either at FCP ~1.3 s or at a fixed ~2.67 s
+(roughly 45% of runs), **on every build tried** (pre-Batch-1 and current, interleaved) and on every page whose FCP falls near
+that window. A trace of a slow run shows the network finished at ~1.27 s, the first layout ran late (1.66 s) and the
+first frame was not produced until 2.67 s: a headless frame-scheduling stall, not page work. It does not reproduce in
+Playwright with the same CDP throttling, and a trivial static page (FCP ~0.6 s) is unaffected. The root cause was not
+pinned down. Because the median of a 50/50 mixture can land in either mode:
+
+- Measure builds **interleaved** (`--bases before=...,after=...`) so the stall hits both equally.
+- Read the `[min-max]` spread printed by `perf:compare` beside each median; a median that moved by ~1.3 s with an
+  unchanged spread is the artifact, not a change.
+- Prefer deterministic signals (bytes, request counts, layout counts, task time) to confirm that a change took effect.
