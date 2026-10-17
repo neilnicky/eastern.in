@@ -29,7 +29,7 @@ const { items } = Astro.props;
   .alist__img :global(img) { width: 100%; height: 100%; object-fit: cover; }
   .alist__text { display: grid; gap: 0.3rem; }
   .alist__meta { font-size: 0.75rem; opacity: 0.75; }
-  .alist__title { font-family: var(--font-serif); font-variation-settings: "opsz" 36; font-size: clamp(1.1rem, 1rem + 0.5vw, 1.45rem); line-height: 1.15; }
+  .alist__title { font-family: var(--font-serif-text); font-variation-settings: "opsz" 36; font-size: clamp(1.1rem, 1rem + 0.5vw, 1.45rem); line-height: 1.15; }
   .alist__row:hover .alist__title { color: var(--orange-ink); }
   .alist__badge { font-size: 0.6875rem; min-height: 1.75rem; }
   @media (max-width: 600px) { .alist__row { grid-template-columns: 4.5rem 1fr auto; } .alist__badge { display: none; } }

@@ -13,8 +13,9 @@
   --tile: #f6e2cc;
   --rule: color-mix(in srgb, var(--clove) 22%, transparent);
 
-  --font-serif: "Fraunces Variable", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-  --font-sans: "Figtree Variable", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Fraunces Variable", "Fraunces Fallback", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-serif-text: "Fraunces Variable", "Fraunces Text Fallback", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-sans: "Figtree Variable", "Figtree Fallback", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   --text-small: 0.875rem;
   --text-base: 1rem;
@@ -42,8 +43,6 @@
 
   color-scheme: light;
 }
-
-@font-face { font-family: "Fraunces Fallback"; src: local("Palatino"), local("Book Antiqua"); size-adjust: 104%; }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
