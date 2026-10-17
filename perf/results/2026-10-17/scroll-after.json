@@ -1,0 +1,599 @@
+{
+ "env": {
+  "base": "http://127.0.0.1:4341",
+  "runs": 5,
+  "scroll": {
+   "device": "Pixel 7",
+   "cpuRate": 4,
+   "settleMs": 2500,
+   "flickPx": 600,
+   "maxPx": 9000,
+   "speed": 1800,
+   "gapMs": 120,
+   "tailMs": 400
+  },
+  "chrome": "chrome-mac-arm64"
+ },
+ "pages": {
+  "/ animated": {
+   "runs": [
+    {
+     "taskMs": 555,
+     "scriptMs": 48,
+     "layoutMs": 17,
+     "styleMs": 85,
+     "layouts": 91,
+     "recalcs": 574,
+     "over33": 0
+    },
+    {
+     "taskMs": 569,
+     "scriptMs": 41,
+     "layoutMs": 18,
+     "styleMs": 94,
+     "layouts": 91,
+     "recalcs": 575,
+     "over33": 1
+    },
+    {
+     "taskMs": 653,
+     "scriptMs": 64,
+     "layoutMs": 18,
+     "styleMs": 90,
+     "layouts": 91,
+     "recalcs": 573,
+     "over33": 1
+    },
+    {
+     "taskMs": 636,
+     "scriptMs": 62,
+     "layoutMs": 18,
+     "styleMs": 104,
+     "layouts": 92,
+     "recalcs": 574,
+     "over33": 0
+    },
+    {
+     "taskMs": 695,
+     "scriptMs": 65,
+     "layoutMs": 19,
+     "styleMs": 128,
+     "layouts": 91,
+     "recalcs": 573,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 636,
+    "scriptMs": 62,
+    "layoutMs": 18,
+    "styleMs": 94,
+    "layouts": 91,
+    "recalcs": 574,
+    "over33": 0
+   }
+  },
+  "/products/ animated": {
+   "runs": [
+    {
+     "taskMs": 1367,
+     "scriptMs": 75,
+     "layoutMs": 17,
+     "styleMs": 59,
+     "layouts": 130,
+     "recalcs": 784,
+     "over33": 0
+    },
+    {
+     "taskMs": 1139,
+     "scriptMs": 53,
+     "layoutMs": 16,
+     "styleMs": 40,
+     "layouts": 130,
+     "recalcs": 777,
+     "over33": 0
+    },
+    {
+     "taskMs": 1190,
+     "scriptMs": 56,
+     "layoutMs": 17,
+     "styleMs": 41,
+     "layouts": 130,
+     "recalcs": 758,
+     "over33": 0
+    },
+    {
+     "taskMs": 1164,
+     "scriptMs": 50,
+     "layoutMs": 15,
+     "styleMs": 42,
+     "layouts": 130,
+     "recalcs": 758,
+     "over33": 0
+    },
+    {
+     "taskMs": 1224,
+     "scriptMs": 57,
+     "layoutMs": 15,
+     "styleMs": 41,
+     "layouts": 141,
+     "recalcs": 760,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 1190,
+    "scriptMs": 56,
+    "layoutMs": 16,
+    "styleMs": 41,
+    "layouts": 130,
+    "recalcs": 760,
+    "over33": 0
+   }
+  },
+  "/timeline/ animated": {
+   "runs": [
+    {
+     "taskMs": 138,
+     "scriptMs": 19,
+     "layoutMs": 10,
+     "styleMs": 9,
+     "layouts": 28,
+     "recalcs": 255,
+     "over33": 0
+    },
+    {
+     "taskMs": 638,
+     "scriptMs": 117,
+     "layoutMs": 56,
+     "styleMs": 57,
+     "layouts": 28,
+     "recalcs": 250,
+     "over33": 4
+    },
+    {
+     "taskMs": 239,
+     "scriptMs": 40,
+     "layoutMs": 12,
+     "styleMs": 18,
+     "layouts": 28,
+     "recalcs": 255,
+     "over33": 0
+    },
+    {
+     "taskMs": 162,
+     "scriptMs": 24,
+     "layoutMs": 12,
+     "styleMs": 10,
+     "layouts": 28,
+     "recalcs": 253,
+     "over33": 0
+    },
+    {
+     "taskMs": 124,
+     "scriptMs": 17,
+     "layoutMs": 11,
+     "styleMs": 6,
+     "layouts": 28,
+     "recalcs": 252,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 162,
+    "scriptMs": 24,
+    "layoutMs": 12,
+    "styleMs": 10,
+    "layouts": 28,
+    "recalcs": 253,
+    "over33": 0
+   }
+  },
+  "/products/chicken-masala/ animated": {
+   "runs": [
+    {
+     "taskMs": 63,
+     "scriptMs": 9,
+     "layoutMs": 1,
+     "styleMs": 3,
+     "layouts": 11,
+     "recalcs": 141,
+     "over33": 0
+    },
+    {
+     "taskMs": 86,
+     "scriptMs": 14,
+     "layoutMs": 0,
+     "styleMs": 6,
+     "layouts": 11,
+     "recalcs": 141,
+     "over33": 1
+    },
+    {
+     "taskMs": 77,
+     "scriptMs": 10,
+     "layoutMs": 1,
+     "styleMs": 5,
+     "layouts": 11,
+     "recalcs": 141,
+     "over33": 0
+    },
+    {
+     "taskMs": 105,
+     "scriptMs": 14,
+     "layoutMs": 1,
+     "styleMs": 10,
+     "layouts": 11,
+     "recalcs": 141,
+     "over33": 0
+    },
+    {
+     "taskMs": 148,
+     "scriptMs": 27,
+     "layoutMs": 1,
+     "styleMs": 13,
+     "layouts": 11,
+     "recalcs": 141,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 86,
+    "scriptMs": 14,
+    "layoutMs": 1,
+    "styleMs": 6,
+    "layouts": 11,
+    "recalcs": 141,
+    "over33": 0
+   }
+  },
+  "/recipes/ animated": {
+   "runs": [
+    {
+     "taskMs": 297,
+     "scriptMs": 23,
+     "layoutMs": 14,
+     "styleMs": 5,
+     "layouts": 41,
+     "recalcs": 113,
+     "over33": 0
+    },
+    {
+     "taskMs": 281,
+     "scriptMs": 32,
+     "layoutMs": 12,
+     "styleMs": 13,
+     "layouts": 41,
+     "recalcs": 112,
+     "over33": 0
+    },
+    {
+     "taskMs": 331,
+     "scriptMs": 38,
+     "layoutMs": 11,
+     "styleMs": 4,
+     "layouts": 41,
+     "recalcs": 113,
+     "over33": 0
+    },
+    {
+     "taskMs": 275,
+     "scriptMs": 29,
+     "layoutMs": 11,
+     "styleMs": 5,
+     "layouts": 41,
+     "recalcs": 114,
+     "over33": 0
+    },
+    {
+     "taskMs": 238,
+     "scriptMs": 26,
+     "layoutMs": 10,
+     "styleMs": 6,
+     "layouts": 41,
+     "recalcs": 113,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 281,
+    "scriptMs": 29,
+    "layoutMs": 11,
+    "styleMs": 5,
+    "layouts": 41,
+    "recalcs": 113,
+    "over33": 0
+   }
+  },
+  "/ reduced": {
+   "runs": [
+    {
+     "taskMs": 202,
+     "scriptMs": 24,
+     "layoutMs": 14,
+     "styleMs": 2,
+     "layouts": 9,
+     "recalcs": 4,
+     "over33": 0
+    },
+    {
+     "taskMs": 126,
+     "scriptMs": 14,
+     "layoutMs": 12,
+     "styleMs": 1,
+     "layouts": 9,
+     "recalcs": 4,
+     "over33": 0
+    },
+    {
+     "taskMs": 141,
+     "scriptMs": 15,
+     "layoutMs": 12,
+     "styleMs": 1,
+     "layouts": 9,
+     "recalcs": 5,
+     "over33": 1
+    },
+    {
+     "taskMs": 159,
+     "scriptMs": 15,
+     "layoutMs": 13,
+     "styleMs": 2,
+     "layouts": 9,
+     "recalcs": 4,
+     "over33": 0
+    },
+    {
+     "taskMs": 100,
+     "scriptMs": 12,
+     "layoutMs": 10,
+     "styleMs": 0,
+     "layouts": 9,
+     "recalcs": 5,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 141,
+    "scriptMs": 15,
+    "layoutMs": 12,
+    "styleMs": 1,
+    "layouts": 9,
+    "recalcs": 4,
+    "over33": 0
+   }
+  },
+  "/products/ reduced": {
+   "runs": [
+    {
+     "taskMs": 197,
+     "scriptMs": 22,
+     "layoutMs": 7,
+     "styleMs": 8,
+     "layouts": 26,
+     "recalcs": 27,
+     "over33": 0
+    },
+    {
+     "taskMs": 180,
+     "scriptMs": 13,
+     "layoutMs": 4,
+     "styleMs": 5,
+     "layouts": 26,
+     "recalcs": 29,
+     "over33": 0
+    },
+    {
+     "taskMs": 370,
+     "scriptMs": 42,
+     "layoutMs": 12,
+     "styleMs": 8,
+     "layouts": 26,
+     "recalcs": 29,
+     "over33": 0
+    },
+    {
+     "taskMs": 266,
+     "scriptMs": 21,
+     "layoutMs": 8,
+     "styleMs": 7,
+     "layouts": 26,
+     "recalcs": 28,
+     "over33": 0
+    },
+    {
+     "taskMs": 239,
+     "scriptMs": 22,
+     "layoutMs": 8,
+     "styleMs": 6,
+     "layouts": 26,
+     "recalcs": 28,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 239,
+    "scriptMs": 22,
+    "layoutMs": 8,
+    "styleMs": 7,
+    "layouts": 26,
+    "recalcs": 28,
+    "over33": 0
+   }
+  },
+  "/timeline/ reduced": {
+   "runs": [
+    {
+     "taskMs": 150,
+     "scriptMs": 18,
+     "layoutMs": 26,
+     "styleMs": 1,
+     "layouts": 4,
+     "recalcs": 5,
+     "over33": 0
+    },
+    {
+     "taskMs": 143,
+     "scriptMs": 18,
+     "layoutMs": 10,
+     "styleMs": 2,
+     "layouts": 4,
+     "recalcs": 5,
+     "over33": 0
+    },
+    {
+     "taskMs": 238,
+     "scriptMs": 30,
+     "layoutMs": 13,
+     "styleMs": 4,
+     "layouts": 4,
+     "recalcs": 5,
+     "over33": 0
+    },
+    {
+     "taskMs": 198,
+     "scriptMs": 24,
+     "layoutMs": 10,
+     "styleMs": 2,
+     "layouts": 4,
+     "recalcs": 4,
+     "over33": 0
+    },
+    {
+     "taskMs": 163,
+     "scriptMs": 17,
+     "layoutMs": 12,
+     "styleMs": 2,
+     "layouts": 4,
+     "recalcs": 5,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 163,
+    "scriptMs": 18,
+    "layoutMs": 12,
+    "styleMs": 2,
+    "layouts": 4,
+    "recalcs": 5,
+    "over33": 0
+   }
+  },
+  "/products/chicken-masala/ reduced": {
+   "runs": [
+    {
+     "taskMs": 105,
+     "scriptMs": 13,
+     "layoutMs": 0,
+     "styleMs": 1,
+     "layouts": 1,
+     "recalcs": 2,
+     "over33": 0
+    },
+    {
+     "taskMs": 50,
+     "scriptMs": 5,
+     "layoutMs": 0,
+     "styleMs": 1,
+     "layouts": 1,
+     "recalcs": 2,
+     "over33": 0
+    },
+    {
+     "taskMs": 37,
+     "scriptMs": 5,
+     "layoutMs": 0,
+     "styleMs": 0,
+     "layouts": 1,
+     "recalcs": 2,
+     "over33": 0
+    },
+    {
+     "taskMs": 49,
+     "scriptMs": 6,
+     "layoutMs": 0,
+     "styleMs": 0,
+     "layouts": 1,
+     "recalcs": 3,
+     "over33": 0
+    },
+    {
+     "taskMs": 59,
+     "scriptMs": 7,
+     "layoutMs": 0,
+     "styleMs": 0,
+     "layouts": 1,
+     "recalcs": 3,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 50,
+    "scriptMs": 6,
+    "layoutMs": 0,
+    "styleMs": 0,
+    "layouts": 1,
+    "recalcs": 2,
+    "over33": 0
+   }
+  },
+  "/recipes/ reduced": {
+   "runs": [
+    {
+     "taskMs": 177,
+     "scriptMs": 15,
+     "layoutMs": 9,
+     "styleMs": 1,
+     "layouts": 29,
+     "recalcs": 2,
+     "over33": 0
+    },
+    {
+     "taskMs": 155,
+     "scriptMs": 9,
+     "layoutMs": 10,
+     "styleMs": 1,
+     "layouts": 29,
+     "recalcs": 2,
+     "over33": 0
+    },
+    {
+     "taskMs": 158,
+     "scriptMs": 13,
+     "layoutMs": 9,
+     "styleMs": 1,
+     "layouts": 29,
+     "recalcs": 2,
+     "over33": 0
+    },
+    {
+     "taskMs": 148,
+     "scriptMs": 11,
+     "layoutMs": 11,
+     "styleMs": 1,
+     "layouts": 29,
+     "recalcs": 3,
+     "over33": 0
+    },
+    {
+     "taskMs": 152,
+     "scriptMs": 11,
+     "layoutMs": 8,
+     "styleMs": 3,
+     "layouts": 29,
+     "recalcs": 2,
+     "over33": 0
+    }
+   ],
+   "median": {
+    "taskMs": 155,
+    "scriptMs": 11,
+    "layoutMs": 9,
+    "styleMs": 1,
+    "layouts": 29,
+    "recalcs": 2,
+    "over33": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,473 @@
+{
+ "env": {
+  "base": "http://127.0.0.1:4341",
+  "method": "devtools",
+  "runs": 5,
+  "lighthouse": "12.8.2",
+  "chrome": "chrome-mac-arm64",
+  "throttling": {
+   "rttMs": 150,
+   "throughputKbps": 1638.4,
+   "requestLatencyMs": 562.5,
+   "downloadThroughputKbps": 1474.56,
+   "uploadThroughputKbps": 675,
+   "cpuSlowdownMultiplier": 4
+  },
+  "benchmarkIndexMedian": 4462,
+  "benchmarkIndexRuns": [
+   4388,
+   4446,
+   4314,
+   4423,
+   4364,
+   4427,
+   4444,
+   4436,
+   4224,
+   4350,
+   4433,
+   4461,
+   4421,
+   4502,
+   4455,
+   4496,
+   4468,
+   4468,
+   4102,
+   4470,
+   4428,
+   4361,
+   4393,
+   4455,
+   4465,
+   4482,
+   4456,
+   4459,
+   4333,
+   4488,
+   4463,
+   4491,
+   4472,
+   4485,
+   4456,
+   4504,
+   4500,
+   4496,
+   4475,
+   4458,
+   4432,
+   4484,
+   4473,
+   4467,
+   4463,
+   4476,
+   4486,
+   4436,
+   4471,
+   4485,
+   4482,
+   4483,
+   4453,
+   4437,
+   4473,
+   4433,
+   4469,
+   4451,
+   4479,
+   4501
+  ],
+  "harnessSha": "dfdfae7"
+ },
+ "pages": {
+  "home": {
+   "runs": [
+    {
+     "perf": 91,
+     "fcp": 2692,
+     "lcp": 2692,
+     "tbt": 36,
+     "cls": 0,
+     "si": 3403,
+     "kb": 1039
+    },
+    {
+     "perf": 99,
+     "fcp": 1411,
+     "lcp": 1509,
+     "tbt": 0,
+     "cls": 0,
+     "si": 3332,
+     "kb": 1039
+    },
+    {
+     "perf": 97,
+     "fcp": 2042,
+     "lcp": 2106,
+     "tbt": 2,
+     "cls": 0,
+     "si": 3161,
+     "kb": 1039
+    },
+    {
+     "perf": 85,
+     "fcp": 2689,
+     "lcp": 3622,
+     "tbt": 0,
+     "cls": 0,
+     "si": 3415,
+     "kb": 1039
+    },
+    {
+     "perf": 99,
+     "fcp": 1395,
+     "lcp": 1509,
+     "tbt": 0,
+     "cls": 0,
+     "si": 3304,
+     "kb": 1039
+    }
+   ],
+   "median": {
+    "perf": 97,
+    "fcp": 2042,
+    "lcp": 2106,
+    "tbt": 0,
+    "cls": 0,
+    "si": 3332,
+    "kb": 1039
+   },
+   "lcpEl": [
+    "chicken-porichathu",
+    "chicken-porichathu",
+    "chicken-porichathu",
+    "<text class=\"astro-lcdef",
+    "chicken-porichathu"
+   ]
+  },
+  "products": {
+   "runs": [
+    {
+     "perf": 99,
+     "fcp": 1330,
+     "lcp": 1713,
+     "tbt": 8,
+     "cls": 0.001,
+     "si": 2381,
+     "kb": 620
+    },
+    {
+     "perf": 92,
+     "fcp": 2682,
+     "lcp": 2705,
+     "tbt": 33,
+     "cls": 0.001,
+     "si": 2739,
+     "kb": 620
+    },
+    {
+     "perf": 99,
+     "fcp": 1331,
+     "lcp": 1712,
+     "tbt": 8,
+     "cls": 0.001,
+     "si": 2366,
+     "kb": 620
+    },
+    {
+     "perf": 92,
+     "fcp": 2671,
+     "lcp": 2694,
+     "tbt": 22,
+     "cls": 0.001,
+     "si": 2729,
+     "kb": 620
+    },
+    {
+     "perf": 99,
+     "fcp": 1344,
+     "lcp": 1738,
+     "tbt": 4,
+     "cls": 0.001,
+     "si": 2398,
+     "kb": 620
+    }
+   ],
+   "median": {
+    "perf": 99,
+    "fcp": 1344,
+    "lcp": 1738,
+    "tbt": 8,
+    "cls": 0.001,
+    "si": 2398,
+    "kb": 620
+   },
+   "lcpEl": [
+    "Web-banner-5",
+    "Web-banner-5",
+    "Web-banner-5",
+    "Web-banner-5",
+    "Web-banner-5"
+   ]
+  },
+  "pdp": {
+   "runs": [
+    {
+     "perf": 92,
+     "fcp": 2674,
+     "lcp": 2674,
+     "tbt": 0,
+     "cls": 0.001,
+     "si": 2897,
+     "kb": 620
+    },
+    {
+     "perf": 92,
+     "fcp": 2696,
+     "lcp": 2696,
+     "tbt": 0,
+     "cls": 0.001,
+     "si": 3105,
+     "kb": 620
+    },
+    {
+     "perf": 92,
+     "fcp": 2688,
+     "lcp": 2688,
+     "tbt": 0,
+     "cls": 0.001,
+     "si": 2914,
+     "kb": 620
+    },
+    {
+     "perf": 99,
+     "fcp": 1333,
+     "lcp": 1562,
+     "tbt": 0,
+     "cls": 0.001,
+     "si": 2633,
+     "kb": 620
+    },
+    {
+     "perf": 92,
+     "fcp": 2682,
+     "lcp": 2682,
+     "tbt": 0,
+     "cls": 0.001,
+     "si": 2904,
+     "kb": 620
+    }
+   ],
+   "median": {
+    "perf": 92,
+    "fcp": 2682,
+    "lcp": 2682,
+    "tbt": 0,
+    "cls": 0.001,
+    "si": 2904,
+    "kb": 620
+   },
+   "lcpEl": [
+    "chicken-masala",
+    "chicken-masala",
+    "chicken-masala",
+    "chicken-masala",
+    "chicken-masala"
+   ]
+  },
+  "recipes": {
+   "runs": [
+    {
+     "perf": 99,
+     "fcp": 1348,
+     "lcp": 1825,
+     "tbt": 0,
+     "cls": 0.017,
+     "si": 2447,
+     "kb": 431
+    },
+    {
+     "perf": 99,
+     "fcp": 1303,
+     "lcp": 1784,
+     "tbt": 0,
+     "cls": 0.017,
+     "si": 2375,
+     "kb": 431
+    },
+    {
+     "perf": 92,
+     "fcp": 2699,
+     "lcp": 2725,
+     "tbt": 0,
+     "cls": 0.017,
+     "si": 2787,
+     "kb": 431
+    },
+    {
+     "perf": 99,
+     "fcp": 1323,
+     "lcp": 1825,
+     "tbt": 0,
+     "cls": 0.017,
+     "si": 2435,
+     "kb": 431
+    },
+    {
+     "perf": 99,
+     "fcp": 1293,
+     "lcp": 1789,
+     "tbt": 0,
+     "cls": 0.017,
+     "si": 2419,
+     "kb": 431
+    }
+   ],
+   "median": {
+    "perf": 99,
+    "fcp": 1323,
+    "lcp": 1825,
+    "tbt": 0,
+    "cls": 0.017,
+    "si": 2435,
+    "kb": 431
+   },
+   "lcpEl": [
+    "Web-banner-3",
+    "Web-banner-3",
+    "Web-banner-3",
+    "Web-banner-3",
+    "Web-banner-3"
+   ]
+  },
+  "cookbook": {
+   "runs": [
+    {
+     "perf": 97,
+     "fcp": 1318,
+     "lcp": 2007,
+     "tbt": 0,
+     "cls": 0.079,
+     "si": 2431,
+     "kb": 334
+    },
+    {
+     "perf": 90,
+     "fcp": 2674,
+     "lcp": 2703,
+     "tbt": 0,
+     "cls": 0.079,
+     "si": 2791,
+     "kb": 334
+    },
+    {
+     "perf": 97,
+     "fcp": 1335,
+     "lcp": 2029,
+     "tbt": 0,
+     "cls": 0.079,
+     "si": 2444,
+     "kb": 334
+    },
+    {
+     "perf": 97,
+     "fcp": 1333,
+     "lcp": 2043,
+     "tbt": 0,
+     "cls": 0.079,
+     "si": 2439,
+     "kb": 334
+    },
+    {
+     "perf": 97,
+     "fcp": 1338,
+     "lcp": 2002,
+     "tbt": 0,
+     "cls": 0.079,
+     "si": 2435,
+     "kb": 334
+    }
+   ],
+   "median": {
+    "perf": 97,
+    "fcp": 1335,
+    "lcp": 2029,
+    "tbt": 0,
+    "cls": 0.079,
+    "si": 2439,
+    "kb": 334
+   },
+   "lcpEl": [
+    "Cook-Book-04-03",
+    "Cook-Book-04-03",
+    "Cook-Book-04-03",
+    "Cook-Book-04-03",
+    "Cook-Book-04-03"
+   ]
+  },
+  "timeline": {
+   "runs": [
+    {
+     "perf": 92,
+     "fcp": 2692,
+     "lcp": 2722,
+     "tbt": 0,
+     "cls": 0.023,
+     "si": 2856,
+     "kb": 273
+    },
+    {
+     "perf": 99,
+     "fcp": 1315,
+     "lcp": 1842,
+     "tbt": 0,
+     "cls": 0.023,
+     "si": 2477,
+     "kb": 273
+    },
+    {
+     "perf": 99,
+     "fcp": 1323,
+     "lcp": 1836,
+     "tbt": 0,
+     "cls": 0.023,
+     "si": 2460,
+     "kb": 273
+    },
+    {
+     "perf": 99,
+     "fcp": 1312,
+     "lcp": 1855,
+     "tbt": 0,
+     "cls": 0.023,
+     "si": 2459,
+     "kb": 273
+    },
+    {
+     "perf": 99,
+     "fcp": 1311,
+     "lcp": 1846,
+     "tbt": 0,
+     "cls": 0.023,
+     "si": 2462,
+     "kb": 273
+    }
+   ],
+   "median": {
+    "perf": 99,
+    "fcp": 1315,
+    "lcp": 1846,
+    "tbt": 0,
+    "cls": 0.023,
+    "si": 2462,
+    "kb": 273
+   },
+   "lcpEl": [
+    "Eastern-Trading-Company",
+    "Eastern-Trading-Company",
+    "Eastern-Trading-Company",
+    "Eastern-Trading-Company",
+    "Eastern-Trading-Company"
+   ]
+  }
+ }
+}
