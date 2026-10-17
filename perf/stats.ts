@@ -23,3 +23,15 @@ export function args(argv = process.argv.slice(2)): Record<string, string> {
   }
   return out;
 }
+
+/**
+ * Devtools-throttled Lighthouse runs sometimes paint at a fixed ~2.67 s instead of ~1.3 s whatever the build (see
+ * perf/README.md). A run whose FCP lands at or after this is "stalled" and is reported separately.
+ */
+export const STALL_FCP_MS = 2600;
+export const isStalled = (r: { fcp: number }) => r.fcp >= STALL_FCP_MS;
+
+export function unstalledMedian<T extends { fcp: number } & Record<string, number>>(rows: T[]): { median: T | null; stalled: number; kept: number } {
+  const kept = rows.filter((r) => !isStalled(r));
+  return { median: kept.length ? medianBy(kept) : null, stalled: rows.length - kept.length, kept: kept.length };
+}

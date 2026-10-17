@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import fs from "node:fs";
 import { LH_PAGES, RUNS, SCROLL, SCROLL_PAGES, THROTTLING } from "../../perf/config.ts";
-import { args, median, medianBy } from "../../perf/stats.ts";
+import { args, isStalled, median, medianBy, STALL_FCP_MS, unstalledMedian } from "../../perf/stats.ts";
 
 describe("perf harness", () => {
   it("reports medians, ignoring non-finite values", () => {
@@ -9,6 +9,16 @@ describe("perf harness", () => {
     expect(median([4, 1, 3, 2])).toBe(2.5);
     expect(median([1, NaN, 3])).toBe(2);
     expect(medianBy([{ a: 1, b: 10 }, { a: 3, b: 30 }, { a: 2, b: 20 }])).toEqual({ a: 2, b: 20 });
+  });
+
+  it("separates runs that hit the ~2.67 s FCP stall from the rest", () => {
+    const row = (fcp: number, lcp: number) => ({ fcp, lcp });
+    expect(STALL_FCP_MS).toBe(2600);
+    expect(isStalled(row(2680, 2680))).toBe(true);
+    expect(isStalled(row(1340, 1500))).toBe(false);
+    const r = unstalledMedian([row(1300, 1500), row(2680, 2680), row(1320, 1520), row(2670, 2670), row(1310, 1510)]);
+    expect(r).toEqual({ median: { fcp: 1310, lcp: 1510 }, stalled: 2, kept: 3 });
+    expect(unstalledMedian([row(2700, 2700)])).toEqual({ median: null, stalled: 1, kept: 0 });
   });
 
   it("parses --name value and bare flags", () => {
