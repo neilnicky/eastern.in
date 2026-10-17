@@ -28,7 +28,19 @@ const result: Record<string, Record<string, PageResult>> = Object.fromEntries(Ob
 const bench: number[] = [];
 let lhVersion = "";
 
-async function once(url: string): Promise<{ row: Row; el: string }> {
+/** A Chrome that dies mid-run (machine under load) costs one retry, not the whole benchmark. */
+async function once(url: string, attempts = 3): Promise<{ row: Row; el: string }> {
+  for (let i = 1; ; i++) {
+    try {
+      return await attempt(url);
+    } catch (e) {
+      if (i >= attempts) throw e;
+      console.warn(`run failed (${(e as Error).message.split("\n")[0]}), retrying ${i}/${attempts - 1}`);
+    }
+  }
+}
+
+async function attempt(url: string): Promise<{ row: Row; el: string }> {
   const chrome = await chromeLauncher.launch({ chromePath, chromeFlags: LH_CHROME_FLAGS });
   try {
     const r = await lighthouse(
