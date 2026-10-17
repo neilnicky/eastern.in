@@ -49,8 +49,11 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: clip; }
-/* Touch devices don't load Lenis (motion/main.ts); keep the scroll lock lenis.stop() gave them while the menu is open. */
-@media (pointer: coarse) and (prefers-reduced-motion: no-preference) { html.menu-open { overflow: clip; } }
+/* Touch devices don't load Lenis (motion/main.ts), and with reduced motion nobody does, so the lock that .lenis-stopped gives
+   desktop is applied by hand to every touch device while the menu is open. The menu is also a full-viewport scroll container with
+   overscroll-behavior: contain, which holds the page still on its own in Chromium and WebKit; this makes it unconditional for iOS
+   users who have Reduce Motion on. Not applied to fine pointers: removing a classic scrollbar would shift the page behind the menu. */
+@media (pointer: coarse) { html.menu-open { overflow: clip; } }
 body {
   margin: 0;
   background: var(--cream);
