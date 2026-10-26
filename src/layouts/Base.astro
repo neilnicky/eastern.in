@@ -22,8 +22,9 @@ interface Props {
 }
 const { title, description = siteConfig.description, image = "/og-default.jpg", footer = true, page = "", noindex = false } = Astro.props;
 const fullTitle = siteConfig.titleTemplate(title);
-const canonical = new URL(Astro.url.pathname, siteConfig.url).href;
-const ogImage = new URL(image, siteConfig.url).href;
+const origin = Astro.site ?? siteConfig.url;
+const canonical = new URL(Astro.url.pathname, origin).href;
+const ogImage = new URL(image, origin).href;
 ---
 <!doctype html>
 <html lang="en" data-page={page}>

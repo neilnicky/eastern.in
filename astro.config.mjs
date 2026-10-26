@@ -3,7 +3,9 @@ import { defineConfig } from "astro/config";
 import { legacyRedirects } from "./src/content/redirects.ts";
 
 export default defineConfig({
-  site: "https://eastern.in",
+  // Absolute URLs (canonical, og:image, sitemap) use this origin. Set SITE_URL for a staging deploy
+  // such as workers.dev, or link previews fetch images from eastern.in, which does not serve them yet.
+  site: process.env.SITE_URL ?? "https://eastern.in",
   // WordPress served every route with a trailing slash; keep that so inbound links resolve unchanged.
   trailingSlash: "always",
   devToolbar: { enabled: false },
