@@ -120,9 +120,19 @@ test("no horizontal overflow at 320px", async ({ browser }) => {
 test("every sitemap URL returns 200", async ({ request }) => {
   test.setTimeout(120_000);
   const xml = await (await request.get("/sitemap.xml")).text();
-  const urls = [...xml.matchAll(/<loc>https:\/\/eastern\.in([^<]+)<\/loc>/g)].map((m) => m[1]!);
+  const urls = [...xml.matchAll(/<loc>https?:\/\/[^/<]+([^<]+)<\/loc>/g)].map((m) => m[1]!);
   expect(urls.length).toBeGreaterThan(450);
   const bad: string[] = [];
   for (const u of urls) { const r = await request.get(u); if (r.status() !== 200) bad.push(`${r.status()} ${u}`); }
   expect(bad).toEqual([]);
+});
+
+test("social card image is absolute, shares the canonical origin and is served", async ({ page, request }) => {
+  await page.goto("/");
+  const canonical = new URL((await page.locator('link[rel="canonical"]').getAttribute("href"))!);
+  const og = new URL((await page.locator('meta[property="og:image"]').getAttribute("content"))!);
+  expect(og.origin).toBe(canonical.origin);
+  const r = await request.get(og.pathname);
+  expect(r.status()).toBe(200);
+  expect(r.headers()["content-type"]).toBe("image/jpeg");
 });

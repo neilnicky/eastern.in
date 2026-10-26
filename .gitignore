@@ -7,3 +7,4 @@ playwright-report/
 *.log
 # raw crawl snapshots stay local; the curated extracts live in docs/source/
 .source-cache/
+perf/out/
